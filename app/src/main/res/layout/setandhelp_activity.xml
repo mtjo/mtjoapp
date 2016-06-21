@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!-- 告诉好友 -->
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:background="@drawable/dialog_btn_selector"
+        android:gravity="center_vertical"
+        android:textColor="@color/text_dark_color"
+        android:textSize="@dimen/tv_style_big_size"
+        android:text="告诉好友"
+        android:onClick="tellFriend"
+        android:clickable="true"/>
+    <include layout="@layout/h_line"/>
+    
+    <!-- 给我们赏点分吧！ -->
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:background="@drawable/dialog_btn_selector"
+        android:gravity="center_vertical"
+        android:textColor="@color/text_dark_color"
+        android:textSize="@dimen/tv_style_big_size"
+        android:text="给我们赏点分吧！"
+        android:onClick="givePrise"
+        android:clickable="true"/>
+    <include layout="@layout/h_line"/>
+    
+    <!-- 关于好律师在线 -->
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:background="@drawable/dialog_btn_selector"
+        android:gravity="center_vertical"
+        android:textColor="@color/text_dark_color"
+        android:textSize="@dimen/tv_style_big_size"
+        android:text="关于好律师在线"
+        android:onClick="aboutLscn"
+        android:clickable="true"/>
+    <include layout="@layout/h_line"/>
+	
+    <Button 
+        android:id="@+id/login_out_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/red_button_normal"
+        android:onClick="loginOut"
+        android:text="退出当前账号"/>
+<!--     <include layout="@layout/bottom_about_lscn"/> -->
+</LinearLayout>

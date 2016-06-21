@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MTJO</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+
+    <!-- 加载提示 -->
+    <string name="home">首页</string>
+    <string name="search">搜索</string>
+    <string name="article_list">文章列表</string>
+    <string name="my">我的</string>
+    
+    <!-- 加载提示 -->
+    <string name="reload">刷新重试</string>
+    <string name="start_loading">正在下载</string>
+    <string name="loading">正在加载中,请稍后...</string>
+    <string name="loaderror">加载失败...</string>
+    
+    <!--登录 -->
+	 <string name="regist_phone_number_hint">请输入手机号</string>
+	 <string name="regist_test_code_hint">请输入验证码</string>
+	 <string name="regist_send_repeat_text">&#160;重&#160;发&#160;&#160;</string>
+	 <string name="regist_get_vcode_text">获取验证码</string>
+	 <string name="regist_send_msg">数据发送中&#8230;&#8230;</string>
+	 <string name="regist_test_code_msg">短信验证码已发送</string>
+	 <string name="regist_error_test_code_msg">短信验证码发送失败，请稍后重试</string>
+	 <string name="regist_title_msg">手机验证</string>
+	 <string name="regist_lawyer_phone_msg">律师会通过该手机号与您联系。</string>
+	 <string name="regist_not_empty_msg">手机号码不能为空</string>
+	 <string name="regist_mobile_rule__msg">手机号码不符合规范</string>
+	 <string name="regist_not_empty_vecode_msg">验证码不能为空</string>
+	 <string name="regist_vecode_msg">验证码不符合规范</string>
+	 <string name="regist_succ">登录成功</string>
+	 <string name="regist_fail">登录失败:验证码过期</string>
+	 <string name="regist_change_mobile">更换手机号码</string>
+	 <string name="regist_agree_user">点击确认表示您同意</string>
+	 <string name="regist_protocol">《好律师在线服务协议》</string>
+	 <string name="regist_load">点击登录</string>
+	 <string name="regist_commit_question">确定发送?</string>
+	 
+ 	<!--end登录 -->
+ 
+	<!--我的 -->
+	<string name="me_unlogin_text">未验证</string>
+	<string name="me_changemobile_text">修改</string>
+    <string name="me_told_friend_text">告诉好友</string>
+    <string name="me_feed_back_text">意见反馈</string>
+    <string name="me_evalution_text">评价</string>
+    <string name="me_about_lscn_text">关于</string>
+    <string name="me_exit">注销</string>
+    <string name="me_title_text">我的</string>
+    <string name="me_exit_msg">注销中&#8230;&#8230;</string>
+    <string name="me_exit_succ_msg">注销成功</string>
+    <string name="me_exit_fail_msg">注销失败</string>
+    
+	<!--关于好律师 -->
+    <string name="me_about_lscn_title">关于</string>
+    <string name="me_about_lscn_now_version_text">当前版本</string>
+    <string name="me_about_lscn_version_check_text">版本检查</string>
+    <string name="me_about_lscn_user_protocol_text">服务协议</string>
+    <string name="me_about_lscn_now_version_msg">已是最新版本</string>
+    <string name="me_about_lscn_now_version_fail_msg">获取版本信息失败，请稍后重试</string>
+    
+	<!-- 意见反馈     -->
+    <string name="me_feed_back_title_text">意见反馈</string>
+    <string name="me_feed_back_hint">请详细描述您的建议或遇到的问题。</string>
+    <string name="me_feed_back_msg">反馈内容不能为空</string>
+    <string name="me_feed_back_thanks_msg">谢谢您的反馈</string>
+    
+	<!--评价 -->
+    <string name="me_pingjia_msg">没有可用的平台，请下载相关的平台</string>
+    <string name="me_share_text">好律师在线 快速获取法律问题解答。点击进入立即下载：http://app.ls.cn/download</string>
+
+	<!--告诉好友 -->
+   <string name="me_told_sms">短信</string>
+    <string name="me_told_weixin">微信好友</string>
+    <string name="me_told_qq">QQ</string>
+    <string name="me_told_friend">朋友圈</string>
+    <string name="me_told_sina">新浪微博</string>
+    <string name="me_told_qq_weibo">腾讯微博</string>
+    
+	<!--问律师 -->
+    <string name="ask_lawyer_title_text">问律师</string>
+    <string name="ask_lawyer_hint">请详细描述您遇到的法律问题，好律师在线会为您分配正确的律师回复您的问题并保证您的隐私安全...</string>
+    <string name="ask_lawyer_list_title_text">问律师记录</string>
+    <string name="ask_lawyer_detail_title_text">问律师详情</string>
+    <string name="ask_lawyer_no_empty_msg">请输入相关内容</string>
+    <string name="ask_lawyer_commit_content_fail_msg">发布咨询失败，请稍后重试</string>
+    <string name="ask_lawyer_commit_content_succ_msg">发布成功</string>
+    <string name="ask_lawyer_detail_chat_title_text">咨询详情</string>
+    
+    <!-- 首页 -->
+    <string name="ask_law">问律师</string>
+    <string name="ask_law_remark">执业律师快速为你解答</string>
+    <string name="ask_law_record">问律师记录</string>
+    <string name="find_law">找律师</string>
+    <string name="find_law_remark">律师主动打电话来帮你 </string>
+    <string name="find_law_record">预约记录</string>
+    <string name="see_more">查看更多</string>
+    <string name="hot_line">咨询热线</string>
+    <string name="hot_line_remark">专业客服为您解答问题</string>
+    
+    <!-- 找律师设置页面   -->
+    <string name="findlaw_area">地点</string>
+    <string name="findlaw_type">纠纷类型</string>
+    
+    <!-- 找律师列表页面 -->
+    <string name="praise">评价</string>
+    <string name="casenum">认证案件</string>
+    <string name="asknum">咨询数</string>
+    <string name="law">律师</string>
+    <string name="law_prefession">全部专长</string>
+    <string name="law_area">全部地区</string>
+    <string name="law_default">默认排序</string>
+    
+    <!-- 找律师列表详情页面 -->
+    <string name="find_law_service">找律师服务</string>
+    <string name="find_law_count">[n]人找律师</string>
+    <string name="find_law_request">找律师服务申请</string>
+    <string name="find_law_free_unlimit">免费不限次</string>
+    <string name="find_law_detail_remark">找律师成功，律师将主动电话联系您，帮助您解决问题</string>
+    <string name="find_law_detail_remark2">立即联系律师，让律师了解您的情况，快速解决问题</string>
+    <string name="find_law_lawspecial">擅长：</string>
+    <string name="find_law_good">好评率：</string>
+    <string name="find_law_now">立即预约律师</string>
+    <string name="find_law_call">拨打律师号码</string>
+    <string name="find_law_input_hit">请您尽可能详细的描述您的案件问题，以便得到律师更好的解答</string>
+    <string name="find_law_amount_hit">请输入涉案金额（0-9999999）</string>
+    <string name="find_law_amount">涉及金额</string>
+    <string name="find_law_amount_unit">单位：万元（RMB）</string>
+    <string name="find_law_submit">提交预约</string>
+    <!-- 找律师律师记录列表 -->
+    <string name="findlaw_record">预约记录</string>
+    <string name="findlaw_record_type">分类：</string>
+    <string name="findlaw_record_amount">金额：</string>
+    <string name="findlaw_record_lawdetail">查看律师资料</string>
+    <!-- 找律师记录详情 -->
+    <string name="findlaw_record_casedetail">案件详情</string>
+    <string name="findlaw_record_casetype">问题类型：</string>
+    <string name="findlaw_record_casearea">所在地区：</string>
+    <string name="findlaw_record_caseamount">涉及金额：</string>
+    <string name="findlaw_record_caseremark">案情描述：</string>
+</resources>

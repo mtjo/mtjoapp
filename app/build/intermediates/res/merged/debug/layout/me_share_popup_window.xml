@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+  >
+
+<LinearLayout 
+    android:id="@+id/pop_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_alignParentBottom="true"
+     >
+
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="#ffffff">
+        
+        <LinearLayout  android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView  android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:drawableTop="@drawable/sns_icon_19"
+	        android:paddingTop="10dip"
+        	android:paddingBottom="10dip"
+	        android:gravity="center"
+	         android:background="@drawable/dialog_btn_selector"
+	        android:id="@+id/sms"
+	        android:textColor="@color/text_grey_color"
+	        android:textSize="@dimen/tv_style_smal_size"
+	        android:text="@string/me_told_sms"/>
+        <TextView  android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:drawableTop="@drawable/sns_icon_22"
+	         android:background="@drawable/dialog_btn_selector"
+	         android:paddingTop="10dip"
+        	android:paddingBottom="10dip"
+	        android:gravity="center"
+	         android:id="@+id/weixin"
+	       android:textColor="@color/text_grey_color"
+	        android:textSize="@dimen/tv_style_smal_size"
+	        android:text="@string/me_told_weixin"/>
+        <TextView  android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:drawableTop="@drawable/sns_icon_24"
+	         android:background="@drawable/dialog_btn_selector"
+	         android:paddingTop="10dip"
+        	android:paddingBottom="10dip"
+	        android:gravity="center"
+	         android:id="@+id/qq"
+	        android:textColor="@color/text_grey_color"
+	        android:textSize="@dimen/tv_style_smal_size"
+	        android:text="@string/me_told_qq"/>
+	        
+        </LinearLayout>
+        
+        <LinearLayout  android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+              <TextView  android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:drawableTop="@drawable/sns_icon_23"
+	         android:background="@drawable/dialog_btn_selector"
+	         android:paddingTop="10dip"
+        	android:paddingBottom="10dip"
+	        android:gravity="center"
+	        android:id="@+id/friend"
+	        android:textColor="@color/text_grey_color"
+	        android:textSize="@dimen/tv_style_smal_size"
+	        android:text="@string/me_told_friend"/>
+        <TextView  android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:drawableTop="@drawable/sns_icon_1"
+	         android:background="@drawable/dialog_btn_selector"
+	         android:paddingTop="10dip"
+        	android:paddingBottom="10dip"
+	        android:gravity="center"
+	         android:id="@+id/sina"
+	        android:textColor="@color/text_grey_color"
+	        android:textSize="@dimen/tv_style_smal_size"
+	        android:text="@string/me_told_sina"/>
+        <TextView  android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:drawableTop="@drawable/sns_icon_2"
+	         android:background="@drawable/dialog_btn_selector"
+	         android:paddingTop="10dip"
+        	android:paddingBottom="10dip"
+	        android:gravity="center"
+	         android:id="@+id/weibo"
+	        android:textColor="@color/text_grey_color"
+	        android:textSize="@dimen/tv_style_smal_size"
+	        android:text="@string/me_told_qq_weibo"/>
+        </LinearLayout>
+        
+          <TextView  android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:id="@+id/exit"
+	        android:paddingTop="10dip"
+        	android:paddingBottom="10dip"
+        	android:background="@drawable/dialog_btn_selector"
+	      	android:textColor="@color/text_grey_color"
+	        android:textSize="@dimen/tv_style_smal_size"
+	        android:text="取消"/>
+       
+    </LinearLayout>
+    
+</LinearLayout>
+</RelativeLayout>

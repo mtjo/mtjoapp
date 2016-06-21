@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">10dp</dimen>
+    
+    <!-- 头像高度，宽度，圆角度 -->
+    <dimen name="head_width">45dp</dimen>
+    <dimen name="head_height">45dp</dimen>
+    <dimen name="head_round">5px</dimen>
+    
+    <!-- 文章图片 -->
+    <dimen name="article_img_width">60dp</dimen>
+    <dimen name="article_img_height">60dp</dimen>
+    
+    <!-- 分割线高度 -->
+    <dimen name="space_line_size">1px</dimen>
+    
+    <!-- 字体大小 -->
+    <dimen name="tv_style_big_size">16sp</dimen>
+    <dimen name="tv_style_smal_size">14sp</dimen>
+    <dimen name="tv_style_mini_size">12sp</dimen>
+    
+    <!-- -->
+    <dimen name="tv_main_menu_size">12sp</dimen>
+    
+    <dimen name="ask_head_width">30dp</dimen>
+    <dimen name="ask_head_height">30dp</dimen>
+</resources>

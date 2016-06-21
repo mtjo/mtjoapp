@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingRight="16dp" >
+    <TextView 
+       	android:layout_width="match_parent"  
+   		android:layout_height="wrap_content"
+   		android:layout_centerVertical="true"
+   		android:textColor="#ffffff"
+   		android:textSize="20sp"
+   		android:text="@string/app_name"/>
+    <FrameLayout 
+  	    android:layout_width="wrap_content"
+   	    android:layout_height="wrap_content"
+   	    android:layout_alignParentRight="true">
+      	<com.aframe.ui.widget.MaterialRippleLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:padding="8dp"
+	        ripple:mrl_rippleColor="@color/theme_default_primary"
+	        ripple:mrl_rippleDelayClick="true"
+	       	ripple:mrl_rippleOverlay="true"
+	       	ripple:mrl_rippleHover="true"
+	       	ripple:mrl_rippleRoundedCorners="90dp">
+       	    <ImageView 
+	      	    android:layout_width="wrap_content"
+	      	    android:layout_height="wrap_content"
+	      	    android:src="@drawable/msg_icon"
+	      	    android:onClick="goMsg"/>
+	  </com.aframe.ui.widget.MaterialRippleLayout>
+	  <TextView 
+     	    android:id="@+id/msg_count_tv"
+     	    android:layout_width="wrap_content"
+     	    android:layout_height="wrap_content"
+     	    android:gravity="center"
+     	    android:layout_marginLeft="20dp"
+     	    style="@style/new_message_style"/>
+	  </FrameLayout>
+</RelativeLayout>

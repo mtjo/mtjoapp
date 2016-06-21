@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical">
+	    <LinearLayout 
+	        android:id="@+id/nologin_head_lt"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/my_top_unlogin_bg"
+	        android:orientation="vertical"
+	        android:gravity="center"
+	        android:visibility="gone">
+	        <ImageView 
+	            android:id="@+id/unlogin_head"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/my_default_head"/>
+	        <Button 
+	            android:id="@+id/tologin_btn"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="10dp"
+	            android:paddingLeft="15dp"
+	            android:paddingRight="15dp"
+	            android:gravity="center"
+	            android:background="@drawable/my_login_btn"
+	            android:text="登录  /  注册"/>
+	    </LinearLayout>
+	    
+	    <LinearLayout 
+	        android:id="@+id/login_head_lt"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:background="@drawable/my_top_login_bg"
+	        android:padding="@dimen/activity_horizontal_margin"
+	        android:gravity="center_vertical">
+	        <ImageView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/my_default_head"/>
+	        <TextView 
+	            android:id="@+id/mobile_tv"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:paddingLeft="10dp"
+		        android:gravity="center_vertical"
+		        android:textColor="@color/text_dark_color"
+		        android:textSize="@dimen/tv_style_big_size"
+		        android:text="我的咨询"/>
+	    </LinearLayout>
+	    
+	    <LinearLayout 
+	        android:id="@+id/login_content_lt"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical">
+	        <!-- 我的咨询 -->
+		    <TextView 
+		        android:id="@+id/my_ask_tv"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:padding="@dimen/activity_horizontal_margin"
+		        android:drawableLeft="@drawable/my_question_icon"
+		        android:background="@drawable/dialog_btn_selector"
+		        android:gravity="center_vertical"
+		        android:textColor="@color/text_dark_color"
+		        android:textSize="@dimen/tv_style_big_size"
+		        android:drawablePadding="10dp"
+		        android:text="我的咨询"/>
+		    <include layout="@layout/h_line"/>
+		    
+		    <!-- 我的收藏 -->
+<!-- 		    <TextView  -->
+<!-- 		        android:id="@+id/my_collect_tv" -->
+<!-- 		        android:layout_width="match_parent" -->
+<!-- 		        android:layout_height="wrap_content" -->
+<!-- 		        android:padding="@dimen/activity_horizontal_margin" -->
+<!-- 		        android:drawableLeft="@drawable/my_collect_icon" -->
+<!-- 		        android:background="@drawable/click_bg_selector" -->
+<!-- 		        android:gravity="center_vertical" -->
+<!-- 		        android:textColor="@color/text_dark_color" -->
+<!-- 		        android:textSize="@dimen/tv_style_big_size" -->
+<!-- 		        android:drawablePadding="10dp" -->
+<!-- 		        android:text="我的收藏"/> -->
+<!-- 		    <include layout="@layout/h_line"/> -->
+	    </LinearLayout>
+	    
+	    <!-- 设置与帮助 -->
+	    <TextView 
+	        android:id="@+id/set_help_tv"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="@dimen/activity_horizontal_margin"
+	        android:drawableLeft="@drawable/my_sethelp_icon"
+	        android:background="@drawable/dialog_btn_selector"
+	        android:gravity="center_vertical"
+	        android:textColor="@color/text_dark_color"
+	        android:textSize="@dimen/tv_style_big_size"
+	        android:drawablePadding="10dp"
+	        android:text="设置与帮助"/>
+	    <include layout="@layout/h_line"/>
+	    
+	    <!-- 意见反馈 -->
+	    <TextView 
+	        android:id="@+id/feed_back_tv"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="@dimen/activity_horizontal_margin"
+	        android:drawableLeft="@drawable/my_face_back_icon"
+	        android:background="@drawable/dialog_btn_selector"
+	        android:gravity="center_vertical"
+	        android:textColor="@color/text_dark_color"
+	        android:textSize="@dimen/tv_style_big_size"
+	        android:drawablePadding="10dp"
+	        android:text="意见反馈"/>
+	    <include layout="@layout/h_line"/>
+	    
+	    <!-- 联系我们 -->
+	    <TextView 
+	        android:id="@+id/contanct_us_tv"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="@dimen/activity_horizontal_margin"
+	        android:drawableLeft="@drawable/my_call_service_icon"
+	        android:background="@drawable/dialog_btn_selector"
+	        android:gravity="center_vertical"
+	        android:textColor="@color/text_dark_color"
+	        android:textSize="@dimen/tv_style_big_size"
+	        android:drawablePadding="10dp"
+	        android:text="联系我们"/>
+	    <include layout="@layout/h_line"/>
+	</LinearLayout>
+</ScrollView>
+

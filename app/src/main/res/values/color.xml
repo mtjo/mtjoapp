@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Theme colors -->
+    <color name="theme_default_primary">#3fd7be</color>
+    <color name="theme_default_primary_dark">#3fd7be</color>
+    <color name="theme_default_text_primary">#ffffff</color>
+    <color name="theme_accent">#ff4081</color>
+    <color name="theme_window_background">#ffffff</color>
+    <color name="theme_window_background_click">#f2f2f2</color>
+    
+    <!-- Widget -->
+    <color name="code_button_text_normal">#3fd7be</color>
+    <color name="code_button_text_click">#666666</color>
+    <color name="edit_text_color">#666666</color>
+    <color name="edit_text_hint_color">#d3d3d3</color>
+    <color name="green_button_text_color">#ffffff</color>
+    
+    <!-- line -->
+    <color name="space_line_color">#cccccc</color>
+    
+    <!-- text -->
+    <color name="text_dark_color">#000000</color>
+    <color name="text_grey_color">#666666</color>
+    <color name="text_light_color">#898989</color>
+    
+    <!--  -->
+    <color name="tv_main_menu_normal">#666666</color>
+    <color name="tv_main_menu_click">#3fd7be</color>
+    
+    <color name="tv_unread_color">#aaaaaa</color>
+    
+    <color name="ask_detail_itme_bg">#edeef0</color>
+    
+    <color name="indacar_slider_color">#1cbea3</color>
+</resources>

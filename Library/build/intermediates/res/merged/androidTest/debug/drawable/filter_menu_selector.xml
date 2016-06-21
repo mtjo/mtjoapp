@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:Android="http://schemas.android.com/apk/res/android">
+
+    <item Android:drawable="@drawable/filter_menu_click" Android:state_pressed="true"/>
+    <item Android:drawable="@drawable/filter_menu_click" Android:state_checked="true"/>
+    <item Android:drawable="@drawable/filter_menu_normal" Android:state_enabled="true"/>
+ <!-- focused -->
+    <item Android:drawable="@drawable/filter_menu_normal"/>
+ <!-- default -->
+
+</selector>

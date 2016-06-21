@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="15dp">
+    <include layout="@layout/h_line"/>
+    <LinearLayout 
+		  android:layout_width="match_parent"
+		  android:layout_height="wrap_content"
+		  android:paddingLeft="10dp"
+		  android:paddingRight="10dp"
+		  android:paddingTop="15dp"
+		  android:paddingBottom="15dp"
+		  android:background="@drawable/dialog_btn_selector"
+		  android:onClick="getArea">
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/text_grey_color"
+	        android:textSize="@dimen/tv_style_smal_size"
+	        android:text="@string/findlaw_area"/>
+	    <TextView 
+	        android:id="@+id/findlaw_area_tv"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="right|center_vertical"
+	        android:drawableRight="@drawable/go_more"
+	        android:drawablePadding="5dp"
+	        android:textColor="@color/text_grey_color"
+	        android:textSize="@dimen/tv_style_smal_size"/>
+	</LinearLayout>
+	<include layout="@layout/h_line"/>
+	<LinearLayout 
+	    android:id="@+id/findlaw_type_lt"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:layout_marginTop="10dp"
+	    android:visibility="gone">
+	    <include layout="@layout/h_line"/>
+	    <LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:paddingLeft="10dp"
+		    android:paddingRight="10dp"
+		    android:paddingTop="15dp"
+		    android:paddingBottom="15dp"
+		    android:background="@drawable/dialog_btn_selector"
+		    android:onClick="getType">
+		    <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/text_grey_color"
+	        	android:textSize="@dimen/tv_style_smal_size"
+		        android:text="@string/findlaw_type"/>
+		    <TextView 
+		        android:id="@+id/findlaw_type_tv"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="right|center_vertical"
+		        android:drawableRight="@drawable/go_more"
+		        android:drawablePadding="5dp"
+		        android:textColor="@color/text_grey_color"
+	        	android:textSize="@dimen/tv_style_smal_size"/>
+		</LinearLayout>
+		<include layout="@layout/h_line"/>
+	</LinearLayout>
+	<Button 
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp"
+	    android:layout_marginTop="10dp"
+	    android:onClick="doSearch"
+	    android:text="搜索律师"/>
+</LinearLayout>

@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    xmlns:tools="http://schemas.android.com/tools"  
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent"  
+    android:orientation="vertical" 
+    android:background="#f1f1f2">
+    
+    <RelativeLayout 
+		    android:id="@+id/header"
+		    android:layout_width="fill_parent"
+		    android:layout_height="50dp"
+		    android:gravity="center_vertical"
+		    android:background="#ffffff"
+		    android:padding="5dp"
+		    android:layout_alignParentTop="true">
+		    <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerInParent="true"
+		        android:text="选择相册"
+		        android:textSize="20sp"
+		        android:textColor="#007aff"/>
+		    <TextView 
+		        android:id="@+id/imageload_cancle"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textSize="20sp"
+		        android:textColor="#007aff"
+		        android:layout_alignParentRight="true"
+		        android:layout_centerInParent="true"
+		        android:text="取消"/>
+		</RelativeLayout>
+		<View 
+	        android:layout_width="fill_parent"
+	        android:layout_height="0.5dp"
+	        android:background="#cccccc"/>  
+    <ListView  
+        android:id="@+id/listview"  
+        android:layout_width="fill_parent"  
+        android:layout_height="fill_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="#cccccc"
+        android:dividerHeight="0.5dp"/> 
+  
+</LinearLayout>

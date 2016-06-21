@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent" >
+    
+	<ImageView 
+	    android:id="@+id/lscn_img"
+	    android:layout_width="80dp"
+	    android:layout_height="80dp"
+	    android:layout_marginTop="20dp"
+	    android:src="@drawable/ic_launcher"/>
+
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"
+	    android:layout_marginBottom="20dp"
+	    android:textColor="@color/text_grey_color"
+	    android:textSize="@dimen/tv_style_smal_size"
+	    android:text="@string/app_name"/>
+	
+	<include layout="@layout/h_line"/>
+	
+	<RelativeLayout android:layout_width="match_parent"
+	    android:orientation="horizontal"
+	    android:gravity="center_vertical"
+	    android:background="@color/dialog_background"
+	    android:layout_height="40dip">
+	    
+		<TextView 
+		    android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:textColor="@color/text_grey_color"
+	    	android:textSize="@dimen/tv_style_smal_size"
+			android:layout_marginLeft="@dimen/activity_vertical_margin"
+			android:text="@string/me_about_lscn_now_version_text"/>
+		
+		<TextView
+		    android:id="@+id/now_version"
+		    android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:textColor="@color/text_grey_color"
+	    	android:textSize="@dimen/tv_style_smal_size"
+			android:layout_alignParentRight="true"
+			android:layout_marginRight="@dimen/activity_vertical_margin"/>
+	</RelativeLayout>
+
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:orientation="horizontal"
+	    android:gravity="center_vertical"
+	    android:background="@drawable/dialog_btn_selector"
+	    android:layout_height="40dip"
+	    android:onClick="checkVersion">
+		<include layout="@layout/h_line"/>
+		
+		<TextView 
+		    android:layout_width="fill_parent"
+			android:layout_height="40dip"
+		    android:gravity="center_vertical"
+		    android:textColor="@color/text_grey_color"
+	    	android:textSize="@dimen/tv_style_smal_size"
+	     	android:paddingLeft="@dimen/activity_vertical_margin"
+		    android:text="@string/me_about_lscn_version_check_text"/>
+		
+		<ImageView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="match_parent"
+		    android:src="@drawable/go_more"
+		    android:layout_marginRight="10dip"
+		    android:layout_alignParentRight="true"/>
+	</RelativeLayout>
+	<include layout="@layout/h_line"/>
+	
+	<RelativeLayout android:layout_width="match_parent"
+    	android:orientation="horizontal"
+    	android:gravity="center_vertical"
+    	android:background="@drawable/dialog_btn_selector"
+    	android:layout_height="40dip"
+    	android:onClick="userAgreement">
+		<TextView 
+		    android:layout_width="fill_parent"
+		    android:layout_height="40dip"
+		    android:gravity="center_vertical"
+		    android:textColor="@color/text_grey_color"
+	    	android:textSize="@dimen/tv_style_smal_size"
+		    android:paddingLeft="@dimen/activity_vertical_margin"
+		    android:text="@string/me_about_lscn_user_protocol_text"/>
+		<ImageView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="match_parent"
+		    android:src="@drawable/go_more"
+		    android:layout_marginRight="10dip"
+		    android:layout_alignParentRight="true"/>
+	</RelativeLayout>
+	<include layout="@layout/h_line"/>
+</LinearLayout>

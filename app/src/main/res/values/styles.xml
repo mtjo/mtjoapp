@@ -1,0 +1,140 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light">
+		  <item name="windowActionBar">false</item>
+		  <item name="windowNoTitle">true</item>
+		  <!-- Actionbar color -->
+		  <item name="colorPrimary">@color/theme_default_primary</item>
+		  <!--Status bar color-->
+		  <item name="colorPrimaryDark">@color/theme_default_primary_dark</item>
+		  <item name="colorControlNormal">@color/text_light_color</item>
+		  <item name="colorAccent">@color/text_grey_color</item>
+		  <item name="actionMenuTextColor">@color/theme_default_text_primary</item>
+		  <item name="actionMenuTextAppearance">@style/myactionMenuTextAppearance</item>
+		  <!--Window color-->
+		  <item name="android:windowBackground">@color/theme_window_background</item>
+		  <item name="android:windowAnimationStyle">@style/animSlide</item>
+		<item name="android:windowContentOverlay">@null</item>
+		<item name="android:editTextStyle">@style/edittext_style</item>
+		<item name="android:buttonStyle">@style/button_style</item>
+		<item name="android:listViewStyle">@style/listview_style</item>
+		<item name="vpiTabPageIndicatorStyle">@style/TabPageIndicator</item>
+	</style>
+	<style name="AppTheme" parent="AppTheme.Base"/>
+	
+	 <!--     activity切换动画 -->
+     <style name="animSlide" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_left</item>  
+	    <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>  
+	    <item name="android:activityCloseEnterAnimation">@anim/slide_in_right</item>  
+	    <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>  
+	      
+	    <item name="android:taskOpenEnterAnimation">@anim/slide_in_left</item>  
+	    <item name="android:taskOpenExitAnimation">@anim/slide_out_left</item>  
+	    <item name="android:taskCloseEnterAnimation">@anim/slide_in_right</item>  
+	    <item name="android:taskCloseExitAnimation">@anim/slide_out_right</item>  
+	      
+	    <item name="android:taskToFrontEnterAnimation">@anim/slide_in_left</item>  
+	    <item name="android:taskToFrontExitAnimation">@anim/slide_out_left</item>  
+	    <item name="android:taskToBackEnterAnimation">@anim/slide_in_right</item>  
+	    <item name="android:taskToBackExitAnimation">@anim/slide_out_right</item>
+   </style>
+   
+     <!-- 按钮 -->
+    <style name="button_style">
+        <item name="android:background">@drawable/green_button_selector</item>
+        <item name="android:textColor">@color/green_button_text_color</item>
+        <item name="android:textSize">@dimen/tv_style_big_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+    </style>
+    
+    <style name="code_button_style">
+        <item name="android:background">@drawable/code_button_selector</item>
+        <item name="android:textColor">@drawable/code_button_text_selector</item>
+        <item name="android:textSize">@dimen/tv_style_big_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+    </style>
+    
+    <style name="edittext_style">
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/edittext_bg_selector</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:textColor">@color/edit_text_color</item>
+        <item name="android:textColorHint">@color/edit_text_hint_color</item>
+        <item name="android:textSize">@dimen/tv_style_big_size</item>
+        <item name="android:cursorVisible">true</item>
+    </style>
+    
+    <style name="myactionMenuTextAppearance">
+		<item name="android:textSize">18sp</item>
+<!-- 		<item name="android:textStyle">bold</item> -->
+	</style>
+    
+    <style name="listview_style">
+        <item name="android:scrollbars">vertical</item>
+<!--         <item name="android:listSelector">@drawable/click_bg_selector</item> -->
+        <item name="android:divider">@color/space_line_color</item>
+        <item name="android:dividerHeight">@dimen/space_line_size</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+<!--         <item name="android:background">@color/content_bg_color</item> -->
+    </style>
+    
+    <style name="myProgressBarStyleLarge" >
+<!-- 	　　<item name="android:indeterminateDrawable">@anim/loading</item> -->
+	　　<item name="android:indeterminateDrawable">@anim/progress_bar</item>
+	　　<item name="android:minWidth">46dp</item>
+	　　<item name="android:maxWidth">46dp</item>
+	　　<item name="android:minHeight">46dp</item>
+	　　<item name="android:maxHeight">46dp</item>
+	</style>
+	
+    <!-- Tab页默认样式 -->
+    <style name="TabPageIndicator">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/tabindicator_bg_selector</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:weightSum">1</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">@dimen/tv_style_smal_size</item>
+    </style>
+	
+    <!-- 主页底部的radiobutton样式 -->
+    <style name="footbar">
+        <item name="android:textSize">@dimen/tv_main_menu_size</item>
+        <item name="android:textColor">@drawable/main_menu_textcolor_selector</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">bottom|center_horizontal</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:drawablePadding">2dp</item>
+    </style>
+    <style name="main_bottom_item">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/dialog_btn_selector</item>
+    </style>
+    
+    <!-- Popupwindow窗口动画 -->
+     <style name="PopupAnimation" parent="android:Animation"  
+        mce_bogus="1">  
+        <item name="android:windowEnterAnimation">@anim/popwindow_in</item>  
+        <item name="android:windowExitAnimation">@anim/popwindow_out</item>  
+    </style>
+    
+     <!-- 新消息 -->
+    <style name="new_message_style">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">3dp</item>
+        <item name="android:paddingRight">3dp</item>
+        <item name="android:background">@drawable/msg_count_bg</item>
+    </style>
+</resources>

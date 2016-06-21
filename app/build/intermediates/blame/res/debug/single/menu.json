@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/res/merged/debug/menu/main.xml",
+        "source": "/Users/mtjo/AndroidStudioProjects/mtjo.net/app/src/main/res/menu/main.xml"
+    },
+    {
+        "merged": "/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/res/merged/debug/menu/next.xml",
+        "source": "/Users/mtjo/AndroidStudioProjects/mtjo.net/app/src/main/res/menu/next.xml"
+    },
+    {
+        "merged": "/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/res/merged/debug/menu/submit.xml",
+        "source": "/Users/mtjo/AndroidStudioProjects/mtjo.net/app/src/main/res/menu/submit.xml"
+    },
+    {
+        "merged": "/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/res/merged/debug/menu/share.xml",
+        "source": "/Users/mtjo/AndroidStudioProjects/mtjo.net/app/src/main/res/menu/share.xml"
+    }
+]

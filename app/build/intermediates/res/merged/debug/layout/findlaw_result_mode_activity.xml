@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+    <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+     android:id="@+id/layout"
+    android:layout_height="40dip">
+    
+        <TextView 
+            android:layout_width="match_parent"
+		    android:layout_height="fill_parent"
+		    android:text="@string/law_prefession"
+		    android:textColor="@color/text_grey_color"
+		    android:textSize="@dimen/tv_style_smal_size"
+		    android:gravity="center"
+		    android:id="@+id/prefessional"
+		    android:background="@drawable/dialog_btn_selector"
+		    android:layout_weight="1"/>
+        
+          <include layout="@layout/v_line"/>
+          
+        <TextView 
+            android:layout_width="match_parent"
+		    android:layout_height="fill_parent"
+		    android:text="@string/law_area"
+		    android:textColor="@color/text_grey_color"
+		    android:textSize="@dimen/tv_style_smal_size"
+		    android:gravity="center"
+		    android:id="@+id/area"
+		     android:background="@drawable/dialog_btn_selector"
+		    android:layout_weight="1"/>
+        
+        <include layout="@layout/v_line"/>
+        
+        <TextView 
+            android:layout_width="match_parent"
+		    android:layout_height="fill_parent"
+		    android:text="@string/law_default"
+		    android:textColor="@color/text_grey_color"
+		    android:textSize="@dimen/tv_style_smal_size"
+		    android:background="@drawable/dialog_btn_selector"
+		    android:gravity="center"
+		    android:id="@+id/default_select"
+		    android:layout_weight="1"/>
+    </LinearLayout>
+     <include layout="@layout/h_line"/>
+     
+</LinearLayout>

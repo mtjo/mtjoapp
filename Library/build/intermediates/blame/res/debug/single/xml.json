@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/mtjo/AndroidStudioProjects/mtjo.net/Library/build/intermediates/res/merged/debug/xml/face_cn.xml",
+        "source": "/Users/mtjo/AndroidStudioProjects/mtjo.net/Library/src/main/res/xml/face_cn.xml"
+    },
+    {
+        "merged": "/Users/mtjo/AndroidStudioProjects/mtjo.net/Library/build/intermediates/res/merged/debug/xml/face.xml",
+        "source": "/Users/mtjo/AndroidStudioProjects/mtjo.net/Library/src/main/res/xml/face.xml"
+    }
+]

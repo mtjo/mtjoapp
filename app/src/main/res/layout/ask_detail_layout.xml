@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/listview_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_sended_tips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:text="您的咨询已经发布成功，请耐心等待律师的回复！"
+                android:textSize="14sp"
+                android:visibility="gone"
+                android:paddingLeft="16dp"
+                android:paddingRight="22dp"
+                />
+
+            <LinearLayout
+                android:id="@+id/ll_time_and_tips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/circle_white_bg"
+                android:visibility="visible"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="22dp">
+                <TextView
+                    android:id="@+id/tv_wait_tips"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="您的咨询已经发布成功，距离律师上线还有："
+                    android:textSize="14sp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    />
+                <TextView
+                    android:id="@+id/tv_wait_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="35dp"
+                    android:textColor="@android:color/black"
+                    android:text="2:40:39"
+                    android:gravity="center"
+                    android:layout_marginBottom="30dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_risk_test"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/circle_white_bg"
+                android:visibility="visible"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="22dp">
+                <TextView
+                    android:id="@+id/tv_risk_test_tips"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="等待时间不如试试“法律风险自测”,了解自己的咨询风险，更好的得到解决方案"
+                    android:textSize="14sp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    />
+
+                <include layout="@layout/h_line"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp">
+                    <TextView
+                        android:id="@+id/tv_risk_jump"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="法律风险自测"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:layout_centerVertical="true"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:src="@drawable/go_more"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
