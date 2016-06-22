@@ -48,12 +48,12 @@
         "source": "/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/exploded-aar/mtjo.net/Library/unspecified/res/layout/activity_imageload.xml"
     },
     {
-        "merged": "/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/res/merged/debug/layout/chat_item_right.xml",
-        "source": "/Users/mtjo/AndroidStudioProjects/mtjo.net/app/src/main/res/layout/chat_item_right.xml"
-    },
-    {
         "merged": "/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/res/merged/debug/layout/findlaw_default_popup_window_item.xml",
         "source": "/Users/mtjo/AndroidStudioProjects/mtjo.net/app/src/main/res/layout/findlaw_default_popup_window_item.xml"
+    },
+    {
+        "merged": "/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/res/merged/debug/layout/chat_item_right.xml",
+        "source": "/Users/mtjo/AndroidStudioProjects/mtjo.net/app/src/main/res/layout/chat_item_right.xml"
     },
     {
         "merged": "/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/res/merged/debug/layout/findlaw_record_detail_activity.xml",
@@ -420,12 +420,12 @@
         "source": "/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/exploded-aar/mtjo.net/ComponetLibrary/unspecified/res/layout/umeng_bak_platform_selector_dialog.xml"
     },
     {
-        "merged": "/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/res/merged/debug/layout/login_activity.xml",
-        "source": "/Users/mtjo/AndroidStudioProjects/mtjo.net/app/src/main/res/layout/login_activity.xml"
-    },
-    {
         "merged": "/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/res/merged/debug/layout/abc_action_bar_view_list_nav_layout.xml",
         "source": "/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/layout/abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/res/merged/debug/layout/login_activity.xml",
+        "source": "/Users/mtjo/AndroidStudioProjects/mtjo.net/app/src/main/res/layout/login_activity.xml"
     },
     {
         "merged": "/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/res/merged/debug/layout/umeng_bak_at_list_item.xml",

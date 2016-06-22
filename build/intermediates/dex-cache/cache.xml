@@ -6,168 +6,168 @@
         jumboMode="true"
         revision="23.0.1"
         sha1="2322a82099790da35c2514675efa4db28e27ccc1">
-        <dex dex="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/transforms/dex/debug/folders/1000/8/SocialSDK_tencentWB_1_a24744018eb967b7b5d154a83a0cf1439e8719ff/classes.dex" />
-    </item>
-    <item
-        jar="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/exploded-aar/mtjo.net/ComponetLibrary/unspecified/jars/libs/SocialSDK_Sina.jar"
-        jumboMode="true"
-        revision="23.0.1"
-        sha1="8aeb9f0054a74d26180dd322b33f8e6f11b5f9ee">
-        <dex dex="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/transforms/dex/debug/folders/1000/8/SocialSDK_Sina_1998020b100a6f542689b21fdf56252779c4ffad/classes.dex" />
-    </item>
-    <item
-        jar="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.1"
-        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
-        <dex dex="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-22.2.0_be699d6969b5c7199048d7a52d444809415e04bb/classes.dex" />
-    </item>
-    <item
-        jar="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/exploded-aar/mtjo.net/ComponetLibrary/unspecified/jars/libs/umeng_social_sdk.jar"
-        jumboMode="true"
-        revision="23.0.1"
-        sha1="58640b095c31b4aa6c6b0baf6153aa978be51de9">
-        <dex dex="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/transforms/dex/debug/folders/1000/8/umeng_social_sdk_47503cf477e59001b3d423114f112452f31a385f/classes.dex" />
+        <dex dex="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/pre-dexed/debug/SocialSDK_tencentWB_1_a24744018eb967b7b5d154a83a0cf1439e8719ff.jar" />
     </item>
     <item
         jar="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/exploded-aar/mtjo.net/ComponetLibrary/unspecified/jars/libs/httpmime-4.1.3.jar"
         jumboMode="true"
         revision="23.0.1"
         sha1="cea1e91efe503ce1958352d8d6edc261e1409f6b">
-        <dex dex="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/transforms/dex/debug/folders/1000/8/httpmime-4.1.3_27ce24a78b530a3c6236fe22479f6bd72e82b192/classes.dex" />
+        <dex dex="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/pre-dexed/debug/httpmime-4.1.3_27ce24a78b530a3c6236fe22479f6bd72e82b192.jar" />
     </item>
     <item
         jar="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/exploded-aar/mtjo.net/ComponetLibrary/unspecified/jars/libs/umeng-feedback-v4.3.jar"
         jumboMode="true"
         revision="23.0.1"
         sha1="7afa32507a6945be8f0a16a9f0df26e21d4a2b3b">
-        <dex dex="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/transforms/dex/debug/folders/1000/8/umeng-feedback-v4.3_d7ffa5f0fd644fb8f9dda2959ad96543c06baae4/classes.dex" />
-    </item>
-    <item
-        jar="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/exploded-aar/mtjo.net/ComponetLibrary/unspecified/jars/libs/SocialSDK_QQZone_3.jar"
-        jumboMode="true"
-        revision="23.0.1"
-        sha1="c734ed6377725335ff4abf81825d8aa8a120eceb">
-        <dex dex="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/transforms/dex/debug/folders/1000/8/SocialSDK_QQZone_3_5c346a7007396ceadec49e63c663e5bbcadfc840/classes.dex" />
+        <dex dex="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/pre-dexed/debug/umeng-feedback-v4.3_d7ffa5f0fd644fb8f9dda2959ad96543c06baae4.jar" />
     </item>
     <item
         jar="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/exploded-aar/mtjo.net/ComponetLibrary/unspecified/jars/libs/mid-sdk-2.10.jar"
         jumboMode="true"
         revision="23.0.1"
         sha1="706a857e2dd285797844d908dc5cc73c71746f1a">
-        <dex dex="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/transforms/dex/debug/folders/1000/8/mid-sdk-2.10_00b2df26bcd19526d1984734b8ec49da01d5c26a/classes.dex" />
+        <dex dex="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/pre-dexed/debug/mid-sdk-2.10_00b2df26bcd19526d1984734b8ec49da01d5c26a.jar" />
     </item>
     <item
         jar="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/exploded-aar/mtjo.net/ComponetLibrary/unspecified/jars/libs/SocialSDK_tencentWB_3.jar"
         jumboMode="true"
         revision="23.0.1"
         sha1="ecc61309a08d556d71feabce6ab7618e186a71d6">
-        <dex dex="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/transforms/dex/debug/folders/1000/8/SocialSDK_tencentWB_3_e4c195e26c07fb9c3b9e08842a8df2a37560a123/classes.dex" />
+        <dex dex="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/pre-dexed/debug/SocialSDK_tencentWB_3_e4c195e26c07fb9c3b9e08842a8df2a37560a123.jar" />
     </item>
     <item
         jar="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/exploded-aar/mtjo.net/ComponetLibrary/unspecified/jars/libs/SocialSDK_tencentWB_2.jar"
         jumboMode="true"
         revision="23.0.1"
         sha1="b148620c94b627689daedbd9e918f13eceeb7543">
-        <dex dex="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/transforms/dex/debug/folders/1000/8/SocialSDK_tencentWB_2_1538b7048b49d2adb4b1508ebc1e853b44b6ed24/classes.dex" />
-    </item>
-    <item
-        jar="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/exploded-aar/mtjo.net/ComponetLibrary/unspecified/jars/libs/SocialSDK_QQZone_2.jar"
-        jumboMode="true"
-        revision="23.0.1"
-        sha1="5714a13d76069edd9d89984eb37b72da70878152">
-        <dex dex="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/transforms/dex/debug/folders/1000/8/SocialSDK_QQZone_2_a69a5b483698be0a4048a5f2445ec65d4b56e18c/classes.dex" />
+        <dex dex="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/pre-dexed/debug/SocialSDK_tencentWB_2_1538b7048b49d2adb4b1508ebc1e853b44b6ed24.jar" />
     </item>
     <item
         jar="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/exploded-aar/mtjo.net/ComponetLibrary/unspecified/jars/libs/SocialSDK_sms.jar"
         jumboMode="true"
         revision="23.0.1"
         sha1="97cef3ad6daa3c5c9c0cea2d6fdd34f36c34f0d7">
-        <dex dex="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/transforms/dex/debug/folders/1000/8/SocialSDK_sms_3074f13e9eb712fa52e0fe44cd129d276f60963b/classes.dex" />
+        <dex dex="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/pre-dexed/debug/SocialSDK_sms_3074f13e9eb712fa52e0fe44cd129d276f60963b.jar" />
     </item>
     <item
         jar="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         revision="23.0.1"
-        sha1="f9333ebe2621702801f3ba75b2296e64dc040ab0">
-        <dex dex="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_8466cc82f115380ba46ab9745e2dd5cb2128dd0a/classes.dex" />
-    </item>
-    <item
-        jar="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/exploded-aar/mtjo.net/ComponetLibrary/unspecified/jars/libs/SocialSDK_QQZone_1.jar"
-        jumboMode="true"
-        revision="23.0.1"
-        sha1="810e884c5edcb960446d98bd1bb016df53dfc9f4">
-        <dex dex="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/transforms/dex/debug/folders/1000/8/SocialSDK_QQZone_1_9310f281e5c9d35bf7c1023e9d2e4b1641e37dcc/classes.dex" />
-    </item>
-    <item
-        jar="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.1"
-        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
-        <dex dex="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-22.2.0_1650eec3d14bb05d035f7fc7c1ae945b458b2b08/classes.dex" />
+        sha1="c005943b8f9229ebc1856e03c9d8cadb32b5157a">
+        <dex dex="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/pre-dexed/debug/instant-run-bootstrap_8466cc82f115380ba46ab9745e2dd5cb2128dd0a.jar" />
     </item>
     <item
         jar="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/exploded-aar/mtjo.net/ComponetLibrary/unspecified/jars/libs/SocialSDK_WeiXin_2.jar"
         jumboMode="true"
         revision="23.0.1"
         sha1="d7058100064f45eb1e75ce7a61a0e14df879d79f">
-        <dex dex="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/transforms/dex/debug/folders/1000/8/SocialSDK_WeiXin_2_2241a32180b67f7c3b8e86a546e896c7a5c069a1/classes.dex" />
+        <dex dex="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/pre-dexed/debug/SocialSDK_WeiXin_2_2241a32180b67f7c3b8e86a546e896c7a5c069a1.jar" />
     </item>
     <item
         jar="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/libs/internal_impl-22.2.0.jar"
         jumboMode="true"
         revision="23.0.1"
         sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
-        <dex dex="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-22.2.0_ddfea11a51789c7cd5b637d8f5886d315f4ff0a2/classes.dex" />
-    </item>
-    <item
-        jar="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        revision="23.0.1"
-        sha1="aaf7fb21807790d0ddd02da332ef04065e41c1f8">
-        <dex dex="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_b09af77b6791ebaa819fe4cdfabb033cab522d43/classes.dex" />
+        <dex dex="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.0_ddfea11a51789c7cd5b637d8f5886d315f4ff0a2.jar" />
     </item>
     <item
         jar="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/exploded-aar/mtjo.net/ComponetLibrary/unspecified/jars/libs/umeng-analytics-v5.5.3.jar"
         jumboMode="true"
         revision="23.0.1"
         sha1="86dd6b44b4f57637cba5bdeb6e2912fc04f10e0b">
-        <dex dex="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/transforms/dex/debug/folders/1000/8/umeng-analytics-v5.5.3_6385567b1ae151b0294de8afbf2af17bc4f2d86e/classes.dex" />
-    </item>
-    <item
-        jar="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/exploded-aar/mtjo.net/ComponetLibrary/unspecified/jars/libs/Xg_sdk_v2.37.jar"
-        jumboMode="true"
-        revision="23.0.1"
-        sha1="1333eff4067fb721bbf111808b842ef08c679f8e">
-        <dex dex="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/transforms/dex/debug/folders/1000/8/Xg_sdk_v2.37_b0c26c9dba8709bd37bdde8735ba4f2655c34f3b/classes.dex" />
+        <dex dex="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/pre-dexed/debug/umeng-analytics-v5.5.3_6385567b1ae151b0294de8afbf2af17bc4f2d86e.jar" />
     </item>
     <item
         jar="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/exploded-aar/mtjo.net/Library/unspecified/jars/libs/fastjson-1.1.28.jar"
         jumboMode="true"
         revision="23.0.1"
         sha1="506ddcfe2fb5ecd0d091cca364b76f0aab99dc2d">
-        <dex dex="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/transforms/dex/debug/folders/1000/8/fastjson-1.1.28_08217a57396c7c24cfe430afc2a8c4d4855a5a50/classes.dex" />
+        <dex dex="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/pre-dexed/debug/fastjson-1.1.28_08217a57396c7c24cfe430afc2a8c4d4855a5a50.jar" />
+    </item>
+    <item
+        jar="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/exploded-aar/mtjo.net/ComponetLibrary/unspecified/jars/libs/SocialSDK_Sina.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="8aeb9f0054a74d26180dd322b33f8e6f11b5f9ee">
+        <dex dex="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/pre-dexed/debug/SocialSDK_Sina_1998020b100a6f542689b21fdf56252779c4ffad.jar" />
+    </item>
+    <item
+        jar="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-22.2.0_be699d6969b5c7199048d7a52d444809415e04bb.jar" />
+    </item>
+    <item
+        jar="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/exploded-aar/mtjo.net/ComponetLibrary/unspecified/jars/libs/umeng_social_sdk.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="58640b095c31b4aa6c6b0baf6153aa978be51de9">
+        <dex dex="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/pre-dexed/debug/umeng_social_sdk_47503cf477e59001b3d423114f112452f31a385f.jar" />
+    </item>
+    <item
+        jar="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/exploded-aar/mtjo.net/ComponetLibrary/unspecified/jars/libs/SocialSDK_QQZone_3.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="c734ed6377725335ff4abf81825d8aa8a120eceb">
+        <dex dex="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/pre-dexed/debug/SocialSDK_QQZone_3_5c346a7007396ceadec49e63c663e5bbcadfc840.jar" />
+    </item>
+    <item
+        jar="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/exploded-aar/mtjo.net/ComponetLibrary/unspecified/jars/libs/SocialSDK_QQZone_2.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="5714a13d76069edd9d89984eb37b72da70878152">
+        <dex dex="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/pre-dexed/debug/SocialSDK_QQZone_2_a69a5b483698be0a4048a5f2445ec65d4b56e18c.jar" />
+    </item>
+    <item
+        jar="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/exploded-aar/mtjo.net/ComponetLibrary/unspecified/jars/libs/SocialSDK_QQZone_1.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="810e884c5edcb960446d98bd1bb016df53dfc9f4">
+        <dex dex="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/pre-dexed/debug/SocialSDK_QQZone_1_9310f281e5c9d35bf7c1023e9d2e4b1641e37dcc.jar" />
+    </item>
+    <item
+        jar="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
+        <dex dex="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-22.2.0_1650eec3d14bb05d035f7fc7c1ae945b458b2b08.jar" />
+    </item>
+    <item
+        jar="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="a2b4c7f76557dc5e101e0b5d54afbf0876e6dfe5">
+        <dex dex="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/pre-dexed/debug/instant-run_b09af77b6791ebaa819fe4cdfabb033cab522d43.jar" />
+    </item>
+    <item
+        jar="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/exploded-aar/mtjo.net/ComponetLibrary/unspecified/jars/libs/Xg_sdk_v2.37.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="1333eff4067fb721bbf111808b842ef08c679f8e">
+        <dex dex="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/pre-dexed/debug/Xg_sdk_v2.37_b0c26c9dba8709bd37bdde8735ba4f2655c34f3b.jar" />
     </item>
     <item
         jar="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/exploded-aar/mtjo.net/ComponetLibrary/unspecified/jars/libs/wup-1.0.0-SNAPSHOT.jar"
         jumboMode="true"
         revision="23.0.1"
         sha1="fdd420dedfb7403b40746dfa74e2fc3f8c7cb157">
-        <dex dex="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/transforms/dex/debug/folders/1000/8/wup-1.0.0-SNAPSHOT_dd055b7a74fa37ec0d7a476744c0a869ebc7e3df/classes.dex" />
+        <dex dex="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/pre-dexed/debug/wup-1.0.0-SNAPSHOT_dd055b7a74fa37ec0d7a476744c0a869ebc7e3df.jar" />
     </item>
     <item
         jar="/Users/mtjo/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.0/support-annotations-22.2.0.jar"
         jumboMode="true"
         revision="23.0.1"
         sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
-        <dex dex="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-22.2.0_bbf0e9549e0bb4e49ee1a5d920811a22bc0cde17/classes.dex" />
+        <dex dex="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.0_bbf0e9549e0bb4e49ee1a5d920811a22bc0cde17.jar" />
     </item>
     <item
         jar="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/exploded-aar/mtjo.net/ComponetLibrary/unspecified/jars/libs/SocialSDK_WeiXin_1.jar"
         jumboMode="true"
         revision="23.0.1"
         sha1="dee09c43e9ea5c8a2363022b82262227ef201120">
-        <dex dex="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/transforms/dex/debug/folders/1000/8/SocialSDK_WeiXin_1_b067ff9717a856ce6132124fbcec85530d57a3d0/classes.dex" />
+        <dex dex="/Users/mtjo/AndroidStudioProjects/mtjo.net/app/build/intermediates/pre-dexed/debug/SocialSDK_WeiXin_1_b067ff9717a856ce6132124fbcec85530d57a3d0.jar" />
     </item>
 
 </items>
