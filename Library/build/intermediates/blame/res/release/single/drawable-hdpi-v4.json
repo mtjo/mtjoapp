@@ -3068,12 +3068,12 @@
         "source": "/Users/mtjo/AndroidStudioProjects/mtjo.net/Library/src/main/res/drawable-hdpi/emoji_1f4d5.png"
     },
     {
-        "merged": "/Users/mtjo/AndroidStudioProjects/mtjo.net/Library/build/intermediates/res/merged/release/drawable-hdpi-v4/smiley_21.png",
-        "source": "/Users/mtjo/AndroidStudioProjects/mtjo.net/Library/src/main/res/drawable-hdpi/smiley_21.png"
-    },
-    {
         "merged": "/Users/mtjo/AndroidStudioProjects/mtjo.net/Library/build/intermediates/res/merged/release/drawable-hdpi-v4/emoji_1f238.png",
         "source": "/Users/mtjo/AndroidStudioProjects/mtjo.net/Library/src/main/res/drawable-hdpi/emoji_1f238.png"
+    },
+    {
+        "merged": "/Users/mtjo/AndroidStudioProjects/mtjo.net/Library/build/intermediates/res/merged/release/drawable-hdpi-v4/smiley_21.png",
+        "source": "/Users/mtjo/AndroidStudioProjects/mtjo.net/Library/src/main/res/drawable-hdpi/smiley_21.png"
     },
     {
         "merged": "/Users/mtjo/AndroidStudioProjects/mtjo.net/Library/build/intermediates/res/merged/release/drawable-hdpi-v4/emoji_1f60a.png",

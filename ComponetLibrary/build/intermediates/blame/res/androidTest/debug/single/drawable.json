@@ -16,12 +16,12 @@
         "source": "/Users/mtjo/AndroidStudioProjects/mtjo.net/ComponetLibrary/build/intermediates/bundles/debug/res/drawable/umeng_socialize_oauth_check_off.png"
     },
     {
-        "merged": "/Users/mtjo/AndroidStudioProjects/mtjo.net/ComponetLibrary/build/intermediates/res/merged/androidTest/debug/drawable/umeng_socialize_sina_on.png",
-        "source": "/Users/mtjo/AndroidStudioProjects/mtjo.net/ComponetLibrary/build/intermediates/bundles/debug/res/drawable/umeng_socialize_sina_on.png"
-    },
-    {
         "merged": "/Users/mtjo/AndroidStudioProjects/mtjo.net/ComponetLibrary/build/intermediates/res/merged/androidTest/debug/drawable/umeng_socialize_location_off.png",
         "source": "/Users/mtjo/AndroidStudioProjects/mtjo.net/ComponetLibrary/build/intermediates/bundles/debug/res/drawable/umeng_socialize_location_off.png"
+    },
+    {
+        "merged": "/Users/mtjo/AndroidStudioProjects/mtjo.net/ComponetLibrary/build/intermediates/res/merged/androidTest/debug/drawable/umeng_socialize_sina_on.png",
+        "source": "/Users/mtjo/AndroidStudioProjects/mtjo.net/ComponetLibrary/build/intermediates/bundles/debug/res/drawable/umeng_socialize_sina_on.png"
     },
     {
         "merged": "/Users/mtjo/AndroidStudioProjects/mtjo.net/ComponetLibrary/build/intermediates/res/merged/androidTest/debug/drawable/umeng_socialize_wechat_gray.png",
