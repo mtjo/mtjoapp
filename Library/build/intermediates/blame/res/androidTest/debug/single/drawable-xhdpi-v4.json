@@ -1,5 +1,21 @@
 [
     {
+        "merged": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/filter_menu_click.9.png",
+        "source": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/filter_menu_click.9.png"
+    },
+    {
+        "merged": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/load_icon.png",
+        "source": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/load_icon.png"
+    },
+    {
+        "merged": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/filter_menu_normal.9.png",
+        "source": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/filter_menu_normal.9.png"
+    },
+    {
+        "merged": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/filter_menu_bottom.9.png",
+        "source": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/filter_menu_bottom.9.png"
+    },
+    {
         "merged": "/Users/mtjo/AndroidStudioProjects/mtjo.net/Library/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/filter_menu_click.9.png",
         "source": "/Users/mtjo/AndroidStudioProjects/mtjo.net/Library/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/filter_menu_click.9.png"
     },

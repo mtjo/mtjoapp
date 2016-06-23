@@ -12,16 +12,40 @@
         "source": "/Users/mtjo/AndroidStudioProjects/mtjo.net/Library/build/intermediates/bundles/debug/res/layout/filter_menu_btn.xml"
     },
     {
+        "merged": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/build/intermediates/res/merged/androidTest/debug/layout/vw_footer.xml",
+        "source": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/build/intermediates/bundles/debug/res/layout/vw_footer.xml"
+    },
+    {
         "merged": "/Users/mtjo/AndroidStudioProjects/mtjo.net/Library/build/intermediates/res/merged/androidTest/debug/layout/vw_xscrollview_layout.xml",
         "source": "/Users/mtjo/AndroidStudioProjects/mtjo.net/Library/build/intermediates/bundles/debug/res/layout/vw_xscrollview_layout.xml"
+    },
+    {
+        "merged": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/build/intermediates/res/merged/androidTest/debug/layout/filter_menu_btn.xml",
+        "source": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/build/intermediates/bundles/debug/res/layout/filter_menu_btn.xml"
+    },
+    {
+        "merged": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/build/intermediates/res/merged/androidTest/debug/layout/activity_imagedir.xml",
+        "source": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/build/intermediates/bundles/debug/res/layout/activity_imagedir.xml"
     },
     {
         "merged": "/Users/mtjo/AndroidStudioProjects/mtjo.net/Library/build/intermediates/res/merged/androidTest/debug/layout/vw_header.xml",
         "source": "/Users/mtjo/AndroidStudioProjects/mtjo.net/Library/build/intermediates/bundles/debug/res/layout/vw_header.xml"
     },
     {
+        "merged": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/build/intermediates/res/merged/androidTest/debug/layout/alert_dialog_layout.xml",
+        "source": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/build/intermediates/bundles/debug/res/layout/alert_dialog_layout.xml"
+    },
+    {
+        "merged": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/build/intermediates/res/merged/androidTest/debug/layout/image_dir_listitem.xml",
+        "source": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/build/intermediates/bundles/debug/res/layout/image_dir_listitem.xml"
+    },
+    {
         "merged": "/Users/mtjo/AndroidStudioProjects/mtjo.net/Library/build/intermediates/res/merged/androidTest/debug/layout/activity_imagedir.xml",
         "source": "/Users/mtjo/AndroidStudioProjects/mtjo.net/Library/build/intermediates/bundles/debug/res/layout/activity_imagedir.xml"
+    },
+    {
+        "merged": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/build/intermediates/res/merged/androidTest/debug/layout/vw_xscrollview_layout.xml",
+        "source": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/build/intermediates/bundles/debug/res/layout/vw_xscrollview_layout.xml"
     },
     {
         "merged": "/Users/mtjo/AndroidStudioProjects/mtjo.net/Library/build/intermediates/res/merged/androidTest/debug/layout/alert_dialog_layout.xml",
@@ -32,8 +56,24 @@
         "source": "/Users/mtjo/AndroidStudioProjects/mtjo.net/Library/build/intermediates/bundles/debug/res/layout/night_item.xml"
     },
     {
+        "merged": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/build/intermediates/res/merged/androidTest/debug/layout/vw_header.xml",
+        "source": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/build/intermediates/bundles/debug/res/layout/vw_header.xml"
+    },
+    {
+        "merged": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/build/intermediates/res/merged/androidTest/debug/layout/activity_imageload.xml",
+        "source": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/build/intermediates/bundles/debug/res/layout/activity_imageload.xml"
+    },
+    {
+        "merged": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/build/intermediates/res/merged/androidTest/debug/layout/customprogressdialog.xml",
+        "source": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/build/intermediates/bundles/debug/res/layout/customprogressdialog.xml"
+    },
+    {
         "merged": "/Users/mtjo/AndroidStudioProjects/mtjo.net/Library/build/intermediates/res/merged/androidTest/debug/layout/customprogressdialog.xml",
         "source": "/Users/mtjo/AndroidStudioProjects/mtjo.net/Library/build/intermediates/bundles/debug/res/layout/customprogressdialog.xml"
+    },
+    {
+        "merged": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/build/intermediates/res/merged/androidTest/debug/layout/popup_window.xml",
+        "source": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/build/intermediates/bundles/debug/res/layout/popup_window.xml"
     },
     {
         "merged": "/Users/mtjo/AndroidStudioProjects/mtjo.net/Library/build/intermediates/res/merged/androidTest/debug/layout/popup_window.xml",
@@ -42,5 +82,9 @@
     {
         "merged": "/Users/mtjo/AndroidStudioProjects/mtjo.net/Library/build/intermediates/res/merged/androidTest/debug/layout/activity_imageload.xml",
         "source": "/Users/mtjo/AndroidStudioProjects/mtjo.net/Library/build/intermediates/bundles/debug/res/layout/activity_imageload.xml"
+    },
+    {
+        "merged": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/build/intermediates/res/merged/androidTest/debug/layout/night_item.xml",
+        "source": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/build/intermediates/bundles/debug/res/layout/night_item.xml"
     }
 ]

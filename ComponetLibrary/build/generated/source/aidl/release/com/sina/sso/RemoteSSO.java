@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: /Users/mtjo/AndroidStudioProjects/mtjo.net/ComponetLibrary/src/main/aidl/com/sina/sso/RemoteSSO.aidl
+ * Original file: /home/mtjo/AndroidStudioProjects/mtjoapp/ComponetLibrary/src/main/aidl/com/sina/sso/RemoteSSO.aidl
  */
 package com.sina.sso;
 public interface RemoteSSO extends android.os.IInterface

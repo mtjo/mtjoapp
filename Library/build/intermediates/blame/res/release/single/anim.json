@@ -1,7 +1,31 @@
 [
     {
+        "merged": "/home/mtjo/mtjoapp/Library/build/intermediates/res/merged/release/anim/filtermenushow_anim.xml",
+        "source": "/home/mtjo/mtjoapp/Library/src/main/res/anim/filtermenushow_anim.xml"
+    },
+    {
+        "merged": "/home/mtjo/mtjoapp/Library/build/intermediates/res/merged/release/anim/filtermenuhidden_anim.xml",
+        "source": "/home/mtjo/mtjoapp/Library/src/main/res/anim/filtermenuhidden_anim.xml"
+    },
+    {
+        "merged": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/build/intermediates/res/merged/release/anim/filtermenuhidden_anim.xml",
+        "source": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/src/main/res/anim/filtermenuhidden_anim.xml"
+    },
+    {
+        "merged": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/build/intermediates/res/merged/release/anim/filtermenushow_anim.xml",
+        "source": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/src/main/res/anim/filtermenushow_anim.xml"
+    },
+    {
         "merged": "/Users/mtjo/AndroidStudioProjects/mtjo.net/Library/build/intermediates/res/merged/release/anim/filtermenushow_anim.xml",
         "source": "/Users/mtjo/AndroidStudioProjects/mtjo.net/Library/src/main/res/anim/filtermenushow_anim.xml"
+    },
+    {
+        "merged": "/home/mtjo/mtjoapp/Library/build/intermediates/res/merged/release/anim/progressdialog_anim.xml",
+        "source": "/home/mtjo/mtjoapp/Library/src/main/res/anim/progressdialog_anim.xml"
+    },
+    {
+        "merged": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/build/intermediates/res/merged/release/anim/progressdialog_anim.xml",
+        "source": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/src/main/res/anim/progressdialog_anim.xml"
     },
     {
         "merged": "/Users/mtjo/AndroidStudioProjects/mtjo.net/Library/build/intermediates/res/merged/release/anim/filtermenuhidden_anim.xml",

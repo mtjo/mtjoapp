@@ -1,6 +1,14 @@
 [
     {
+        "merged": "/home/mtjo/AndroidStudioProjects/mtjoapp/ComponetLibrary/build/intermediates/res/merged/androidTest/debug/menu/main.xml",
+        "source": "/home/mtjo/AndroidStudioProjects/mtjoapp/ComponetLibrary/build/intermediates/bundles/debug/res/menu/main.xml"
+    },
+    {
         "merged": "/Users/mtjo/AndroidStudioProjects/mtjo.net/ComponetLibrary/build/intermediates/res/merged/androidTest/debug/menu/main.xml",
         "source": "/Users/mtjo/AndroidStudioProjects/mtjo.net/ComponetLibrary/build/intermediates/bundles/debug/res/menu/main.xml"
+    },
+    {
+        "merged": "/home/mtjo/mtjoapp/ComponetLibrary/build/intermediates/res/merged/androidTest/debug/menu/main.xml",
+        "source": "/home/mtjo/mtjoapp/ComponetLibrary/build/intermediates/bundles/debug/res/menu/main.xml"
     }
 ]

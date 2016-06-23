@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/Users/mtjo/AndroidStudioProjects/mtjo.net/Library/src/main/assets"/><source path="/Users/mtjo/AndroidStudioProjects/mtjo.net/Library/build/generated/assets/shaders/debug"/></dataSet><dataSet config="debug"><source path="/Users/mtjo/AndroidStudioProjects/mtjo.net/Library/src/debug/assets"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="/home/mtjo/AndroidStudioProjects/mtjoapp/Library/src/main/assets"/><source path="/home/mtjo/AndroidStudioProjects/mtjoapp/Library/build/generated/assets/shaders/debug"/></dataSet><dataSet config="debug"><source path="/home/mtjo/AndroidStudioProjects/mtjoapp/Library/src/debug/assets"/></dataSet></merger>
