@@ -1,6 +1,0 @@
-/build/
-/build/*
-/app/build/*
-!build.gradle
-.DS_Store
-.idea
