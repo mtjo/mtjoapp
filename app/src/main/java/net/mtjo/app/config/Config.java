@@ -2,6 +2,7 @@ package net.mtjo.app.config;
 
 public class Config {
 	public static String LSCN_URL = "http://ls.cn/?m=";
+	public static String API_URL="http://mtjo.net/?g=app&m=";
 	
 	public static String FINDLAW_URL = "http://api.app.findlaw.cn:8888/router/rest";
 //	public static String FINDLAW_URL = "http://192.168.3.235:9081/router/rest";
@@ -13,6 +14,10 @@ public class Config {
 	 * lscn http post公开请求地址
 	 */
 	public static String LSCN_PUB_URL = LSCN_URL+"apppub";
+
+
+	//文章
+	public static String API_ARTICLES =  API_URL+"index&a=article_list";
 	
 	/**
 	 * lscn http post登录请求地址
@@ -44,14 +49,14 @@ public class Config {
 	/**
 	 * 客服电话
 	 */
-	public static final String  SERVICE_CALL = "4000888211";
+	public static final String  SERVICE_CALL = "18177627403";
 	
 	/**
 	 * 消息通知id
 	 */
 	public static int NoticeID;
-	
-	
+
+
 	// 友盟自定义事件
 	public static final String UMENG_COMMIT_ASK_LAWYER = "提交问律师";
 	public static final String UMENG_SEND_MOBILE = "拨打400电话";

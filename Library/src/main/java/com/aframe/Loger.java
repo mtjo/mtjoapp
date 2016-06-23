@@ -4,7 +4,6 @@ import android.util.Log;
 
 /** 
  * log日志打印，根据是否是调试打印出日志信息
- * @author Moyaofen
  */
 public final class Loger {
 	public static boolean IS_DEBUG = true;

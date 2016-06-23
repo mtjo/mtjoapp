@@ -4,18 +4,6 @@
         "source": "/home/mtjo/AndroidStudioProjects/mtjoapp/ComponetLibrary/build/intermediates/bundles/debug/res/layout-sw550dp-large-v13/umeng_socialize_full_alert_dialog.xml"
     },
     {
-        "merged": "/home/mtjo/mtjoapp/ComponetLibrary/build/intermediates/res/merged/androidTest/debug/layout-sw550dp-large-v13/umeng_socialize_oauth_dialog.xml",
-        "source": "/home/mtjo/mtjoapp/ComponetLibrary/build/intermediates/bundles/debug/res/layout-sw550dp-large-v13/umeng_socialize_oauth_dialog.xml"
-    },
-    {
-        "merged": "/home/mtjo/mtjoapp/ComponetLibrary/build/intermediates/res/merged/androidTest/debug/layout-sw550dp-large-v13/umeng_socialize_full_alert_dialog.xml",
-        "source": "/home/mtjo/mtjoapp/ComponetLibrary/build/intermediates/bundles/debug/res/layout-sw550dp-large-v13/umeng_socialize_full_alert_dialog.xml"
-    },
-    {
-        "merged": "/Users/mtjo/AndroidStudioProjects/mtjo.net/ComponetLibrary/build/intermediates/res/merged/androidTest/debug/layout-sw550dp-large-v13/umeng_socialize_post_share.xml",
-        "source": "/Users/mtjo/AndroidStudioProjects/mtjo.net/ComponetLibrary/build/intermediates/bundles/debug/res/layout-sw550dp-large-v13/umeng_socialize_post_share.xml"
-    },
-    {
         "merged": "/home/mtjo/AndroidStudioProjects/mtjoapp/ComponetLibrary/build/intermediates/res/merged/androidTest/debug/layout-sw550dp-large-v13/umeng_socialize_oauth_dialog.xml",
         "source": "/home/mtjo/AndroidStudioProjects/mtjoapp/ComponetLibrary/build/intermediates/bundles/debug/res/layout-sw550dp-large-v13/umeng_socialize_oauth_dialog.xml"
     },
@@ -24,27 +12,7 @@
         "source": "/home/mtjo/AndroidStudioProjects/mtjoapp/ComponetLibrary/build/intermediates/bundles/debug/res/layout-sw550dp-large-v13/umeng_socialize_post_share.xml"
     },
     {
-        "merged": "/Users/mtjo/AndroidStudioProjects/mtjo.net/ComponetLibrary/build/intermediates/res/merged/androidTest/debug/layout-sw550dp-large-v13/umeng_socialize_titile_bar.xml",
-        "source": "/Users/mtjo/AndroidStudioProjects/mtjo.net/ComponetLibrary/build/intermediates/bundles/debug/res/layout-sw550dp-large-v13/umeng_socialize_titile_bar.xml"
-    },
-    {
         "merged": "/home/mtjo/AndroidStudioProjects/mtjoapp/ComponetLibrary/build/intermediates/res/merged/androidTest/debug/layout-sw550dp-large-v13/umeng_socialize_titile_bar.xml",
         "source": "/home/mtjo/AndroidStudioProjects/mtjoapp/ComponetLibrary/build/intermediates/bundles/debug/res/layout-sw550dp-large-v13/umeng_socialize_titile_bar.xml"
-    },
-    {
-        "merged": "/Users/mtjo/AndroidStudioProjects/mtjo.net/ComponetLibrary/build/intermediates/res/merged/androidTest/debug/layout-sw550dp-large-v13/umeng_socialize_oauth_dialog.xml",
-        "source": "/Users/mtjo/AndroidStudioProjects/mtjo.net/ComponetLibrary/build/intermediates/bundles/debug/res/layout-sw550dp-large-v13/umeng_socialize_oauth_dialog.xml"
-    },
-    {
-        "merged": "/Users/mtjo/AndroidStudioProjects/mtjo.net/ComponetLibrary/build/intermediates/res/merged/androidTest/debug/layout-sw550dp-large-v13/umeng_socialize_full_alert_dialog.xml",
-        "source": "/Users/mtjo/AndroidStudioProjects/mtjo.net/ComponetLibrary/build/intermediates/bundles/debug/res/layout-sw550dp-large-v13/umeng_socialize_full_alert_dialog.xml"
-    },
-    {
-        "merged": "/home/mtjo/mtjoapp/ComponetLibrary/build/intermediates/res/merged/androidTest/debug/layout-sw550dp-large-v13/umeng_socialize_titile_bar.xml",
-        "source": "/home/mtjo/mtjoapp/ComponetLibrary/build/intermediates/bundles/debug/res/layout-sw550dp-large-v13/umeng_socialize_titile_bar.xml"
-    },
-    {
-        "merged": "/home/mtjo/mtjoapp/ComponetLibrary/build/intermediates/res/merged/androidTest/debug/layout-sw550dp-large-v13/umeng_socialize_post_share.xml",
-        "source": "/home/mtjo/mtjoapp/ComponetLibrary/build/intermediates/bundles/debug/res/layout-sw550dp-large-v13/umeng_socialize_post_share.xml"
     }
 ]

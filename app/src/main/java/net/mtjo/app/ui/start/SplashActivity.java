@@ -40,7 +40,7 @@ public class SplashActivity extends BaseActivity {
 			}
 		};
 		timer = new Timer();
-		timer.schedule(task, 3000);
+		timer.schedule(task, 100);
 		
 //		Loger.debug(getDeviceInfo(mContext));
 	}

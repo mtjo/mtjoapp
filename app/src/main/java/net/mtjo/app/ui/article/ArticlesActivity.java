@@ -8,6 +8,7 @@ import org.json.JSONException;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AbsListView;
 import android.widget.AbsListView.OnScrollListener;
@@ -24,6 +25,7 @@ import net.mtjo.app.ui.base.BaseListViewActivity;
 import net.mtjo.app.ui.base.WebViewActivity;
 
 public class ArticlesActivity extends BaseListViewActivity {
+	private static String TAG = "Articles";
 	private ArticlesActivity mContext;
 	private ArticleAdapter adapter;
 	private ArrayList<Articles> datalist = new ArrayList<Articles>();
@@ -98,7 +100,7 @@ public class ArticlesActivity extends BaseListViewActivity {
 					}
 					article.setIsRead(1);
 					adapter.notifyDataSetChanged();
-					WebViewActivity.ShareWebView(mContext,article.getUrl(),"法律讲堂",article.getTitle(),article.getThumb());
+					WebViewActivity.ShareWebView(mContext,article.getUrl(),"文章详情",article.getTitle(),article.getThumb());
 				}
 			}
 		});
@@ -196,8 +198,10 @@ public class ArticlesActivity extends BaseListViewActivity {
 	private void loadData(int page){
 		HttpPostManager.getArticleList(page, pageSize,
 				new StringCallBack() {
+
 					@Override
 					public void onSuccess(Object t) {
+
 						showData(this.getJsonArray());
 						if (isReflash || isInit) {
 							if (datalist.size() == 0) {

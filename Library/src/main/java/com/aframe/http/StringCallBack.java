@@ -1,5 +1,7 @@
 package com.aframe.http;
 
+import android.util.Log;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -55,6 +57,7 @@ public class StringCallBack implements IHttpRespond {
 	 * @param String content http请求结果
 	 */
 	public void setContent(String content){
+		Log.d("content", "setContent: "+content);
 		this.jsonContent = null;
 		this.jsonArray = null;
 		this.strContent = null;

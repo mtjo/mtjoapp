@@ -1,12 +1,15 @@
 package net.mtjo.app.api;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.HashMap;
 
 import android.app.Activity;
+import android.util.Log;
 
 import com.aframe.Loger;
 import com.aframe.http.StringCallBack;
-import com.aframe.http.WYHttp;
+import com.aframe.http.Http;
 import com.aframe.utils.StrUtils;
 import net.mtjo.app.config.Config;
 import net.mtjo.app.utils.AesUtil;
@@ -20,7 +23,7 @@ public class HttpPostManager {
 	 */
 	public static void getFetchChallengePlaintext(StringCallBack callback, Activity aty, String msg){
 		HashMap<String,String> params = new HashMap<String,String>();
-		WYHttp.getInstancts().urlPost(getUrl(Config.LSCN_PUB_URL,"fetchChallengePlaintext"), params, callback, aty, msg);
+		Http.getInstancts().urlPost(getUrl(Config.LSCN_PUB_URL,"fetchChallengePlaintext"), params, callback, aty, msg);
 	}
 	
 	/**
@@ -39,7 +42,7 @@ public class HttpPostManager {
 		} catch (Exception e) {
 			Loger.debug("获取短信转码", e);
 		}
-		WYHttp.getInstancts().urlPost(getUrl(Config.LSCN_PUB_URL,"sendVcode"), params, callback, aty, msg);
+		Http.getInstancts().urlPost(getUrl(Config.LSCN_PUB_URL,"sendVcode"), params, callback, aty, msg);
 			
 	 }
 	
@@ -56,7 +59,7 @@ public class HttpPostManager {
 		params.put("mobile", mobile);
 		params.put("vcode", vcode);
 		
-		WYHttp.getInstancts().urlPost(getUrl(Config.LSCN_PUB_URL, "mobileLogin"), params, callback, aty, msg);
+		Http.getInstancts().urlPost(getUrl(Config.LSCN_PUB_URL, "mobileLogin"), params, callback, aty, msg);
 		
 	}
 	
@@ -68,7 +71,7 @@ public class HttpPostManager {
 		params.put("authtoken", authtoken);
 		params.put("deviceToken", token);
 		params.put("deviceid", "2");
-		WYHttp.getInstancts().urlPost(getUrl(Config.LSCN_USER_URL, "uploadToken"), params, callback, aty, msg);
+		Http.getInstancts().urlPost(getUrl(Config.LSCN_USER_URL, "uploadToken"), params, callback, aty, msg);
 	}
 	
 	/**
@@ -80,7 +83,7 @@ public class HttpPostManager {
 		params.put("mobile", mobile);
 		params.put("vcode", vcode);
 		
-		WYHttp.getInstancts().urlPost(getUrl(Config.LSCN_USER_URL, "modifMobile"), params, callback, aty, msg);
+		Http.getInstancts().urlPost(getUrl(Config.LSCN_USER_URL, "modifMobile"), params, callback, aty, msg);
 	}
 	
 	/**
@@ -94,7 +97,7 @@ public class HttpPostManager {
 		HashMap<String, String> params = new HashMap<String, String>();
 		params.put("authtoken", authtoken);
 		
-		WYHttp.getInstancts().urlPost(getUrl(Config.LSCN_USER_URL, "logout"), params, callback, aty, msg);
+		Http.getInstancts().urlPost(getUrl(Config.LSCN_USER_URL, "logout"), params, callback, aty, msg);
 	}
 	
 	/**
@@ -108,7 +111,7 @@ public class HttpPostManager {
 		params.put("appKey", "00002");
 		params.put("v", "1.0");
 		params.put("method", "lscn.app.insertQuestion");
-		WYHttp.getInstancts().urlPost(Config.FINDLAW_URL,
+		Http.getInstancts().urlPost(Config.FINDLAW_URL,
 				params,callback, aty, msg);
 		
 	}
@@ -124,7 +127,7 @@ public class HttpPostManager {
 		params.put("appKey", "00002");
 		params.put("v", "1.0");
 		params.put("method", "lscn.app.getMyQuestionList");
-		WYHttp.getInstancts().urlPost(Config.FINDLAW_URL,
+		Http.getInstancts().urlPost(Config.FINDLAW_URL,
 				params,callback, aty, msg); 
 	}
 	/**
@@ -137,7 +140,7 @@ public class HttpPostManager {
 		params.put("appKey", "00002");
 		params.put("v", "1.0");
 		params.put("method", "lscn.app.getLawyerAnswerList");
-		WYHttp.getInstancts().urlPost(Config.FINDLAW_URL,
+		Http.getInstancts().urlPost(Config.FINDLAW_URL,
 				params,callback, aty, msg); 
 	}
 	
@@ -153,7 +156,7 @@ public class HttpPostManager {
 		params.put("appKey", "00002");
 		params.put("v", "1.0");
 		params.put("method", "findlaw.user.gps.mobile");
-		WYHttp.getInstancts().urlPost(Config.FINDLAW_URL,
+		Http.getInstancts().urlPost(Config.FINDLAW_URL,
 				params,callback, aty, msg);
 	}
 	
@@ -161,7 +164,7 @@ public class HttpPostManager {
 	 * 加载地区信息
 	 */
 	public static void getSpecialCitys(StringCallBack callback, Activity aty, String msg){
-		WYHttp.getInstancts().urlPost(getUrl(Config.LSCN_PUB_URL,"getSpecialCitys"),
+		Http.getInstancts().urlPost(getUrl(Config.LSCN_PUB_URL,"getSpecialCitys"),
 				null,callback, aty, msg,true);
 	}
 	
@@ -169,14 +172,14 @@ public class HttpPostManager {
 	 * 获取服务类型
 	 */
 	public static void getSpecialList(StringCallBack callback, Activity aty, String msg){
-		WYHttp.getInstancts().urlPost(getUrl(Config.LSCN_PUB_URL,"getSpecialList"),
+		Http.getInstancts().urlPost(getUrl(Config.LSCN_PUB_URL,"getSpecialList"),
 				null,callback, aty, msg);
 	}
 	/**
 	 * 获取服务类型
 	 */
 	public static void getAmountList(StringCallBack callback, Activity aty, String msg){
-		WYHttp.getInstancts().urlPost(getUrl(Config.LSCN_PUB_URL,"getAmountList"),
+		Http.getInstancts().urlPost(getUrl(Config.LSCN_PUB_URL,"getAmountList"),
 				null,callback, aty, msg);
 	}
 	
@@ -191,7 +194,7 @@ public class HttpPostManager {
 		params.put("page", page+"");
 		params.put("pageSize", pageSize+"");
 		params.put("order", order);
-		WYHttp.getInstancts().urlPost(getUrl(Config.LSCN_PUB_URL,"searchLawyer"), params, callback, aty, msg);
+		Http.getInstancts().urlPost(getUrl(Config.LSCN_PUB_URL,"searchLawyer"), params, callback, aty, msg);
 	}
 	
 	/**
@@ -210,7 +213,7 @@ public class HttpPostManager {
 		params.put("appKey", "00002");
 		params.put("v", "1.0");
 		params.put("method", "findlaw.lawyer.search.list");
-		WYHttp.getInstancts().urlPost(Config.FINDLAW_URL,
+		Http.getInstancts().urlPost(Config.FINDLAW_URL,
 				params,callback, aty, msg);
 	}
 	
@@ -230,7 +233,7 @@ public class HttpPostManager {
 		params.put("amount", StrUtils.strToString(amount).trim().length() > 0 ? amount : "0");
 		params.put("content", content);
 		params.put("lawyerUid", lawyerUid);
-		WYHttp.getInstancts().urlPost(getUrl(Config.LSCN_USER_URL,"bespeakLawyer"), params, callback, aty, msg);
+		Http.getInstancts().urlPost(getUrl(Config.LSCN_USER_URL,"bespeakLawyer"), params, callback, aty, msg);
 	}
 	
 	/**
@@ -242,7 +245,7 @@ public class HttpPostManager {
 		params.put("authtoken", authtoken);
 		params.put("page", page+"");
 		params.put("pageSize", pageSize+"");
-		WYHttp.getInstancts().urlPost(getUrl(Config.LSCN_USER_URL,"getMyBespeakList"), params, callback, aty, msg);
+		Http.getInstancts().urlPost(getUrl(Config.LSCN_USER_URL,"getMyBespeakList"), params, callback, aty, msg);
 	}
 	
 	/**
@@ -253,7 +256,8 @@ public class HttpPostManager {
 		HashMap<String,String> params = new HashMap<String,String>();
 		params.put("page", page+"");
 		params.put("pageSize", pageSize+"");
-		WYHttp.getInstancts().urlPost(getUrl(Config.LSCN_PUB_URL,"getArticleList"),
+
+		Http.getInstancts().urlPost(Config.API_ARTICLES,
 				params,callback, aty, msg);
 	}
 	
@@ -274,7 +278,7 @@ public class HttpPostManager {
 		params.put("appKey", "00002");
 		params.put("v", "1.0");
 		params.put("method", "lscn.app.getDialogue");
-		WYHttp.getInstancts().urlPost(Config.FINDLAW_URL,
+		Http.getInstancts().urlPost(Config.FINDLAW_URL,
 				params,callback, aty, msg);
 	}
 	
@@ -285,7 +289,7 @@ public class HttpPostManager {
 	 * @param msg
 	 */
 	public static void getNowView(StringCallBack callback, Activity aty, String msg){
-		WYHttp.getInstancts().urlPost(getUrl(Config.LSCN_PUB_URL, "getVersion"), null, callback, aty, msg);
+		Http.getInstancts().urlPost(getUrl(Config.LSCN_PUB_URL, "getVersion"), null, callback, aty, msg);
 	}
 	
 	/**
@@ -309,7 +313,7 @@ public class HttpPostManager {
 		params.put("appKey", "00002");
 		params.put("v", "1.0");
 		params.put("method", "lscn.app.insertVoice");
-		WYHttp.getInstancts().urlPost(Config.FINDLAW_URL,
+		Http.getInstancts().urlPost(Config.FINDLAW_URL,
 				params,callback, aty, msg);
 	}
 	
@@ -320,7 +324,7 @@ public class HttpPostManager {
 		params.put("appKey", "00002");
 		params.put("v", "1.0");
 		params.put("method", "lscn.app.homepage.newmessage.num");
-		WYHttp.getInstancts().urlPost(Config.FINDLAW_URL,
+		Http.getInstancts().urlPost(Config.FINDLAW_URL,
 				params,callback, aty, msg);
 	}
 	
@@ -334,7 +338,7 @@ public class HttpPostManager {
 		params.put("appKey", "00002");
 		params.put("v", "1.0");
 		params.put("method", "lscn.app.homepage.fetch.alerts");
-		WYHttp.getInstancts().urlPost(Config.FINDLAW_URL,
+		Http.getInstancts().urlPost(Config.FINDLAW_URL,
 				params,callback, aty, msg);
 	}
 	
@@ -346,7 +350,7 @@ public class HttpPostManager {
 		params.put("authtoken", authtoken);
 		params.put("xpath", "/lscn/dialogue/qid/");
 		
-		WYHttp.getInstancts().urlPost(getUrl(Config.LSCN_USER_URL, "getUnreadNum"), params, callback, aty, msg);
+		Http.getInstancts().urlPost(getUrl(Config.LSCN_USER_URL, "getUnreadNum"), params, callback, aty, msg);
 	}
 	
 	/**
@@ -359,7 +363,7 @@ public class HttpPostManager {
 		params.put("xpath", "/lscn/dialogue/qid/"+qid+"/fromuid/"+lawid);
 		params.put("num", "0");
 		
-		WYHttp.getInstancts().urlPost(getUrl(Config.LSCN_USER_URL, "setUnreadNum"), params, callback, aty, msg);
+		Http.getInstancts().urlPost(getUrl(Config.LSCN_USER_URL, "setUnreadNum"), params, callback, aty, msg);
 	}
 	
 	/**
@@ -370,7 +374,7 @@ public class HttpPostManager {
 		HashMap<String, String> params = new HashMap<String, String>();
 		params.put("authtoken", authtoken);
 		
-		WYHttp.getInstancts().urlPost(getUrl(Config.LSCN_USER_URL, "getMyUnreadQuestionList"), params, callback, aty, msg);
+		Http.getInstancts().urlPost(getUrl(Config.LSCN_USER_URL, "getMyUnreadQuestionList"), params, callback, aty, msg);
 	}
 	
 	/**
@@ -379,7 +383,7 @@ public class HttpPostManager {
 	public static void getFindlawDefalutSort(StringCallBack callback, Activity aty, String msg){
 		HashMap<String, String> params = new HashMap<String, String>();
 		
-		WYHttp.getInstancts().urlPost(getUrl(Config.LSCN_PUB_URL, "getSearchSortList"), params, callback, aty, msg);
+		Http.getInstancts().urlPost(getUrl(Config.LSCN_PUB_URL, "getSearchSortList"), params, callback, aty, msg);
 	}
 	
 	/**
@@ -394,7 +398,7 @@ public class HttpPostManager {
 		params.put("appKey", "00002");
 		params.put("v", "1.0");
 		params.put("method", "lscn.app.question.set.resolve");
-		WYHttp.getInstancts().urlPost(Config.FINDLAW_URL,
+		Http.getInstancts().urlPost(Config.FINDLAW_URL,
 				params,callback, aty, msg);
 	}
 	

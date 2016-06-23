@@ -1,91 +1,27 @@
 [
     {
-        "merged": "/Users/mtjo/AndroidStudioProjects/mtjo.net/Library/build/intermediates/res/merged/debug/drawable/filter_menu_selector.xml",
-        "source": "/Users/mtjo/AndroidStudioProjects/mtjo.net/Library/src/main/res/drawable/filter_menu_selector.xml"
+        "merged": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/build/intermediates/res/merged/debug/drawable/progressdialog_bg_shape.xml",
+        "source": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/src/main/res/drawable/progressdialog_bg_shape.xml"
     },
     {
         "merged": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/build/intermediates/res/merged/debug/drawable/filter_menu_text_selector.xml",
         "source": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/src/main/res/drawable/filter_menu_text_selector.xml"
     },
     {
-        "merged": "/home/mtjo/mtjoapp/Library/build/intermediates/res/merged/debug/drawable/dialog_layout_background.xml",
-        "source": "/home/mtjo/mtjoapp/Library/src/main/res/drawable/dialog_layout_background.xml"
-    },
-    {
         "merged": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/build/intermediates/res/merged/debug/drawable/shade_repead.xml",
         "source": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/src/main/res/drawable/shade_repead.xml"
-    },
-    {
-        "merged": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/build/intermediates/res/merged/debug/drawable/pic_choose_selector.xml",
-        "source": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/src/main/res/drawable/pic_choose_selector.xml"
-    },
-    {
-        "merged": "/Users/mtjo/AndroidStudioProjects/mtjo.net/Library/build/intermediates/res/merged/debug/drawable/shade_repead.xml",
-        "source": "/Users/mtjo/AndroidStudioProjects/mtjo.net/Library/src/main/res/drawable/shade_repead.xml"
-    },
-    {
-        "merged": "/Users/mtjo/AndroidStudioProjects/mtjo.net/Library/build/intermediates/res/merged/debug/drawable/dialog_layout_background.xml",
-        "source": "/Users/mtjo/AndroidStudioProjects/mtjo.net/Library/src/main/res/drawable/dialog_layout_background.xml"
-    },
-    {
-        "merged": "/Users/mtjo/AndroidStudioProjects/mtjo.net/Library/build/intermediates/res/merged/debug/drawable/pic_choose_selector.xml",
-        "source": "/Users/mtjo/AndroidStudioProjects/mtjo.net/Library/src/main/res/drawable/pic_choose_selector.xml"
-    },
-    {
-        "merged": "/home/mtjo/mtjoapp/Library/build/intermediates/res/merged/debug/drawable/pic_choose_selector.xml",
-        "source": "/home/mtjo/mtjoapp/Library/src/main/res/drawable/pic_choose_selector.xml"
-    },
-    {
-        "merged": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/build/intermediates/res/merged/debug/drawable/progressdialog_bg_shape.xml",
-        "source": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/src/main/res/drawable/progressdialog_bg_shape.xml"
-    },
-    {
-        "merged": "/home/mtjo/mtjoapp/Library/build/intermediates/res/merged/debug/drawable/filter_menu_selector.xml",
-        "source": "/home/mtjo/mtjoapp/Library/src/main/res/drawable/filter_menu_selector.xml"
-    },
-    {
-        "merged": "/Users/mtjo/AndroidStudioProjects/mtjo.net/Library/build/intermediates/res/merged/debug/drawable/btn_copy_selector.xml",
-        "source": "/Users/mtjo/AndroidStudioProjects/mtjo.net/Library/src/main/res/drawable/btn_copy_selector.xml"
     },
     {
         "merged": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/build/intermediates/res/merged/debug/drawable/dialog_layout_background.xml",
         "source": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/src/main/res/drawable/dialog_layout_background.xml"
     },
     {
-        "merged": "/home/mtjo/mtjoapp/Library/build/intermediates/res/merged/debug/drawable/btn_copy_selector.xml",
-        "source": "/home/mtjo/mtjoapp/Library/src/main/res/drawable/btn_copy_selector.xml"
-    },
-    {
-        "merged": "/Users/mtjo/AndroidStudioProjects/mtjo.net/Library/build/intermediates/res/merged/debug/drawable/progressdialog_bg_shape.xml",
-        "source": "/Users/mtjo/AndroidStudioProjects/mtjo.net/Library/src/main/res/drawable/progressdialog_bg_shape.xml"
-    },
-    {
         "merged": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/build/intermediates/res/merged/debug/drawable/btn_copy_selector.xml",
         "source": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/src/main/res/drawable/btn_copy_selector.xml"
     },
     {
-        "merged": "/Users/mtjo/AndroidStudioProjects/mtjo.net/Library/build/intermediates/res/merged/debug/drawable/dialog_btn_selector.xml",
-        "source": "/Users/mtjo/AndroidStudioProjects/mtjo.net/Library/src/main/res/drawable/dialog_btn_selector.xml"
-    },
-    {
-        "merged": "/home/mtjo/mtjoapp/Library/build/intermediates/res/merged/debug/drawable/progressdialog_bg_shape.xml",
-        "source": "/home/mtjo/mtjoapp/Library/src/main/res/drawable/progressdialog_bg_shape.xml"
-    },
-    {
-        "merged": "/home/mtjo/mtjoapp/Library/build/intermediates/res/merged/debug/drawable/dialog_btn_selector.xml",
-        "source": "/home/mtjo/mtjoapp/Library/src/main/res/drawable/dialog_btn_selector.xml"
-    },
-    {
-        "merged": "/Users/mtjo/AndroidStudioProjects/mtjo.net/Library/build/intermediates/res/merged/debug/drawable/filter_menu_text_selector.xml",
-        "source": "/Users/mtjo/AndroidStudioProjects/mtjo.net/Library/src/main/res/drawable/filter_menu_text_selector.xml"
-    },
-    {
-        "merged": "/home/mtjo/mtjoapp/Library/build/intermediates/res/merged/debug/drawable/shade_repead.xml",
-        "source": "/home/mtjo/mtjoapp/Library/src/main/res/drawable/shade_repead.xml"
-    },
-    {
-        "merged": "/home/mtjo/mtjoapp/Library/build/intermediates/res/merged/debug/drawable/filter_menu_text_selector.xml",
-        "source": "/home/mtjo/mtjoapp/Library/src/main/res/drawable/filter_menu_text_selector.xml"
+        "merged": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/build/intermediates/res/merged/debug/drawable/pic_choose_selector.xml",
+        "source": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/src/main/res/drawable/pic_choose_selector.xml"
     },
     {
         "merged": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/build/intermediates/res/merged/debug/drawable/filter_menu_selector.xml",

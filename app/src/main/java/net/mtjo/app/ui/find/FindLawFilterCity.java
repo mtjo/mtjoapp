@@ -25,8 +25,8 @@ public class FindLawFilterCity extends LinearLayout {
 	private ListView parentListView;
 	private ListView childListView;
 	
-	private FindLawCityAdapter padapter;
-	private FindLawCityAdapter cadapter;
+	private SearchAdapter padapter;
+	private SearchAdapter cadapter;
 	private ArrayList<FindlawCity> plist = new ArrayList<FindlawCity>();
 	private ArrayList<FindlawCity> clist = new ArrayList<FindlawCity>();
 	
@@ -77,10 +77,10 @@ public class FindLawFilterCity extends LinearLayout {
 		parentListView = (ListView) findViewById(R.id.listview_parent);
 		childListView = (ListView) findViewById(R.id.listview_child);
 
-		padapter = new FindLawCityAdapter(context, plist, 
+		padapter = new SearchAdapter(context, plist,
 				R.color.theme_window_background, R.color.theme_window_background_click);
 		parentListView.setAdapter(padapter);
-		padapter.setOnItemClickListener(new FindLawCityAdapter.OnItemClickListener() {
+		padapter.setOnItemClickListener(new SearchAdapter.OnItemClickListener() {
 			@Override
 			public void onItemClick(FindlawCity item) {
 				if(null == item)return;
@@ -96,9 +96,9 @@ public class FindLawFilterCity extends LinearLayout {
 			}
 		});
 		
-		cadapter = new FindLawCityAdapter(context, clist,0, 0);
+		cadapter = new SearchAdapter(context, clist,0, 0);
 		childListView.setAdapter(cadapter);
-		cadapter.setOnItemClickListener(new FindLawCityAdapter.OnItemClickListener() {
+		cadapter.setOnItemClickListener(new SearchAdapter.OnItemClickListener() {
 			@Override
 			public void onItemClick(FindlawCity item) {
 				if(null != mOnSelectListener)
