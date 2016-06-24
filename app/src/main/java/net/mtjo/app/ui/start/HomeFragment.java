@@ -19,6 +19,7 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import com.daimajia.slider.library.*;
+import com.daimajia.slider.library.Animations.DescriptionAnimation;
 import com.daimajia.slider.library.SliderTypes.BaseSliderView;
 import com.daimajia.slider.library.SliderTypes.TextSliderView;
 import com.daimajia.slider.library.Transformers.AccordionTransformer;
@@ -45,7 +46,7 @@ public class HomeFragment extends Fragment implements OnClickListener{
 		
 		aty = getActivity();
 		initView();
-		showTip();
+		//showTip();
 	}
 	
 	private void initView(){
@@ -54,27 +55,21 @@ public class HomeFragment extends Fragment implements OnClickListener{
 
 
 		HashMap<String,String> url_maps = new HashMap<String, String>();
-		url_maps.put("Hannibal", "http://static2.hypable.com/wp-content/uploads/2013/12/hannibal-season-2-release-date.jpg");
-		url_maps.put("Big Bang Theory", "http://tvfiles.alphacoders.com/100/hdclearart-10.png");
-		url_maps.put("House of Cards", "http://cdn3.nflximg.net/images/3093/2043093.jpg");
-		url_maps.put("Game of Thrones", "http://images.boomsbeat.com/data/images/full/19640/game-of-thrones-season-4-jpg.jpg");
+		url_maps.put("1", "http://mtjo.net/themes/simplebootx/Public/images/demo/1.jpg");
+		url_maps.put("2", "http://mtjo.net/themes/simplebootx/Public/images/demo/2.jpg");
+		url_maps.put("3", "http://mtjo.net/themes/simplebootx/Public/images/demo/3.jpg");
 
 		System.out.println(url_maps);
-
-		Iterator iterator = url_maps.keySet().iterator();
-
 		for(String name : url_maps.keySet()){
 			Log.d("initView", "initView: "+name+":"+url_maps.get(name));
+			TextSliderView textSliderView = new TextSliderView(aty);
+			textSliderView
+					.description(name)
+					.image(url_maps.get(name));
+			sliderShow.setPagerTransformer(false,new AccordionTransformer());
+			sliderShow.addSlider(textSliderView);
 
 		}
-		TextSliderView textSliderView = new TextSliderView(aty);
-		textSliderView
-				.description("Game of Thrones")
-				.image("http://images.boomsbeat.com/data/images/full/19640/game-of-thrones-season-4-jpg.jpg");
-		sliderShow.setPagerTransformer(false,new AccordionTransformer());
-		sliderShow.addSlider(textSliderView);
-
-
 	}
 	@Override
 	public void onStop() {

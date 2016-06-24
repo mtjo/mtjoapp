@@ -27,5 +27,5 @@ dependencies {
     compile project(':Library')
     compile 'com.android.support:support-v4:21.0.3'
     compile 'com.android.support:appcompat-v7:22.2.0'
-    compile 'com.daimajia.slider:library:1.1.5@aar'
+    compile 'com.daimajia.slider:library:1.0.2@aar'
 }

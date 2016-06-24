@@ -400,12 +400,12 @@
         "source": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/src/main/res/drawable-hdpi/smiley_64.png"
     },
     {
-        "merged": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/build/intermediates/res/merged/debug/drawable-hdpi-v4/emoji_1f46e.png",
-        "source": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/src/main/res/drawable-hdpi/emoji_1f46e.png"
-    },
-    {
         "merged": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/build/intermediates/res/merged/debug/drawable-hdpi-v4/emoji_26d4.png",
         "source": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/src/main/res/drawable-hdpi/emoji_26d4.png"
+    },
+    {
+        "merged": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/build/intermediates/res/merged/debug/drawable-hdpi-v4/emoji_1f46e.png",
+        "source": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/src/main/res/drawable-hdpi/emoji_1f46e.png"
     },
     {
         "merged": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/build/intermediates/res/merged/debug/drawable-hdpi-v4/emoji_1f234.png",
@@ -1904,12 +1904,12 @@
         "source": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/src/main/res/drawable-hdpi/emoji_1f41a.png"
     },
     {
-        "merged": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/build/intermediates/res/merged/debug/drawable-hdpi-v4/emoji_2049.png",
-        "source": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/src/main/res/drawable-hdpi/emoji_2049.png"
-    },
-    {
         "merged": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/build/intermediates/res/merged/debug/drawable-hdpi-v4/emoji_1f512.png",
         "source": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/src/main/res/drawable-hdpi/emoji_1f512.png"
+    },
+    {
+        "merged": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/build/intermediates/res/merged/debug/drawable-hdpi-v4/emoji_2049.png",
+        "source": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/src/main/res/drawable-hdpi/emoji_2049.png"
     },
     {
         "merged": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/build/intermediates/res/merged/debug/drawable-hdpi-v4/emoji_1f343.png",
