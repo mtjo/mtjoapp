@@ -3,5 +3,6 @@
 /app/build/*
 !build.gradle
 .DS_Store
-.idea
+.idea/*
+.gradle/*
 *~
