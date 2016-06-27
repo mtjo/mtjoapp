@@ -136,16 +136,16 @@
         "source": "/home/mtjo/AndroidStudioProjects/mtjoapp/ComponetLibrary/build/intermediates/bundles/debug/res/drawable/umeng_socialize_button_login_normal.png"
     },
     {
+        "merged": "/home/mtjo/AndroidStudioProjects/mtjoapp/ComponetLibrary/build/intermediates/res/merged/androidTest/debug/drawable/umeng_socialize_location_off.png",
+        "source": "/home/mtjo/AndroidStudioProjects/mtjoapp/ComponetLibrary/build/intermediates/bundles/debug/res/drawable/umeng_socialize_location_off.png"
+    },
+    {
         "merged": "/home/mtjo/AndroidStudioProjects/mtjoapp/ComponetLibrary/build/intermediates/res/merged/androidTest/debug/drawable/umeng_socialize_title_tab_left_pressed.png",
         "source": "/home/mtjo/AndroidStudioProjects/mtjoapp/ComponetLibrary/build/intermediates/bundles/debug/res/drawable/umeng_socialize_title_tab_left_pressed.png"
     },
     {
         "merged": "/home/mtjo/AndroidStudioProjects/mtjoapp/ComponetLibrary/build/intermediates/res/merged/androidTest/debug/drawable/umeng_socialize_button_white.9.png",
         "source": "/home/mtjo/AndroidStudioProjects/mtjoapp/ComponetLibrary/build/intermediates/bundles/debug/res/drawable/umeng_socialize_button_white.9.png"
-    },
-    {
-        "merged": "/home/mtjo/AndroidStudioProjects/mtjoapp/ComponetLibrary/build/intermediates/res/merged/androidTest/debug/drawable/umeng_socialize_location_off.png",
-        "source": "/home/mtjo/AndroidStudioProjects/mtjoapp/ComponetLibrary/build/intermediates/bundles/debug/res/drawable/umeng_socialize_location_off.png"
     },
     {
         "merged": "/home/mtjo/AndroidStudioProjects/mtjoapp/ComponetLibrary/build/intermediates/res/merged/androidTest/debug/drawable/umeng_socialize_sms_on.png",

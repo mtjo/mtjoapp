@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:ripple="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-	android:orientation="horizontal">
+    android:id="@+id/scrollView"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-	<com.daimajia.slider.library.SliderLayout
-			android:id="@+id/slider"
-			android:layout_width="match_parent"
-			android:layout_height="200dp"
-			/>
+        <com.daimajia.slider.library.SliderLayout
+            android:id="@+id/slider"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
 
+        <GridView
+            android:id="@+id/gridView"
+            android:layout_below="@id/slider"
+            android:layout_height="500dp"
+            android:layout_width="match_parent"
 
-	<include
-		android:id="@+id/main1"
-		layout="@layout/h_line" />
-
-
-
-
-
-</LinearLayout>
+            android:numColumns="3"
+            android:verticalSpacing="10dp"
+            android:horizontalSpacing="10dp"/>
+</RelativeLayout>
+</ScrollView>

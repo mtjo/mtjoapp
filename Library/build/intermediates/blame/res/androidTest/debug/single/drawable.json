@@ -16,12 +16,12 @@
         "source": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/build/intermediates/bundles/debug/res/drawable/progressdialog_bg_shape.xml"
     },
     {
-        "merged": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/build/intermediates/res/merged/androidTest/debug/drawable/filter_menu_selector.xml",
-        "source": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/build/intermediates/bundles/debug/res/drawable/filter_menu_selector.xml"
-    },
-    {
         "merged": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/build/intermediates/res/merged/androidTest/debug/drawable/pic_choose_selector.xml",
         "source": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/build/intermediates/bundles/debug/res/drawable/pic_choose_selector.xml"
+    },
+    {
+        "merged": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/build/intermediates/res/merged/androidTest/debug/drawable/filter_menu_selector.xml",
+        "source": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/build/intermediates/bundles/debug/res/drawable/filter_menu_selector.xml"
     },
     {
         "merged": "/home/mtjo/AndroidStudioProjects/mtjoapp/Library/build/intermediates/res/merged/androidTest/debug/drawable/dialog_btn_selector.xml",
