@@ -408,4 +408,14 @@ public class HttpPostManager {
 		}
 		return url;
 	}
+
+
+
+	/**
+	 * banner
+	 */
+	public static void getHomeSlides(StringCallBack callback, Activity aty, String msg){
+		Http.getInstancts().urlPost(Config.API_HOME_SLIDES,
+				null,callback, aty, msg);
+	}
 }

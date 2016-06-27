@@ -18,6 +18,9 @@ public class Config {
 
 	//文章
 	public static String API_ARTICLES =  API_URL+"index&a=article_list";
+
+	//banner
+	public static String API_HOME_SLIDES =  API_URL+"index&a=home_slides";
 	
 	/**
 	 * lscn http post登录请求地址
