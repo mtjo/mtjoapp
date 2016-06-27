@@ -12,12 +12,12 @@
         "source": "/home/mtjo/AndroidStudioProjects/mtjoapp/ComponetLibrary/build/intermediates/bundles/debug/res/layout/umeng_socialize_composer_header.xml"
     },
     {
-        "merged": "/home/mtjo/AndroidStudioProjects/mtjoapp/ComponetLibrary/build/intermediates/res/merged/androidTest/debug/layout/umeng_bak_platform_item_simple.xml",
-        "source": "/home/mtjo/AndroidStudioProjects/mtjoapp/ComponetLibrary/build/intermediates/bundles/debug/res/layout/umeng_bak_platform_item_simple.xml"
-    },
-    {
         "merged": "/home/mtjo/AndroidStudioProjects/mtjoapp/ComponetLibrary/build/intermediates/res/merged/androidTest/debug/layout/umeng_socialize_failed_load_page.xml",
         "source": "/home/mtjo/AndroidStudioProjects/mtjoapp/ComponetLibrary/build/intermediates/bundles/debug/res/layout/umeng_socialize_failed_load_page.xml"
+    },
+    {
+        "merged": "/home/mtjo/AndroidStudioProjects/mtjoapp/ComponetLibrary/build/intermediates/res/merged/androidTest/debug/layout/umeng_bak_platform_item_simple.xml",
+        "source": "/home/mtjo/AndroidStudioProjects/mtjoapp/ComponetLibrary/build/intermediates/bundles/debug/res/layout/umeng_bak_platform_item_simple.xml"
     },
     {
         "merged": "/home/mtjo/AndroidStudioProjects/mtjoapp/ComponetLibrary/build/intermediates/res/merged/androidTest/debug/layout/umeng_socialize_oauth_dialog.xml",

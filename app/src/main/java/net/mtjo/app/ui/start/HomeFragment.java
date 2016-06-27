@@ -21,13 +21,32 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.daimajia.slider.library.*;
+import com.daimajia.slider.library.Animations.DescriptionAnimation;
 import com.daimajia.slider.library.SliderTypes.BaseSliderView;
 import com.daimajia.slider.library.SliderTypes.TextSliderView;
 import com.daimajia.slider.library.Transformers.AccordionTransformer;
+import com.daimajia.slider.library.Transformers.BackgroundToForegroundTransformer;
+import com.daimajia.slider.library.Transformers.BaseTransformer;
+import com.daimajia.slider.library.Transformers.CubeInTransformer;
+import com.daimajia.slider.library.Transformers.DefaultTransformer;
+import com.daimajia.slider.library.Transformers.DepthPageTransformer;
+import com.daimajia.slider.library.Transformers.FadeTransformer;
+import com.daimajia.slider.library.Transformers.FlipHorizontalTransformer;
+import com.daimajia.slider.library.Transformers.FlipPageViewTransformer;
+import com.daimajia.slider.library.Transformers.ForegroundToBackgroundTransformer;
+import com.daimajia.slider.library.Transformers.RotateDownTransformer;
+import com.daimajia.slider.library.Transformers.RotateUpTransformer;
+import com.daimajia.slider.library.Transformers.StackTransformer;
+import com.daimajia.slider.library.Transformers.TabletTransformer;
+import com.daimajia.slider.library.Transformers.ZoomInTransformer;
+import com.daimajia.slider.library.Transformers.ZoomOutSlideTransformer;
+import com.daimajia.slider.library.Transformers.ZoomOutTransformer;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import java.util.Random;
 
 public class HomeFragment extends Fragment implements OnClickListener, BaseSliderView.OnSliderClickListener {
     private Activity aty;
@@ -68,6 +87,67 @@ public class HomeFragment extends Fragment implements OnClickListener, BaseSlide
                         for (int i = 0; i < homeSlides.length(); i++) {
                             try {
                                 JSONObject oj = homeSlides.getJSONObject(i);
+                                BaseTransformer transformer ;
+                                Random rand = new Random();
+
+                                switch (rand.nextInt(17)){
+                                    case 0:
+                                        transformer= new AccordionTransformer();
+                                        break;
+                                    case 1:
+                                        transformer= new BackgroundToForegroundTransformer();
+                                        break;
+                                    /*case 2:
+                                        transformer= new BaseTransformer();
+                                        break;*/
+                                    case 3:
+                                        transformer= new CubeInTransformer();
+                                        break;
+                                    case 4:
+                                        transformer= new DefaultTransformer();
+                                        break;
+                                    case 5:
+                                        transformer= new DepthPageTransformer();
+                                        break;
+                                    case 6:
+                                        transformer= new FadeTransformer();
+                                        break;
+                                    case 7:
+                                        transformer= new FlipHorizontalTransformer();
+                                        break;
+                                    case 8:
+                                        transformer= new FlipPageViewTransformer();
+                                        break;
+                                    case 9:
+                                        transformer= new ForegroundToBackgroundTransformer();
+                                        break;
+                                    case 10:
+                                        transformer= new RotateDownTransformer();
+                                        break;
+                                    case 11:
+                                        transformer= new RotateUpTransformer();
+                                        break;
+                                    case 12:
+                                        transformer= new StackTransformer();
+                                        break;
+                                    case 13:
+                                        transformer= new TabletTransformer();
+                                        break;
+                                    case 14:
+                                        transformer= new ZoomInTransformer();
+                                        break;
+                                    case 15:
+                                        transformer= new ZoomOutSlideTransformer();
+                                        break;
+                                    case 16:
+                                        transformer= new ZoomOutTransformer();
+                                        break;
+                                    default:
+                                        transformer= new AccordionTransformer();
+                                        break;
+
+                                }
+
 
                                 TextSliderView textSliderView = new TextSliderView(aty);
                                 textSliderView
@@ -76,9 +156,10 @@ public class HomeFragment extends Fragment implements OnClickListener, BaseSlide
                                 .setOnSliderClickListener(HomeFragment.this);
                                 textSliderView.getBundle()
                                         .putString("slide_url", oj.getString("slide_url"));
-
-                                sliderShow.setPagerTransformer(false, new AccordionTransformer());
+                                sliderShow.setPagerTransformer(false, transformer);
+                                //sliderShow.setCustomAnimation(new DescriptionAnimation());
                                 sliderShow.addSlider(textSliderView);
+
 
 
                                 System.out.println(oj);

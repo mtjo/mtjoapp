@@ -24,11 +24,11 @@
         "source": "/home/mtjo/AndroidStudioProjects/mtjoapp/ComponetLibrary/build/intermediates/bundles/debug/res/drawable-hdpi-v4/umeng_socialize_nav_bar_bg_pad.9.png"
     },
     {
-        "merged": "/home/mtjo/AndroidStudioProjects/mtjoapp/ComponetLibrary/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/umeng_socialize_oauth_check_off.png",
-        "source": "/home/mtjo/AndroidStudioProjects/mtjoapp/ComponetLibrary/build/intermediates/bundles/debug/res/drawable-hdpi-v4/umeng_socialize_oauth_check_off.png"
-    },
-    {
         "merged": "/home/mtjo/AndroidStudioProjects/mtjoapp/ComponetLibrary/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/umeng_socialize_share_pic.png",
         "source": "/home/mtjo/AndroidStudioProjects/mtjoapp/ComponetLibrary/build/intermediates/bundles/debug/res/drawable-hdpi-v4/umeng_socialize_share_pic.png"
+    },
+    {
+        "merged": "/home/mtjo/AndroidStudioProjects/mtjoapp/ComponetLibrary/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/umeng_socialize_oauth_check_off.png",
+        "source": "/home/mtjo/AndroidStudioProjects/mtjoapp/ComponetLibrary/build/intermediates/bundles/debug/res/drawable-hdpi-v4/umeng_socialize_oauth_check_off.png"
     }
 ]
