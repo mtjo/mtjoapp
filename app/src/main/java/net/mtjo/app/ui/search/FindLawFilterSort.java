@@ -1,4 +1,4 @@
-package net.mtjo.app.ui.find;
+package net.mtjo.app.ui.search;
 
 import java.util.ArrayList;
 

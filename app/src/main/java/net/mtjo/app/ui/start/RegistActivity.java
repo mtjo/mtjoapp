@@ -73,12 +73,7 @@ public class RegistActivity extends BaseActivity {
 	
 	@Override
 	protected void onInit() {
-		Intent intent = getIntent();
-		isAsk = intent.hasExtra("isAsk") ? intent.getBooleanExtra("isAsk", false):false;
-		if(isAsk)
-			setContentLayout(R.layout.login_activity1);
-		else
-			setContentLayout(R.layout.login_activity);
+		setContentLayout(R.layout.my_login_activity);
 	}
 	
 	@Override

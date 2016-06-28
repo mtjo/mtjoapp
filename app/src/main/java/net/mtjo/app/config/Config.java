@@ -21,6 +21,9 @@ public class Config {
 
 	//banner
 	public static String API_HOME_SLIDES =  API_URL+"index&a=home_slides";
+
+	//banner
+	public static String API_VERIFYCODE =  API_URL+"index&a=getcode";
 	
 	/**
 	 * lscn http post登录请求地址

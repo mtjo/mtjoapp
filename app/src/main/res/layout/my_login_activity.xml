@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_launcher" />
+
+    <EditText
+        android:id="@+id/regist_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/user_icon"
+        android:drawablePadding="5dp"
+        android:drawableStart="@drawable/user_icon"
+        android:gravity="center_vertical"
+        android:hint="手机号/邮箱/用户名"
+        android:inputType="number"
+        android:maxLength="11"
+        android:singleLine="true"
+        android:textCursorDrawable="@null" />
+
+    <EditText
+        android:id="@+id/login_password_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/pswd_icon"
+        android:drawablePadding="5dp"
+        android:drawableStart="@drawable/pswd_icon"
+        android:gravity="center_vertical"
+        android:hint="密码"
+        android:inputType="number"
+        android:maxLength="11"
+        android:singleLine="true"
+        android:textCursorDrawable="@null" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:id="@+id/imgcode"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/regist_test_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@id/imgcode"
+            android:drawableLeft="@drawable/pswd_icon"
+            android:drawablePadding="5dp"
+            android:drawableStart="@drawable/pswd_icon"
+            android:gravity="center_vertical"
+            android:hint="验证码"
+            android:inputType="number"
+            android:maxLength="6"
+            android:singleLine="true"
+            android:textCursorDrawable="@null" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:onClick="doLogin"
+        android:text="登录" />
+</LinearLayout>

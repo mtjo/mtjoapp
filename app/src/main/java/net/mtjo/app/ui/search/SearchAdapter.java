@@ -1,9 +1,6 @@
-package net.mtjo.app.ui.find;
+package net.mtjo.app.ui.search;
 
 import java.util.ArrayList;
-
-import net.mtjo.app.R;
-import net.mtjo.app.entity.FindLawDefaultSort;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -13,16 +10,19 @@ import android.view.View.OnClickListener;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-public class FindLawSortAdapter extends BaseAdapter {
+import net.mtjo.app.R;
+import net.mtjo.app.entity.FindlawCity;
+
+public class SearchAdapter extends BaseAdapter {
 	private Context mContext;
-	private ArrayList<FindLawDefaultSort> datalist;
+	private ArrayList<FindlawCity> datalist;
 	private int selectItem = -1;
 	private int sColor;
 	private int nColor;
 	private OnItemClickListener mOnItemClickListener;
 	private OnClickListener clickListener;
 	
-	public FindLawSortAdapter(Context context, ArrayList<FindLawDefaultSort> list, int ncolor,int scolor){
+	public SearchAdapter(Context context, ArrayList<FindlawCity> list, int ncolor, int scolor){
 		this.mContext = context;
 		this.datalist = list;
 		this.sColor = scolor;
@@ -60,10 +60,10 @@ public class FindLawSortAdapter extends BaseAdapter {
 			holder = (ViewHolder) convertView.getTag();
 		}
 		
-		FindLawDefaultSort item = (FindLawDefaultSort) getItem(position);
+		FindlawCity item = (FindlawCity) getItem(position);
 		if(null != item){
 			if(null != holder.name_tv){
-				holder.name_tv.setText(item.getName());
+				holder.name_tv.setText("0".equals(item.getGrade()) ? item.getProvince():item.getCity());
 			}
 		}
 		
@@ -85,7 +85,7 @@ public class FindLawSortAdapter extends BaseAdapter {
 			public void onClick(View v) {
 				selectItem = (Integer) v.getTag();
 				if (mOnItemClickListener != null) {
-					mOnItemClickListener.onItemClick((FindLawDefaultSort)getItem(selectItem));
+					mOnItemClickListener.onItemClick((FindlawCity)getItem(selectItem));
 				}
 				notifyDataSetChanged();
 			}
@@ -97,7 +97,7 @@ public class FindLawSortAdapter extends BaseAdapter {
 	}
 
 	public interface OnItemClickListener {
-		public void onItemClick(FindLawDefaultSort item);
+		public void onItemClick(FindlawCity item);
 	}
 	
 	private static class ViewHolder{

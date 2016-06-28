@@ -7,12 +7,14 @@ import net.mtjo.app.R;
 import net.mtjo.app.config.Config;
 import net.mtjo.app.entity.UserInfo;
 import net.mtjo.app.ui.my.FeedBackActivity;
+import net.mtjo.app.ui.my.LoginActivity;
 import net.mtjo.app.ui.my.SetAndHelpActivity;
 import net.mtjo.app.utils.SharedUserInfo;
 import net.mtjo.app.utils.UMengUtil;
 
 import android.app.Activity;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -82,7 +84,10 @@ public class MyFragment extends Fragment implements OnClickListener{
 				RegistActivity.open(aty, TOLOGIN);
 				break;
 			case R.id.unlogin_head:
-				RegistActivity.open(aty, TOLOGIN);
+				//RegistActivity.open(aty, TOLOGIN);
+				Intent intent = new Intent();
+				intent.setClass(aty, LoginActivity.class);
+				startActivity(intent);
 				break;
 			case R.id.my_ask_tv:
 				if(null == SharedUserInfo.getUserInfo(aty)){

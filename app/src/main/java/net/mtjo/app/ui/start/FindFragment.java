@@ -20,12 +20,12 @@ import net.mtjo.app.entity.FindLawDefaultSort;
 import net.mtjo.app.entity.FindLawResult;
 import net.mtjo.app.entity.FindlawCity;
 import net.mtjo.app.entity.SelectItem;
-import net.mtjo.app.ui.find.FindLawDetailActivity;
-import net.mtjo.app.ui.find.FindLawDetailActivity2;
-import net.mtjo.app.ui.find.FindLawFilterCity;
-import net.mtjo.app.ui.find.FindLawFilterSort;
-import net.mtjo.app.ui.find.FindLawFilterType;
-import net.mtjo.app.ui.find.FindLawModeAdapter;
+import net.mtjo.app.ui.search.FindLawDetailActivity;
+import net.mtjo.app.ui.search.FindLawDetailActivity2;
+import net.mtjo.app.ui.search.FindLawFilterCity;
+import net.mtjo.app.ui.search.FindLawFilterSort;
+import net.mtjo.app.ui.search.FindLawFilterType;
+import net.mtjo.app.ui.search.FindLawModeAdapter;
 import net.mtjo.app.ui.LoadStateView;
 import net.mtjo.app.utils.SharedUserInfo;
 

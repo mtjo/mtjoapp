@@ -418,4 +418,14 @@ public class HttpPostManager {
 		Http.getInstancts().urlPost(Config.API_HOME_SLIDES,
 				null,callback, aty, msg);
 	}
+
+
+	/**
+	 * banner
+	 */
+	public static void getVerifyCode(StringCallBack callback, Activity aty, String msg){
+		Http.getInstancts().urlPost(Config.API_VERIFYCODE,
+				null,callback, aty, msg);
+	}
+
 }
