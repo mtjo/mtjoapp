@@ -24,6 +24,10 @@ public class Config {
 
 	//banner
 	public static String API_VERIFYCODE =  API_URL+"index&a=getcode";
+
+
+	//banner
+	public static String API_LOGIN =  API_URL+"user&a=dologin";
 	
 	/**
 	 * lscn http post登录请求地址

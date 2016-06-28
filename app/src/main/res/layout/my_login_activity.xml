@@ -15,7 +15,7 @@
         android:src="@drawable/ic_launcher" />
 
     <EditText
-        android:id="@+id/regist_phone_number"
+        android:id="@+id/login_username_tv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawableLeft="@drawable/user_icon"
@@ -23,7 +23,7 @@
         android:drawableStart="@drawable/user_icon"
         android:gravity="center_vertical"
         android:hint="手机号/邮箱/用户名"
-        android:inputType="number"
+        android:inputType="text"
         android:maxLength="11"
         android:singleLine="true"
         android:textCursorDrawable="@null" />
@@ -34,11 +34,12 @@
         android:layout_height="wrap_content"
         android:drawableLeft="@drawable/pswd_icon"
         android:drawablePadding="5dp"
+        android:password="true"
         android:drawableStart="@drawable/pswd_icon"
         android:gravity="center_vertical"
         android:hint="密码"
-        android:inputType="number"
-        android:maxLength="11"
+        android:inputType="textPassword"
+        android:maxLength="20"
         android:singleLine="true"
         android:textCursorDrawable="@null" />
 
@@ -54,7 +55,7 @@
             android:layout_height="wrap_content" />
 
         <EditText
-            android:id="@+id/regist_test_code"
+            android:id="@+id/login_verify_code_tv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginRight="15dp"
@@ -64,7 +65,7 @@
             android:drawableStart="@drawable/pswd_icon"
             android:gravity="center_vertical"
             android:hint="验证码"
-            android:inputType="number"
+            android:inputType="text"
             android:maxLength="6"
             android:singleLine="true"
             android:textCursorDrawable="@null" />
@@ -75,6 +76,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:onClick="doLogin"
+        android:onClick="dologin"
         android:text="登录" />
 </LinearLayout>

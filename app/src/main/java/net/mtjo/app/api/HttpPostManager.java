@@ -427,5 +427,17 @@ public class HttpPostManager {
 		Http.getInstancts().urlPost(Config.API_VERIFYCODE,
 				null,callback, aty, msg);
 	}
+	/**
+	 * dologin
+	 */
+	public static void dologin(String username,String password,String verify_code,StringCallBack callback, Activity aty, String msg){
+		HashMap<String, String> params = new HashMap<String, String>();
+		params.put("username", username);
+		params.put("password", password);
+		params.put("verify", verify_code);
+
+		Http.getInstancts().urlPost(Config.API_LOGIN,
+				params,callback, aty, msg);
+	}
 
 }
