@@ -54,23 +54,7 @@
             android:screenOrientation="portrait"
             android:launchMode="singleTask"/>
         
-        <!-- 问律师 -->
-        <activity 
-            android:name="net.mtjo.app.ui.ask.AskLawyerActivity"
-            android:screenOrientation="portrait"
-            android:launchMode="singleTask"/>
-        <activity 
-            android:name="net.mtjo.app.ui.ask.AskLawyerListActivity"
-            android:screenOrientation="portrait"
-            android:launchMode="singleTask"/>
-        <activity 
-            android:name="net.mtjo.app.ui.ask.AskLawyerDetailActivity"
-            android:screenOrientation="portrait"
-            android:launchMode="singleTask"/>
-        <activity 
-            android:name="net.mtjo.app.ui.ask.AskLawyerDetailChatActivity"
-            android:screenOrientation="portrait"/>
-        
+
         <!-- 消息列表 -->
         <activity 
             android:name="net.mtjo.app.ui.msg.MessageListActivity"
@@ -79,7 +63,7 @@
         
         <!-- 我的 -->
         <activity 
-            android:name="net.mtjo.app.ui.my.AboutLSCNActivity"
+            android:name=".ui.my.AboutActivity"
             android:screenOrientation="portrait"
             android:launchMode="singleTask"/>
         <activity 

@@ -6,7 +6,6 @@ import com.aframe.utils.AppUtils;
 import net.mtjo.app.R;
 import net.mtjo.app.config.Config;
 import net.mtjo.app.entity.UserInfo;
-import net.mtjo.app.ui.ask.AskLawyerListActivity;
 import net.mtjo.app.ui.my.FeedBackActivity;
 import net.mtjo.app.ui.my.SetAndHelpActivity;
 import net.mtjo.app.utils.SharedUserInfo;
@@ -42,7 +41,6 @@ public class MyFragment extends Fragment implements OnClickListener{
 		aty = getActivity();
 		initView();
 		initData();
-		showTip();
 	}
 	
 	private void initView(){
@@ -91,7 +89,7 @@ public class MyFragment extends Fragment implements OnClickListener{
 					RegistActivity.open(aty, TOLOGIN);
 				} else {
 					//我的咨询
-					AskLawyerListActivity.open(aty, 1);
+					//AskLawyerListActivity.open(aty, 1);
 				}
 				break;
 			case R.id.set_help_tv:
@@ -111,7 +109,7 @@ public class MyFragment extends Fragment implements OnClickListener{
 						try {
 							AppUtils.doCall(aty, Config.SERVICE_CALL);
 						} catch (Exception e) {
-							Loger.debug("打电话给律师", e);
+							Loger.debug("打电话", e);
 						}
 					}
 					
@@ -136,16 +134,5 @@ public class MyFragment extends Fragment implements OnClickListener{
 	public void loginOutSuccess(){
 		setUnLogin();
 	}
-	
-	/************************首次使用功能引导提示**************************/
-	/**
-	 * 显示提示
-	 */
-	private void showTip(){
-		String isMainGuid = AppUtils.getLocalCache(aty, "isMyGuid");
-		if(!"true".equals(isMainGuid)){
-			((MainActivity)getActivity()).showtipView(R.drawable.my_guid);
-			AppUtils.saveLocalCache(aty, "isMyGuid", "true");
-		}
-	}
+
 }

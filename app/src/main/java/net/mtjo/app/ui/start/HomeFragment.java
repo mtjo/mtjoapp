@@ -54,8 +54,8 @@ import java.util.Random;
 
 public class HomeFragment extends Fragment implements OnClickListener, BaseSliderView.OnSliderClickListener {
     private Activity aty;
-    SliderLayout sliderShow;
-
+    public SliderLayout sliderShow;
+    public  ScrollView scrollview;
     private  ArrayList<Map<String, Object>> data_list;
 
     private GridView gview;
@@ -94,16 +94,9 @@ public class HomeFragment extends Fragment implements OnClickListener, BaseSlide
         //showTip();
     }
 
-    @Override
-    public void onResume() {
-        super.onResume();
-        ScrollView scrollview = ((ScrollView)aty.findViewById(R.id.scrollView));
-        scrollview.scrollTo(0,0);
-    }
-
     private void initView() {
         //getActivity().findViewById(R.id.ask_img).setOnClickListener(this);
-
+        scrollview = ((ScrollView)aty.findViewById(R.id.scrollView));
         sliderShow = (SliderLayout) aty.findViewById(R.id.slider);
         HttpPostManager.getHomeSlides(
                 new StringCallBack() {

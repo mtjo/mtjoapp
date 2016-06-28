@@ -28,7 +28,7 @@ public class SplashActivity extends BaseActivity {
 		setContentView(R.layout.splash_activity);
 		mContext = this;
 		
-		findViewById(R.id.img).setBackgroundResource(R.drawable.splash);
+		findViewById(R.id.img).setBackgroundResource(R.drawable.ic_launcher);
 		
 		//启动定时器
 		task = new TimerTask() {

@@ -24,12 +24,12 @@ import net.mtjo.app.ui.base.WebViewActivity;
  * @author zxp
  *
  */
-public class AboutLSCNActivity extends BaseActivity{
-	private AboutLSCNActivity mContext;
+public class AboutActivity extends BaseActivity{
+	private AboutActivity mContext;
 	private TextView version_tv;
 	
 	public static void open(Activity aty, int requestCode){
-		Intent intent = new Intent(aty, AboutLSCNActivity.class);
+		Intent intent = new Intent(aty, AboutActivity.class);
 		aty.startActivityForResult(intent, requestCode);
 	}
 	
@@ -68,7 +68,7 @@ public class AboutLSCNActivity extends BaseActivity{
 		public void onServiceConnected(ComponentName arg0, IBinder service) {
 			versionService = ((VersionService.VersionBinder)service).getService();
 			versionService.setChecklistener(listener);
-			versionService.checkVersion(AboutLSCNActivity.this);
+			versionService.checkVersion(AboutActivity.this);
 		}
 	};
 	

@@ -16,7 +16,7 @@ import net.mtjo.app.api.HttpPostManager;
 import net.mtjo.app.application.SysApplication;
 import net.mtjo.app.entity.MessageModel;
 import net.mtjo.app.entity.UserInfo;
-import net.mtjo.app.ui.ask.AskLawyerDetailChatActivity;
+
 import net.mtjo.app.ui.base.BaseListViewActivity;
 import net.mtjo.app.ui.base.WebViewActivity;
 import net.mtjo.app.ui.msg.cache.MessageCache;
@@ -58,8 +58,8 @@ public class MessageListActivity extends BaseListViewActivity {
 						SysApplication.getInstance().updateMsg();
 						break;
 					case 2:
-						AskLawyerDetailChatActivity.open(mContext, model.getFromuid(), 
-								model.getParams_qid(), "");
+						/*AskLawyerDetailChatActivity.open(mContext, model.getFromuid(),
+								model.getParams_qid(), "");*/
 						break;
 	
 					default:

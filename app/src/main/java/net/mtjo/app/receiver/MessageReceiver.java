@@ -21,7 +21,6 @@ import com.aframe.Loger;
 import net.mtjo.app.R;
 import net.mtjo.app.application.SysApplication;
 import net.mtjo.app.config.Config;
-import net.mtjo.app.ui.ask.AskLawyerDetailChatActivity;
 
 public class MessageReceiver extends XGPushBaseReceiver {
 
@@ -111,14 +110,14 @@ public class MessageReceiver extends XGPushBaseReceiver {
 		notification.defaults = Notification.DEFAULT_SOUND;
 		notification.audioStreamType = android.media.AudioManager.ADJUST_LOWER;
 		notification.flags = Notification.FLAG_AUTO_CANCEL;
-		Intent intent = new Intent(context, AskLawyerDetailChatActivity.class);
+		//Intent intent = new Intent(context, AskLawyerDetailChatActivity.class);
 		JSONObject json;
 		try {
 			json = new JSONObject(message.getCustomContent());
 			if(null != json){
-				intent.putExtra("qid", json.has("qid") ? json.getString("qid"):"");
+/*				intent.putExtra("qid", json.has("qid") ? json.getString("qid"):"");
 				intent.putExtra("toUid", json.has("fromuid") ? json.getString("fromuid"):"");
-				intent.putExtra("lawName", json.has("fromUsername") ? json.getString("fromUsername"):"");
+				intent.putExtra("lawName", json.has("fromUsername") ? json.getString("fromUsername"):"");*/
 			}
 		} catch (JSONException e) {
 			e.printStackTrace();
@@ -127,14 +126,14 @@ public class MessageReceiver extends XGPushBaseReceiver {
 		
 //		Bundle bd = new Bundle();
 //		bd.putString("nofication", message.getCustomContent());
-		intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+//		intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 //		intent.putExtras(bd);
 		Loger.debug("消息推送" + message.getCustomContent());
 		Loger.debug("消息推送内容" + message.getContent());
-		PendingIntent pending = PendingIntent.getActivity(context, Config.NoticeID, intent,
-				PendingIntent.FLAG_CANCEL_CURRENT);
-		
-		notification.setLatestEventInfo(context, message.getTitle(), message.getContent(), pending);
+		/*PendingIntent pending = PendingIntent.getActivity(context, Config.NoticeID, intent,
+				PendingIntent.FLAG_CANCEL_CURRENT);*/
+/*
+		notification.setLatestEventInfo(context, message.getTitle(), message.getContent(), pending);*/
 		manager.notify(Config.NoticeID++, notification);
 	}
 }

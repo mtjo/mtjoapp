@@ -70,7 +70,7 @@ public class SetAndHelpActivity extends BaseActivity {
 	 * 关于好律师在线
 	 */
 	public void aboutLscn(View v){
-		AboutLSCNActivity.open(this, 0);
+		AboutActivity.open(this, 0);
 	}
 	
 	public void loginOut(View v){
