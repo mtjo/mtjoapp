@@ -3,20 +3,28 @@ package net.mtjo.app.ui.base;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.os.Build;
 import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.webkit.CookieManager;
+import android.webkit.CookieSyncManager;
+import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
+//import com.aframe.http.CookieManager;
+import com.aframe.http.FormAgent;
 import com.aframe.ui.ViewInject;
 import com.aframe.ui.widget.CustomProgressDialog;
+import com.aframe.utils.AppUtils;
 import com.aframe.utils.StrUtils;
 import net.mtjo.app.R;
 import net.mtjo.app.ui.SelectPicPopupShare;
 import net.mtjo.app.ui.article.ArticlesActivity;
+
 
 public class WebViewActivity extends BaseActivity {
 	private WebViewActivity mContext;
@@ -113,7 +121,19 @@ public class WebViewActivity extends BaseActivity {
 //		if(isShare){
 //			setActionIcon(R.drawable.title_share);
 //		}
-		
+		//CookieManager cookieManager = FormAgent.getCookieContainer();
+
+		CookieSyncManager.createInstance(mContext);
+		CookieManager cookieManager = CookieManager.getInstance();
+		cookieManager.setAcceptCookie(true);
+		cookieManager.removeSessionCookie();
+		cookieManager.setCookie("mtjo.net", AppUtils.getLocalCache(mContext,"PHPSESSID"));
+		CookieSyncManager.getInstance().sync();
+
+		System.out.println(cookieManager);
+
+
+
 		inflateMenu(R.menu.share);
 		
 		webview = (WebView) findViewById(R.id.webview);
@@ -150,6 +170,7 @@ public class WebViewActivity extends BaseActivity {
 		        }
 		         
 		        });
+			webview.getSettings().setJavaScriptEnabled(true);
 			
 			webview.setOnKeyListener(new View.OnKeyListener() {    
 	            @Override    

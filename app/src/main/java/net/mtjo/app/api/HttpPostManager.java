@@ -100,49 +100,8 @@ public class HttpPostManager {
 		Http.getInstancts().urlPost(getUrl(Config.LSCN_USER_URL, "logout"), params, callback, aty, msg);
 	}
 	
-	/**
-	 * 提交问题
-	 */
-	public static void commitAskQuestion(String authtoken, String content, String areacode, StringCallBack callback, Activity aty, String msg){
-		HashMap<String, String> params = new HashMap<String, String>();
-		params.put("authtoken", authtoken);
-		params.put("content", content);
-		params.put("areacode", areacode);
-		params.put("appKey", "00002");
-		params.put("v", "1.0");
-		params.put("method", "lscn.app.insertQuestion");
-		Http.getInstancts().urlPost(Config.FINDLAW_URL,
-				params,callback, aty, msg);
-		
-	}
-	/**
-	 * 得到问律师记录列表
-	 */
-	public static void getAskLawyerList(String authtoken, int pageNo,int pageSize,
-			StringCallBack callback, Activity aty, String msg){
-		HashMap<String, String> params = new HashMap<String, String>();
-		params.put("authtoken", authtoken);
-		params.put("pageNum", String.valueOf(pageNo));
-		params.put("pageSize", String.valueOf(pageSize));
-		params.put("appKey", "00002");
-		params.put("v", "1.0");
-		params.put("method", "lscn.app.getMyQuestionList");
-		Http.getInstancts().urlPost(Config.FINDLAW_URL,
-				params,callback, aty, msg); 
-	}
-	/**
-	 * 得到问律师详细记录列表
-	 */
-	public static void getAskLawyerListDetail(String authtoken, String qid,StringCallBack callback, Activity aty, String msg){
-		HashMap<String, String> params = new HashMap<String, String>();
-		params.put("authtoken", authtoken);
-		params.put("qid", qid);
-		params.put("appKey", "00002");
-		params.put("v", "1.0");
-		params.put("method", "lscn.app.getLawyerAnswerList");
-		Http.getInstancts().urlPost(Config.FINDLAW_URL,
-				params,callback, aty, msg); 
-	}
+
+
 	
 	/**
 	 * 通过手机号码跟gps获取城市编码

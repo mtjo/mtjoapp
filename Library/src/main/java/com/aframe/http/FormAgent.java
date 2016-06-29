@@ -64,7 +64,7 @@ public class FormAgent {
 		
 		URL urlObj = new URL(this.getUrl());
         HttpURLConnection  conn =  (HttpURLConnection)urlObj.openConnection();
-    
+
         //设置cookie
         cookieContainer.setCookies(conn);
         

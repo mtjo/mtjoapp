@@ -30,7 +30,9 @@ public class Http {
 	public static Http getInstancts(){
 		return instance;
 	}
-	
+	public void getcookie(){
+
+	}
 	/**
      * Http Post请求
      * 

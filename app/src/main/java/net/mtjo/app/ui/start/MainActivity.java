@@ -28,6 +28,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 import android.widget.RadioButton;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 public class MainActivity extends BaseActivity {
@@ -41,6 +42,7 @@ public class MainActivity extends BaseActivity {
 	
 	private RadioButton home_rb, find_rb, article_rb, my_rb;
 	private TextView msg_count_tv;
+	private ScrollView scrollview = null;
 	
 	private Long lastClickTime = 0l;
 	
@@ -81,7 +83,15 @@ public class MainActivity extends BaseActivity {
 		updateMsg();
 		loadMsg();
 	}
-	
+
+	@Override
+	public void onResume() {
+		super.onResume();
+		if(null!=scrollview){
+			scrollview.scrollTo(0,0);
+		}
+	}
+
 	/*****************页面切换控制***************/
 	
 	private Fragment mContent;
@@ -123,6 +133,8 @@ public class MainActivity extends BaseActivity {
 		}
 		ft.hide(mContent).show(home_fragment).commit();
 		mContent = home_fragment;
+		scrollview = ((ScrollView)findViewById(R.id.scrollView));
+
 	}
 	
 	public void goFind(View v){

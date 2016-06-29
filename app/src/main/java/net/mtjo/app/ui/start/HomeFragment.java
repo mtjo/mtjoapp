@@ -1,5 +1,6 @@
 package net.mtjo.app.ui.start;
 
+import com.aframe.http.FormAgent;
 import com.aframe.http.StringCallBack;
 import com.aframe.utils.AppUtils;
 
@@ -15,6 +16,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+import android.webkit.CookieManager;
+import android.webkit.CookieSyncManager;
+import android.webkit.WebView;
 import android.widget.GridView;
 import android.widget.ListAdapter;
 import android.widget.ScrollView;
@@ -110,7 +114,6 @@ public class HomeFragment extends Fragment implements OnClickListener, BaseSlide
                             try {
                                 JSONObject oj = homeSlides.getJSONObject(i);
 
-
                                 TextSliderView textSliderView = new TextSliderView(aty);
                                 textSliderView
                                         .description(oj.getString("slide_name"))
@@ -175,22 +178,13 @@ public class HomeFragment extends Fragment implements OnClickListener, BaseSlide
         }
     }
 
-    /************************首次使用功能引导提示**************************/
-    /**
-     * 显示提示
-     */
-    private void showTip() {
-        String isMainGuid = AppUtils.getLocalCache(aty, "isMainGuid");
-        if (!"true".equals(isMainGuid)) {
-            ((MainActivity) getActivity()).showtipView(R.drawable.main_guid);
-            AppUtils.saveLocalCache(aty, "isMainGuid", "true");
-        }
-    }
 
     @Override
     public void onSliderClick(BaseSliderView slider) {
         //Toast.makeText(aty, slider.getBundle().get("slide_url") + "", Toast.LENGTH_SHORT).show();
-        WebViewActivity.WebView(aty, slider.getBundle().get("slide_url") + "","文章详情");
+       // SharedPreferences spf = getSharedPreferences("Cookie", Context.MODE_PRIVATE);
+
+       WebViewActivity.WebView(aty, slider.getBundle().get("slide_url") + "","文章详情");
     }
 /**
  * BaseTransformer transformer
