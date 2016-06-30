@@ -18,6 +18,7 @@ import net.mtjo.app.entity.UserInfo;
 import net.mtjo.app.ui.base.BaseActivity;
 import net.mtjo.app.ui.msg.MessageListActivity;
 import net.mtjo.app.ui.msg.cache.MessageCache;
+import net.mtjo.app.ui.my.RegistActivity;
 import net.mtjo.app.utils.SharedUserInfo;
 
 import android.os.Bundle;
@@ -79,9 +80,7 @@ public class MainActivity extends BaseActivity {
 		XGPushConfig.enableDebug(this, true);
 		
 		registerPush();
-		uploadToken();
-		updateMsg();
-		loadMsg();
+
 	}
 
 	@Override
@@ -230,68 +229,15 @@ public class MainActivity extends BaseActivity {
 	 */
 	public void goMsg(View v){
 		if(null == SharedUserInfo.getUserInfo(mContext)){
-			RegistActivity.open(mContext, 1);
+			//RegistActivity.open(mContext, 1);
 		} else {
 			MessageListActivity.open(mContext, 2);
 		}
 	}
 	
-	/**
-	 * 问律师
-	 */
-//	public void goAsk(View v){
-//		UMengUtil.onEvtent(getApplicationContext(), Config.UMENG_ASK_LAWYER2);
-//		AskLawyerActivity.open(mContext, 0);
-//	}
+
 	
-	/*********************消息控制*************************/
-	/**
-	 * 加载未读消息
-	 */
-	public void loadMsg(){
-		UserInfo user = SharedUserInfo.getUserInfo(mContext);
-		if(null == user)return;
-		MessageModel model = MessageCache.create().getNewlySearch(user.getUid());
-		long lastid = null==model? 0:model.getMsgid();
-		
-		StringCallBack callback = new StringCallBack(){
-			@Override
-			public void onSuccess(Object t) {
-				if (this.getJsonArray() != null) {
-					UserInfo user = SharedUserInfo.getUserInfo(mContext);
-					List<MessageModel> list = ParseJson.getEntityList(this.getJsonArray().toString(), MessageModel.class);
-					for(int i=0,l=list.size(); i<l; i++){
-						MessageCache.create().add(list.get(i),user.getUid());
-					}
-					list.clear();
-					list = null;
-					updateMsg();
-				}
-			}
-			
-			@Override
-			public void onFailure(Throwable t, int errorNo, String strMsg) {
-				ViewInject.showToast(mContext, this.getDesc());
-			}
-		};
-		HttpPostManager.getNewMsg(user.getAuthtoken(),
-				lastid, callback, this, null);
-	}
-	
-	
-	/**
-	 * 设置本地未读消息数
-	 */
-	public void updateMsg(){
-		UserInfo user = SharedUserInfo.getUserInfo(mContext);
-		if(null == user) {
-			setMsgCount(0);
-			return;
-		}
-		
-		setMsgCount(MessageCache.create().getCount(user.getUid()));
-	}
-	
+
 	private void setMsgCount(int count){
 		if(null == msg_count_tv)return;
 		if(count == 0){
@@ -311,7 +257,6 @@ public class MainActivity extends BaseActivity {
 			my_fragment.loginSuccess();
 		}
 		//加载是否有新消息
-		loadMsg();
 	}
 	
 	/**
@@ -321,9 +266,7 @@ public class MainActivity extends BaseActivity {
 		if(null != my_fragment){
 			my_fragment.loginOutSuccess();
 		}
-		
-		//设置右上角未读数问题
-		updateMsg();
+
 	}
 	
 	/***************处理推送token***************/

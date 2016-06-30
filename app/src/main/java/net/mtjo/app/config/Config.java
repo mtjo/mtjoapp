@@ -67,16 +67,4 @@ public class Config {
 	public static int NoticeID;
 
 
-	// 友盟自定义事件
-	public static final String UMENG_COMMIT_ASK_LAWYER = "提交问律师";
-	public static final String UMENG_SEND_MOBILE = "拨打400电话";
-	public static final String UMENG_TOLD_FRIEND = "告诉好友";
-	public static final String UMENG_EXIT = "注销";
-	public static final String UMENG_LOGIN = "登录_注册";
-	public static final String UMENG_ASK_LAWYER1 = "问律师1";
-	public static final String UMENG_ASK_LAWYER2 = "问律师2";
-	public static final String UMENG_ASK_LAWYER_NEXT = "下一步";
-	public static final String UMENG_CALL_LAWYER = "拨打律师电话";
-	public static final String UMENG_COMMIT_REPEAT_NEXT = "重复发送_继续发送";
-	public static final String UMENG_COMMIT_REPEAT_LOOK = "重复发送_查看我的咨询";
 }

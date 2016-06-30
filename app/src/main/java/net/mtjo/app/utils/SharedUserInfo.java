@@ -4,8 +4,11 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.location.Location;
 
+import com.aframe.database.annotate.Id;
+
 import net.mtjo.app.entity.UnReadMark;
 import net.mtjo.app.entity.UserInfo;
+
 
 public class SharedUserInfo {
 	
@@ -14,46 +17,42 @@ public class SharedUserInfo {
 	public static Location location; //存放用户当前的位置信息
 	
 	private static final String USER_MODEL = "userinfo";
-	private static final String UID = "uid";
+	private static final String ID = "id";
+	private static final String USER_NICENAME = "user_nicename";
+	private static final String USER_PASS = "user_pass";
+	private static final String USER_LOGIN = "user_login";
+	private static final String USER_EMAIL ="user_email";
+	private static final String USER_URL ="user_url";
+	private static final String AVATAR = "avatar";
+	private static final String SEX = "sex";
+	private static final String BIRTHDAY = "birthday";
+	private static final String SIGNATURE = "signature";
+	private static final String LAST_LOGIN_IP = "last_login_ip";
+	private static final String LAST_LOGIN_TIME = "last_login_time";
+	private static final String CREATE_TIME = "create_time";
+	private static final String USER_ACTIVATION_KEY ="user_activation_key";
+	private static final String USER_STATUS ="user_status";
+	private static final String COIN ="coin";
 	private static final String MOBILE = "mobile";
-	private static final String USERID = "userid";
-	private static final String USERNAME = "username";
-	private static final String IFAUDIT = "ifaudit";
-	private static final String STATUS = "status";
-	private static final String AUTHTOKEN = "authtoken";
+	private static final String SCORE ="score";
+	private static final String USER_TYPE = "user_type";
+
 	private static final String TOKEN = "token";
-	private static final String ASKMSG = "askMsg";
 	
 	private static SharedPreferences sp;
 	
-	/**
-	 * 问律师内容
-	 * @param msg
-	 * @param context
-	 */
-	public static void saveAskLawyerMsg(String msg, Context context){
-		sp = context.getSharedPreferences(USER_MODEL, 0);
-		SharedPreferences.Editor mEditor = sp.edit();
-		mEditor.putString(ASKMSG, msg);
-		mEditor.commit();
-	}
-	public static String getAskLawyerMsg(Context context){
-		sp = context.getSharedPreferences(USER_MODEL, 0);
-		return sp.getString(ASKMSG, null);
-		
-	}
+
 	
 	public static void saveUserinfo(Context context,UserInfo user){
 		userinfo = user;
 		sp = context.getSharedPreferences(USER_MODEL, 0);
 		SharedPreferences.Editor mEditor = sp.edit();
-		mEditor.putString(UID, user.getUid());
+		mEditor.putString(ID, user.getId());
 		mEditor.putString(MOBILE, user.getMobile());
-		mEditor.putString(USERID, user.getUserid());
-		mEditor.putString(USERNAME, user.getUsername());
-		mEditor.putString(IFAUDIT, user.getIfaudit());
-		mEditor.putString(STATUS, user.getStatus());
-		mEditor.putString(AUTHTOKEN, user.getAuthtoken());
+		mEditor.putString(USER_LOGIN, user.getUser_login());
+		mEditor.putString(USER_NICENAME, user.getUser_nicename());
+		mEditor.putString(SEX, user.getSex());
+		mEditor.putString(USER_STATUS, user.getUser_status());
 		mEditor.commit();
 	}
 	
@@ -61,46 +60,32 @@ public class SharedUserInfo {
 		if(null == context)return null;
 		if(null == userinfo){
 			sp = context.getSharedPreferences(USER_MODEL, 0);
-			if (sp.getString(AUTHTOKEN, null) != null) {
+			if (sp.getString(ID, null) != null) {
 				userinfo = new UserInfo();
-				userinfo.setUid(sp.getString(UID, null));
+				userinfo.setId(sp.getString(ID, null));
 				userinfo.setMobile(sp.getString(MOBILE, null));
-				userinfo.setUserid(sp.getString(USERID, null));
-				userinfo.setUsername(sp.getString(USERNAME, null));
-				userinfo.setIfaudit(sp.getString(IFAUDIT, null));
-				userinfo.setStatus(sp.getString(STATUS, null));
-				userinfo.setAuthtoken(sp.getString(AUTHTOKEN, null));
-				userinfo.setToken(sp.getString(TOKEN, null));
-//				userinfo.setAuthtoken("YjczNGEyY2Y0MGI0NDcyNWQyMDllYjRmMTJiYjdlMmFiNjc0YWU5ZGUxNmYyZGIxNjQzODFiNGZjMGMyODgyM2Q5NTE4NjE2NjA1MmRkOWY0MTI0ZDU2MjBjMDEwMTUyZjE0M2UwYjQ3MTQ0ZGZiZjM3OTkyMmZlNzcwNzE5ZmQwNDQzZTc5NjQxNzg2OTVjNGY2YTAyYjQ1NzdmZTYxZTAxNTdkZjliMTYzNjBmNWQ5MWFiODEwZGE1NTU5OTZjZWU1ZmZiYzI5ODZiZWUxMTNiMGMyYmVkY2M1MDk3OGU=");
+				userinfo.setUser_login(sp.getString(USER_LOGIN, null));
+				userinfo.setUser_nicename(sp.getString(USER_NICENAME, null));
+				userinfo.setSex(sp.getString(SEX, null));
+				userinfo.setUser_status(sp.getString(USER_STATUS, null));
 			}
 			
 		}
 		return userinfo;
 	}
 	
-	/**
-	 * 修改手机号码
-	 */
-	public static void saveChange(Context context, String authtoken, String mobile){
-		userinfo = null;
-		sp = context.getSharedPreferences(USER_MODEL, 0);
-		SharedPreferences.Editor mEditor = sp.edit();
-		mEditor.putString(MOBILE, mobile);
-		mEditor.putString(AUTHTOKEN, authtoken);
-		mEditor.clear().commit();
-	}
+
 	
 	public static void exitUserInfo(Context context){
 		userinfo = null;
 		sp = context.getSharedPreferences(USER_MODEL, 0);
 		SharedPreferences.Editor mEditor = sp.edit();
-		mEditor.remove(UID);
+		mEditor.remove(ID);
 		mEditor.remove(MOBILE);
-		mEditor.remove(USERID);
-		mEditor.remove(USERNAME);
-		mEditor.remove(IFAUDIT);
-		mEditor.remove(STATUS);
-		mEditor.remove(AUTHTOKEN);
+		mEditor.remove(USER_LOGIN);
+		mEditor.remove(USER_NICENAME);
+		mEditor.remove(SEX);
+		mEditor.remove(USER_STATUS);
 		mEditor.commit();
 	}
 	

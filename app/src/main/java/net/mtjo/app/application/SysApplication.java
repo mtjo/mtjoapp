@@ -74,7 +74,7 @@ public class SysApplication extends Application {
 		if(null == userinfo || null == token){
 			return;
 		}
-		HttpPostManager.uploadToken(userinfo.getAuthtoken(), token,
+		HttpPostManager.uploadToken(userinfo.getSignature(), token,
 				new StringCallBack() {
 					@Override
 					public void onSuccess(Object t) {
@@ -108,24 +108,6 @@ public class SysApplication extends Application {
 	public void loginOutSuccess(){
 		if(null != mainActivity){
 			mainActivity.loginOutSuccess();
-		}
-	}
-	
-	/**
-	 * 新消息
-	 */
-	public void newMsg(){
-		if(null != mainActivity){
-			mainActivity.loadMsg();
-		}
-	}
-	
-	/**
-	 * 更新消息未读数
-	 */
-	public void updateMsg(){
-		if(null != mainActivity){
-			mainActivity.updateMsg();
 		}
 	}
 }

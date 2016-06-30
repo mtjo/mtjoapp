@@ -98,7 +98,6 @@ public class FindLawDetailActivity extends BaseActivity {
 				public void onClick(DialogInterface dialog, int which) {
 					dialog.dismiss();
 					try {
-						UMengUtil.onEvtent(getApplicationContext(), Config.UMENG_CALL_LAWYER);
 						AppUtils.doCall(mContext, data.getMobile());
 					} catch (Exception e) {
 						Loger.debug("打电话给律师", e);

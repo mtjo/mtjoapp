@@ -125,7 +125,6 @@
 	            android:layout_height="wrap_content"
 	            android:layout_alignParentBottom="true"
 	            android:layout_centerHorizontal="true"
-	            android:background="@drawable/main_menu_ask_selector"
 	            android:layout_marginBottom="10dp"
 	            android:onClick="goAsk"
 				android:visibility="gone"/>

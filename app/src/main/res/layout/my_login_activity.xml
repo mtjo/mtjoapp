@@ -15,7 +15,7 @@
         android:src="@drawable/ic_launcher" />
 
     <EditText
-        android:id="@+id/login_username_tv"
+        android:id="@+id/login_username_et"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawableLeft="@drawable/user_icon"
@@ -29,7 +29,7 @@
         android:textCursorDrawable="@null" />
 
     <EditText
-        android:id="@+id/login_password_tv"
+        android:id="@+id/login_password_et"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawableLeft="@drawable/pswd_icon"
@@ -55,7 +55,7 @@
             android:layout_height="wrap_content" />
 
         <EditText
-            android:id="@+id/login_verify_code_tv"
+            android:id="@+id/login_verify_code_et"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginRight="15dp"

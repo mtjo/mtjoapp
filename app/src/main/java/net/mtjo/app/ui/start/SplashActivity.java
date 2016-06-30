@@ -65,15 +65,10 @@ public class SplashActivity extends BaseActivity {
 				task = null;
 			}
 			//首次使用进入引导页
-			String isfirst = AppUtils.getLocalCache(mContext, "isShowGuide");
-			if("true".equals(isfirst)){
+
 				Intent intent = new Intent(mContext, MainActivity.class);
 				startActivity(intent);
-			} else {
-				AppUtils.saveLocalCache(mContext, "isShowGuide", "true");
-				Intent intent = new Intent(mContext, GuideActivity.class);
-				startActivity(intent);
-			}
+
 			finish();
 		} catch(Exception e) {
 			Loger.debug("启动页", e);

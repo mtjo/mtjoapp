@@ -67,11 +67,7 @@
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.start.RegistActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".ui.start.GuideActivity"
-            android:launchMode="singleTask"
+            android:name=".ui.my.RegistActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".ui.start.MainActivity"

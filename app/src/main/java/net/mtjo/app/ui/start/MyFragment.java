@@ -8,6 +8,7 @@ import net.mtjo.app.config.Config;
 import net.mtjo.app.entity.UserInfo;
 import net.mtjo.app.ui.my.FeedBackActivity;
 import net.mtjo.app.ui.my.LoginActivity;
+import net.mtjo.app.ui.my.RegistActivity;
 import net.mtjo.app.ui.my.SetAndHelpActivity;
 import net.mtjo.app.utils.SharedUserInfo;
 import net.mtjo.app.utils.UMengUtil;
@@ -81,17 +82,21 @@ public class MyFragment extends Fragment implements OnClickListener{
 	public void onClick(View v) {
 		switch (v.getId()) {
 			case R.id.tologin_btn:
-				RegistActivity.open(aty, TOLOGIN);
-				break;
-			case R.id.unlogin_head:
-				//RegistActivity.open(aty, TOLOGIN);
 				Intent intent = new Intent();
 				intent.setClass(aty, LoginActivity.class);
 				startActivity(intent);
 				break;
+			case R.id.unlogin_head:
+				//RegistActivity.open(aty, TOLOGIN);
+				Intent intent2 = new Intent();
+				intent2.setClass(aty, LoginActivity.class);
+				startActivity(intent2);
+				break;
 			case R.id.my_ask_tv:
+				ViewInject.showToast(aty,"my_ask_tv");
 				if(null == SharedUserInfo.getUserInfo(aty)){
-					RegistActivity.open(aty, TOLOGIN);
+					//RegistActivity.open(aty, TOLOGIN);
+					ViewInject.showToast(aty,"tologin_btn");
 				} else {
 					//我的咨询
 					//AskLawyerListActivity.open(aty, 1);
@@ -105,7 +110,7 @@ public class MyFragment extends Fragment implements OnClickListener{
 				break;
 			case R.id.contanct_us_tv:
 				//拨打400电话统计
-				UMengUtil.onEvtent(aty.getApplicationContext(), Config.UMENG_SEND_MOBILE);
+
 				
 				ViewInject.getConfirmDialog(aty, "确定要拨打我们的客服咨询电话吗？", new DialogInterface.OnClickListener(){
 					@Override

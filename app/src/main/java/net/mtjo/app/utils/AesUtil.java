@@ -5,15 +5,7 @@ import javax.crypto.spec.SecretKeySpec;
 
 
 /**
- * <h3>AesUtil</h3>
- * 
- * <p>
- * 
- * </p>
- * 
- * @company 广州快律网络科技有限公司
- * @copyright CopyRight (c) 2012
- * 
+ *
  * @author chenjinlian
  * @date 2014年2月19日
  * @version 1.0

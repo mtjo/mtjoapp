@@ -99,7 +99,7 @@ public class MessageReceiver extends XGPushBaseReceiver {
 			return ;
 		}
 		if (isAppRunning(context)) {
-			SysApplication.getInstance().newMsg();
+			SysApplication.getInstance();
 //			return ;
 		}
 		// APP自主处理消息的过程...

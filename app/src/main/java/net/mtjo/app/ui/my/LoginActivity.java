@@ -1,88 +1,76 @@
 package net.mtjo.app.ui.my;
 
-import android.content.SharedPreferences;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.net.Uri;
-import android.os.Parcel;
-import android.support.v7.app.ActionBarActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.aframe.http.CookieManager;
 import com.aframe.http.FormAgent;
 import com.aframe.http.StringCallBack;
+import com.aframe.json.parse.ParseJson;
 import com.aframe.ui.ViewInject;
 import com.aframe.utils.AppUtils;
 import com.aframe.utils.RandomCode;
 import com.aframe.utils.StrUtils;
-import com.alibaba.fastjson.JSON;
-import com.daimajia.slider.library.SliderTypes.TextSliderView;
-import com.daimajia.slider.library.Transformers.BaseTransformer;
+
 
 import net.mtjo.app.R;
 import net.mtjo.app.api.HttpPostManager;
-import net.mtjo.app.config.Config;
+
+import net.mtjo.app.application.SysApplication;
+import net.mtjo.app.entity.UserInfo;
 import net.mtjo.app.ui.base.BaseActivity;
+import net.mtjo.app.ui.start.MyFragment;
+import net.mtjo.app.utils.SharedUserInfo;
 
-import org.apache.http.HttpResponse;
-import org.apache.http.client.ClientProtocolException;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.cookie.Cookie;
-import org.apache.http.impl.client.AbstractHttpClient;
-import org.apache.http.impl.client.DefaultHttpClient;
-import org.apache.http.protocol.BasicHttpContext;
-import org.apache.http.protocol.HttpContext;
-import org.apache.http.util.EntityUtils;
+
 import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.HttpURLConnection;
-import java.net.URL;
+import java.util.Arrays;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class LoginActivity extends BaseActivity {
     private ImageView imageView;
     private final static String TAG = "Login";
-    private String username,password,verify_code;
-    private TextView username_tv,password_tv,verify_code_tv;
+    private String username, password, verify_code;
+    private EditText username_et, password_et, verify_code_et;
     private LoginActivity mContext;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.my_login_activity);
+        setContentLayout(R.layout.my_login_activity);
         mContext = LoginActivity.this;
 
-        initView();
     }
-    private void initView(){
+    @Override
+    protected void onInitViews() {
         setTitle("登陆");
-        username_tv = (TextView)findViewById(R.id.login_username_tv);
-        password_tv = (TextView)findViewById(R.id.login_password_tv);
-        verify_code_tv = (TextView)findViewById(R.id.login_verify_code_tv);
+        inflateMenu(R.menu.share);
+        username_et = (EditText) findViewById(R.id.login_username_et);
+        password_et = (EditText) findViewById(R.id.login_password_et);
+        verify_code_et = (EditText) findViewById(R.id.login_verify_code_et);
 
-        imageView = (ImageView)findViewById(R.id.imgcode);
+        imageView = (ImageView) findViewById(R.id.imgcode);
         get_code();
 
         imageView.setOnClickListener(new View.OnClickListener() {
 
-            public void onClick(View v) { get_code();
+            public void onClick(View v) {
+                get_code();
             }
         });
-
     }
 
-    public void get_code(){
+
+    public void get_code() {
         HttpPostManager.getVerifyCode(
                 new StringCallBack() {
 
@@ -91,10 +79,9 @@ public class LoginActivity extends BaseActivity {
                         String code = this.getStrContent();
                         imageView.setImageBitmap(RandomCode.getInstance().createBitmap(code));
 
-                        username_tv.setText("mtjo_00@163.com");
-                        password_tv.setText("z..whj7q8j9k0000");
-                        verify_code_tv.setText(code);
-
+                        username_et.setText("mtjo_00@163.com");
+                        password_et.setText("z..whj7q8j9k0000");
+                        verify_code_et.setText(code);
 
 
                     }
@@ -106,79 +93,88 @@ public class LoginActivity extends BaseActivity {
                 }, null, null);
 
 
-
     }
-public void dologin(View v){
-
-    username = username_tv.getText().toString();
-    password = password_tv.getText().toString();
-    verify_code = verify_code_tv.getText().toString();
 
 
-    if (StrUtils.isEmpty(username)) {
+    public void dologin(View v) {
 
-        ViewInject.showToast(mContext, "用户名不能为空!");
-
-
-    }else if (StrUtils.isEmpty(password)) {
-
-        ViewInject.showToast(mContext, "密码不能为空!");
+        username = username_et.getText().toString();
+        password = password_et.getText().toString();
+        verify_code = verify_code_et.getText().toString();
 
 
-    }else if (StrUtils.isEmpty(verify_code)) {
+        if (StrUtils.isEmpty(username)) {
 
-        ViewInject.showToast(mContext, "验证码不能为空!");
+            ViewInject.showToast(mContext, "用户名不能为空!");
 
-    }else{
 
-        HttpPostManager.dologin(username,password,verify_code,
-                new StringCallBack() {
+        } else if (StrUtils.isEmpty(password)) {
 
-                    @Override
-                    public void onSuccess(Object t) {
-                        JSONArray jsonArray = this.getJsonArray();
-                        System.out.println(jsonArray);
+            ViewInject.showToast(mContext, "密码不能为空!");
 
-                        new Thread(){
-                            @Override
-                            public void run() {
-                                try {
-                                    HttpClient client = new DefaultHttpClient();
-                                    HttpGet get = new HttpGet(Config.API_LOGIN);
-                                    HttpResponse response = client.execute(get);
-                                    CookieManager cookieManager = FormAgent.getCookieContainer();
-                                    String cookestring =cookieManager.toString();
 
-                                    Pattern pattern = Pattern.compile("PHPSESSID=\\w+");
-                                    Matcher matcher = pattern.matcher(cookestring);
-                                    StringBuffer buffer = new StringBuffer();
-                                    while (matcher.find()) {
-                                        System.out.println(matcher.group());
-                                        AppUtils.saveLocalCache(mContext,"PHPSESSID",matcher.group());
-                                    }
+        } else if (StrUtils.isEmpty(verify_code)) {
 
-                                } catch (ClientProtocolException e) {
-                                    // TODO Auto-generated catch block
-                                    e.printStackTrace();
-                                } catch (IOException e) {
-                                    // TODO Auto-generated catch block
-                                    e.printStackTrace();
-                                }
+            ViewInject.showToast(mContext, "验证码不能为空!");
+
+        } else {
+
+            StringCallBack login = new StringCallBack() {
+
+                @Override
+                public void onSuccess(Object t) {
+                    UserInfo user = ParseJson.getEntity(this.getJsonContent().toString(), UserInfo.class);
+                    SharedUserInfo.saveUserinfo(mContext, user);
+                    SysApplication.getInstance().loginSuccess();
+                    new Thread() {
+                        @Override
+                        public void run() {
+
+                            CookieManager cookieManager = FormAgent.getCookieContainer();
+                            String cookestring = cookieManager.toString();
+
+                            Pattern pattern = Pattern.compile("PHPSESSID=\\w+");
+                            Matcher matcher = pattern.matcher(cookestring);
+                            while (matcher.find()) {
+                                System.out.println(matcher.group());
+                                AppUtils.saveLocalCache(mContext, "PHPSESSID", matcher.group());
                             }
-                        }.start();
+
+                        }
+                    }.start();
+
+                    finish();
 
 
-                    }
+                }
 
-                    @Override
-                    public void onFailure(Throwable t, int errorNo, String strMsg) {
-                        Toast.makeText(LoginActivity.this, strMsg, Toast.LENGTH_SHORT).show();
-                    }
-                }, null, null);
+                @Override
+                public void onFailure(Throwable t, int errorNo, String strMsg) {
+                    Toast.makeText(LoginActivity.this, strMsg, Toast.LENGTH_SHORT).show();
+                }
+            };
+
+            HttpPostManager.dologin(username, password, verify_code, login , null, null);
+
+        }
+
 
     }
 
 
-}
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.regist, menu);
+        return true;
+    }
+    @Override
+    public boolean onMenuItemClick(MenuItem menuItem) {
+        if(menuItem.getItemId() == R.id.action_regist){
+            Intent intent = new Intent();
+            intent.setClass(mContext,RegistActivity.class);
+            startActivity(intent);
+        }
+        return true;
+    }
 
 }

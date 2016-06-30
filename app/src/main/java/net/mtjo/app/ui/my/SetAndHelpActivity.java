@@ -47,7 +47,6 @@ public class SetAndHelpActivity extends BaseActivity {
 	 * 告诉好友
 	 */
 	public void tellFriend(View v){
-		UMengUtil.onEvtent(mContext.getApplicationContext(), Config.UMENG_TOLD_FRIEND);
 		SelectPicPopupShare share = new SelectPicPopupShare(this,null);
 		share.showAtLocation(findViewById(R.id.layout), Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL, 0, 0);
 	}
@@ -67,7 +66,7 @@ public class SetAndHelpActivity extends BaseActivity {
 	}
 	
 	/**
-	 * 关于好律师在线
+	 * 关于
 	 */
 	public void aboutLscn(View v){
 		AboutActivity.open(this, 0);
@@ -82,8 +81,7 @@ public class SetAndHelpActivity extends BaseActivity {
 	 */
 	private void exit(){
 		//注销登录统计
-		UMengUtil.onEvtent(mContext.getApplicationContext(), Config.UMENG_EXIT);
-		
+
 		UserInfo user = SharedUserInfo.getUserInfo(mContext);
 		StringCallBack callBack = new StringCallBack(){
 			@Override
@@ -107,6 +105,6 @@ public class SetAndHelpActivity extends BaseActivity {
 			}
 		};
 		
-		HttpPostManager.exit(user.getAuthtoken(), callBack, mContext, "正在退出登录，请稍后...");
+		HttpPostManager.exit(user.getBirthday(), callBack, mContext, "正在退出登录，请稍后...");
 	}
 }

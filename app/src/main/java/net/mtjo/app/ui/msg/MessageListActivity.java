@@ -55,7 +55,7 @@ public class MessageListActivity extends BaseListViewActivity {
 					case 1:
 						WebViewActivity.ShareWebView(mContext,model.getParams_url(),"法律讲堂","","");
 						MessageCache.create().updateType(model.getFromuid(), model.getParams(), model.getTouid());
-						SysApplication.getInstance().updateMsg();
+						SysApplication.getInstance();
 						break;
 					case 2:
 						/*AskLawyerDetailChatActivity.open(mContext, model.getFromuid(),
@@ -86,7 +86,7 @@ public class MessageListActivity extends BaseListViewActivity {
 	private void loadLocalData(int pageNo){
 		if(isReflash || isInit)
 			modelList.clear();
-		List<MessageModel> list = MessageCache.create().getMsgList(pageNo, pageSize, SharedUserInfo.getUserInfo(mContext).getUid());
+		List<MessageModel> list = MessageCache.create().getMsgList(pageNo, pageSize, SharedUserInfo.getUserInfo(mContext).getId());
 		if(null != list){
 			modelList.addAll(list);
 			setLoadMoreAble(list.size() < pageSize ? false:true);
@@ -103,7 +103,7 @@ public class MessageListActivity extends BaseListViewActivity {
 	private void loadData(){
 		final UserInfo user = SharedUserInfo.getUserInfo(mContext);
 		if(null == user) return;
-		MessageModel model = MessageCache.create().getNewlySearch(user.getUid());
+		MessageModel model = MessageCache.create().getNewlySearch(user.getId());
 		long lastid = null==model? 0:model.getMsgid();
 		
 		StringCallBack callback = new StringCallBack(){
@@ -112,10 +112,10 @@ public class MessageListActivity extends BaseListViewActivity {
 				if (this.getJsonArray() != null) {
 					List<MessageModel> list = ParseJson.getEntityList(this.getJsonArray().toString(), MessageModel.class);
 					for(int i=0,l=list.size(); i<l; i++){
-						MessageCache.create().add(list.get(i),user.getUid());
+						MessageCache.create().add(list.get(i),user.getId());
 					}
 					if(list.size() > 0)
-						SysApplication.getInstance().updateMsg();
+						SysApplication.getInstance();
 					list.clear();
 					list = null;
 				}
@@ -128,7 +128,7 @@ public class MessageListActivity extends BaseListViewActivity {
 				loadLocalData(1);
 			}
 		};
-		HttpPostManager.getNewMsg(user.getAuthtoken(), 
+		HttpPostManager.getNewMsg(user.getBirthday(),
 				lastid,callback, this,null);
 	}
 

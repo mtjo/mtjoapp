@@ -28,7 +28,7 @@
     <string name="regist_error_test_code_msg">短信验证码发送失败，请稍后重试</string>
     <string name="regist_title_msg">手机验证</string>
     <string name="regist_lawyer_phone_msg">律师会通过该手机号与您联系。</string>
-    <string name="regist_not_empty_msg">手机号码不能为空</string>
+    <string name="regist_not_empty_msg">邮箱不能为空</string>
     <string name="regist_mobile_rule__msg">手机号码不符合规范</string>
     <string name="regist_not_empty_vecode_msg">验证码不能为空</string>
     <string name="regist_vecode_msg">验证码不符合规范</string>
