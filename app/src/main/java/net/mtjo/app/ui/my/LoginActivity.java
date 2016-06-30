@@ -26,13 +26,9 @@ import net.mtjo.app.api.HttpPostManager;
 import net.mtjo.app.application.SysApplication;
 import net.mtjo.app.entity.UserInfo;
 import net.mtjo.app.ui.base.BaseActivity;
-import net.mtjo.app.ui.start.MyFragment;
 import net.mtjo.app.utils.SharedUserInfo;
 
 
-import org.json.JSONArray;
-
-import java.util.Arrays;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 

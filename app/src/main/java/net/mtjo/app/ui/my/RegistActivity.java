@@ -95,7 +95,6 @@ public class RegistActivity extends BaseActivity {
                         RegistActivity.this.finish();
                         //上传用户token
                         SysApplication.getInstance().loginSuccess();
-                        SysApplication.getInstance().uploadToken();
                     } else {
                         ViewInject.showToast(RegistActivity.this, this.getDesc());
                     }

@@ -274,10 +274,7 @@ public class MainActivity extends BaseActivity {
 		Loger.debug("连接信鸽成功,设备token："+token);
 		SharedUserInfo.saveToken(mContext, token);
 	}
-	
-	public void uploadToken(){
-		SysApplication.getInstance().uploadToken();
-	}
+
 
 	private void registerPush(){
 		// 1.获取设备Token
@@ -319,8 +316,6 @@ public class MainActivity extends BaseActivity {
 			if(msg.what == 0){
 				//成功
 				theActivity.saveToken( msg.obj.toString());
-				//上传token
-				theActivity.uploadToken();
 			}else{
 				//失败
 				Loger.debug("获取设备token失败");

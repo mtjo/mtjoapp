@@ -68,7 +68,7 @@ public class SetAndHelpActivity extends BaseActivity {
 	/**
 	 * 关于
 	 */
-	public void aboutLscn(View v){
+	public void aboutus(View v){
 		AboutActivity.open(this, 0);
 	}
 	
@@ -105,6 +105,6 @@ public class SetAndHelpActivity extends BaseActivity {
 			}
 		};
 		
-		HttpPostManager.exit(user.getBirthday(), callBack, mContext, "正在退出登录，请稍后...");
+		HttpPostManager.exit(callBack, mContext, "正在退出登录，请稍后...");
 	}
 }

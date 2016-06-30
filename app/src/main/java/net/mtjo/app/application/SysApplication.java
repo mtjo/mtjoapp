@@ -65,29 +65,7 @@ public class SysApplication extends Application {
 	public void initEngineManager(Context context) {
 	}
 	
-	/**
-	 * 上传推送token
-	 */
-	public void uploadToken(){
-		UserInfo userinfo = SharedUserInfo.getUserInfo(this);
-		String token = SharedUserInfo.getToken(this);
-		if(null == userinfo || null == token){
-			return;
-		}
-		HttpPostManager.uploadToken(userinfo.getSignature(), token,
-				new StringCallBack() {
-					@Override
-					public void onSuccess(Object t) {
-						Loger.debug("手机token上传成功");
-					}
 
-					@Override
-					public void onFailure(Throwable t, int errorNo,
-										  String strMsg) {
-						Loger.debug("手机token上传失败");
-					}
-				}, null, null);
-	}
 	
 	public void setMainActivity(MainActivity mainActivity) {
 		this.mainActivity = mainActivity;

@@ -20,7 +20,7 @@ import net.mtjo.app.ui.base.BaseActivity;
 import net.mtjo.app.ui.base.WebViewActivity;
 
 /**
- * 关于好律师
+ * 关于
  * @author zxp
  *
  */

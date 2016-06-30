@@ -63,41 +63,17 @@ public class HttpPostManager {
 		
 	}
 	
-	/**
-	 * 上传设备token
-	 */
-	public static void uploadToken(String authtoken, String token,StringCallBack callback, Activity aty, String msg){
-		HashMap<String, String> params = new HashMap<String, String>();
-		params.put("authtoken", authtoken);
-		params.put("deviceToken", token);
-		params.put("deviceid", "2");
-		Http.getInstancts().urlPost(getUrl(Config.LSCN_USER_URL, "uploadToken"), params, callback, aty, msg);
-	}
-	
-	/**
-	 * 修改手机号码
-	 */
-	public static void modifMobile(String authtoken,String mobile, String vcode, StringCallBack callback, Activity aty, String msg){
-		HashMap<String, String>	params = new HashMap<String,String>();
-		params.put("authtoken", authtoken);
-		params.put("mobile", mobile);
-		params.put("vcode", vcode);
-		
-		Http.getInstancts().urlPost(getUrl(Config.LSCN_USER_URL, "modifMobile"), params, callback, aty, msg);
-	}
+
 	
 	/**
 	 * 退出登录
-	 * @param authtoken
 	 * @param callback
 	 * @param aty
 	 * @param msg
 	 */
-	public static void exit(String authtoken, StringCallBack callback, Activity aty, String msg){
+	public static void exit(StringCallBack callback, Activity aty, String msg){
 		HashMap<String, String> params = new HashMap<String, String>();
-		params.put("authtoken", authtoken);
-		
-		Http.getInstancts().urlPost(getUrl(Config.LSCN_USER_URL, "logout"), params, callback, aty, msg);
+		Http.getInstancts().urlPost(Config.API_LOGOUT, params, callback, aty, msg);
 	}
 	
 
@@ -176,37 +152,9 @@ public class HttpPostManager {
 				params,callback, aty, msg);
 	}
 	
-	/**
-	 * 预约律师
-	 */
-	public static void bespeakLawyer(String authtoken,String city, String type, String amount,String content,
-			String mobile,String lawyerUid,StringCallBack callback, Activity aty, String msg){
-		HashMap<String,String> params = new HashMap<String,String>();
-		params.put("authtoken", authtoken);
-		params.put("name", mobile);
-		params.put("areacode", city);
-		params.put("special", type);
-		if (!StrUtils.isEmpty(type)) {
-			params.put("special", type);
-		}
-		params.put("amount", StrUtils.strToString(amount).trim().length() > 0 ? amount : "0");
-		params.put("content", content);
-		params.put("lawyerUid", lawyerUid);
-		Http.getInstancts().urlPost(getUrl(Config.LSCN_USER_URL,"bespeakLawyer"), params, callback, aty, msg);
-	}
+
 	
-	/**
-	 * 预约律师记录
-	 */
-	public static void getMyBespeakList(String authtoken, int page, int pageSize,
-			StringCallBack callback, Activity aty, String msg){
-		HashMap<String,String> params = new HashMap<String,String>();
-		params.put("authtoken", authtoken);
-		params.put("page", page+"");
-		params.put("pageSize", pageSize+"");
-		Http.getInstancts().urlPost(getUrl(Config.LSCN_USER_URL,"getMyBespeakList"), params, callback, aty, msg);
-	}
-	
+
 	/**
 	 * 法律文章列表
 	 */
@@ -251,31 +199,7 @@ public class HttpPostManager {
 		Http.getInstancts().urlPost(getUrl(Config.LSCN_PUB_URL, "getVersion"), null, callback, aty, msg);
 	}
 	
-	/**
-	 * 与律师会话
-	 * @param authtoken
-	 * @param voice
-	 * @param qid
-	 * @param tuUid
-	 * @param voiceType
-	 * @param callback
-	 * @param aty
-	 * @param msg
-	 */
-	public static void insertVoice(String authtoken, String voice, String qid, String toUid, String voiceType,StringCallBack callback, Activity aty, String msg){
-		HashMap<String, String> params = new HashMap<String, String>();
-		params.put("authtoken", authtoken);
-		params.put("voice", voice);
-		params.put("qid", qid);
-		params.put("toUid", toUid);
-		params.put("voiceType", voiceType);
-		params.put("appKey", "00002");
-		params.put("v", "1.0");
-		params.put("method", "lscn.app.insertVoice");
-		Http.getInstancts().urlPost(Config.FINDLAW_URL,
-				params,callback, aty, msg);
-	}
-	
+
 	public static void getMsgCount(String authtoken, long lastid,StringCallBack callback, Activity aty, String msg){
 		HashMap<String, String> params = new HashMap<String, String>();
 		params.put("authtoken", authtoken);
@@ -301,40 +225,11 @@ public class HttpPostManager {
 				params,callback, aty, msg);
 	}
 	
-	/**
-	 * 获取用户未读数
-	 */
-	public static void getUnreadNum(String authtoken, StringCallBack callback, Activity aty, String msg){
-		HashMap<String, String> params = new HashMap<String, String>();
-		params.put("authtoken", authtoken);
-		params.put("xpath", "/lscn/dialogue/qid/");
-		
-		Http.getInstancts().urlPost(getUrl(Config.LSCN_USER_URL, "getUnreadNum"), params, callback, aty, msg);
-	}
+
 	
-	/**
-	 * 设置用户未读数
-	 */
-	public static void setUnreadNum(String authtoken,String qid,String lawid, 
-			StringCallBack callback, Activity aty, String msg){
-		HashMap<String, String> params = new HashMap<String, String>();
-		params.put("authtoken", authtoken);
-		params.put("xpath", "/lscn/dialogue/qid/"+qid+"/fromuid/"+lawid);
-		params.put("num", "0");
-		
-		Http.getInstancts().urlPost(getUrl(Config.LSCN_USER_URL, "setUnreadNum"), params, callback, aty, msg);
-	}
+
 	
-	/**
-	 * 获取用户问律师记录，未读列表
-	 */
-	public static void getMyUnreadQuestionList(String authtoken,
-			StringCallBack callback, Activity aty, String msg){
-		HashMap<String, String> params = new HashMap<String, String>();
-		params.put("authtoken", authtoken);
-		
-		Http.getInstancts().urlPost(getUrl(Config.LSCN_USER_URL, "getMyUnreadQuestionList"), params, callback, aty, msg);
-	}
+
 	
 	/**
 	 * 找律师排序列表

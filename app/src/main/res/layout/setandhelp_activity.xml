@@ -47,8 +47,8 @@
         android:gravity="center_vertical"
         android:textColor="@color/text_dark_color"
         android:textSize="@dimen/tv_style_big_size"
-        android:text="关于好律师在线"
-        android:onClick="aboutLscn"
+        android:text="关于"
+        android:onClick="aboutus"
         android:clickable="true"/>
     <include layout="@layout/h_line"/>
 	

@@ -32,7 +32,7 @@ public class Config {
 	/**
 	 * lscn http post登录请求地址
 	 */
-	public static String LSCN_USER_URL = LSCN_URL+"appuser";
+	public static String API_LOGOUT = API_URL+"user&a=logout";;
 	
 	/**
 	 * 协议地址
