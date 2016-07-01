@@ -67,6 +67,7 @@ public class SharedUserInfo {
 				userinfo.setUser_login(sp.getString(USER_LOGIN, null));
 				userinfo.setUser_nicename(sp.getString(USER_NICENAME, null));
 				userinfo.setSex(sp.getString(SEX, null));
+				userinfo.setAvatar(sp.getString(AVATAR,null));
 				userinfo.setUser_status(sp.getString(USER_STATUS, null));
 			}
 			

@@ -116,14 +116,9 @@ public class MyFragment extends Fragment implements OnClickListener{
 				startActivity(intent2);
 				break;
 			case R.id.my_collect_tv:
-				ViewInject.showToast(aty,"my_ask_tv");
-				if(null == SharedUserInfo.getUserInfo(aty)){
-					//RegistActivity.open(aty, TOLOGIN);
-					ViewInject.showToast(aty,"my_collect_tv");
-				} else {
-					//我的咨询
-					//AskLawyerListActivity.open(aty, 1);
-				}
+
+				ViewInject.showToast(aty,"my_collect_tv");
+
 				break;
 			case R.id.set_help_tv:
 				SetAndHelpActivity.open(aty, 2);
