@@ -11,6 +11,7 @@ import net.mtjo.app.config.Config;
 import net.mtjo.app.entity.UserInfo;
 import net.mtjo.app.ui.my.FeedBackActivity;
 import net.mtjo.app.ui.my.LoginActivity;
+import net.mtjo.app.ui.my.MyFavoriteActivity;
 import net.mtjo.app.ui.my.RegistActivity;
 import net.mtjo.app.ui.my.SetAndHelpActivity;
 import net.mtjo.app.utils.SharedUserInfo;
@@ -110,14 +111,14 @@ public class MyFragment extends Fragment implements OnClickListener{
 				startActivity(intent);
 				break;
 			case R.id.unlogin_head:
-				//RegistActivity.open(aty, TOLOGIN);
 				Intent intent2 = new Intent();
 				intent2.setClass(aty, LoginActivity.class);
 				startActivity(intent2);
 				break;
 			case R.id.my_collect_tv:
-
-				ViewInject.showToast(aty,"my_collect_tv");
+				Intent intent3 = new Intent();
+				intent3.setClass(aty, MyFavoriteActivity.class);
+				startActivity(intent3);
 
 				break;
 			case R.id.set_help_tv:

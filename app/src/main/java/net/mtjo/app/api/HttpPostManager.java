@@ -88,6 +88,17 @@ public class HttpPostManager {
     }
 
 
+
+    /**
+     * dologin
+     */
+    public static void getFavorite( StringCallBack callback, Activity aty, String msg) {
+        Http.getInstancts().urlPost(getUrl(Config.API_URL, "user","favorite"),
+                null, callback, aty, msg);
+    }
+
+
+
     public static String getUrl(String url, String Controller, String method) {
         if (null != url) {
             url +=Controller+ "&a=" + method;

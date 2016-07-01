@@ -55,7 +55,7 @@ public class ArticleAdapter extends BaseAdapter {
 		ViewHolder holder;
 		if(convertView == null){
 			holder = new ViewHolder();
-			convertView = inflate.inflate(R.layout.lawarticles_listitem,  parent, false);
+			convertView = inflate.inflate(R.layout.articles_listitem,  parent, false);
 			holder.thum_img = (ImageView) convertView.findViewById(R.id.lawarticle_thum_img);
 			holder.title_tv = (TextView) convertView.findViewById(R.id.lawarticle_title_tv);
 			holder.descri_tv = (TextView) convertView.findViewById(R.id.lawarticle_catname_tv);

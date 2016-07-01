@@ -75,6 +75,7 @@
 
         <!-- 找律师 -->
 
+
         <!-- 消息列表 -->
         <activity
             android:name=".ui.msg.MessageListActivity"
@@ -113,7 +114,7 @@
             android:launchMode="singleTask"
             android:noHistory="true"
             android:theme="@style/Theme.UMDialog"
-            android:windowSoftInputMode="stateVisible|adjustResize"></activity>
+            android:windowSoftInputMode="stateVisible|adjustResize" />
         <!-- ############ QQ空间和QQ SSO授权的Activity注册 ############ -->
         <activity
             android:name="com.tencent.tauth.AuthActivity"
@@ -131,7 +132,7 @@
         <activity
             android:name="com.tencent.connect.common.AssistActivity"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <!-- 微信分享 -->
         <activity
             android:name=".wxapi.WXEntryActivity"
@@ -143,11 +144,11 @@
         <meta-data
             android:name="UMENG_APPKEY"
             android:value="5450aaf5fd98c5a67d02bb2f"
-            tools:replace="android:value"></meta-data>
+            tools:replace="android:value" />
         <meta-data
             android:name="UMENG_CHANNEL"
             android:value="Umeng"
-            tools:replace="android:value"></meta-data>
+            tools:replace="android:value" />
 
         <!-- ####################################腾讯推送配置 #################################### -->
         <!-- 【必须】 信鸽receiver广播接收 -->
@@ -185,7 +186,7 @@
         <activity
             android:name="com.tencent.android.tpush.XGPushActivity"
             android:exported="true"
-            android:theme="@android:style/Theme.Translucent"></activity>
+            android:theme="@android:style/Theme.Translucent" />
         <!-- 【建议】 信鸽service守护进程，可以增加复活机会，提升消息抵达率。请注意添加libtpnsWatchdog.so -->
         <service
             android:name="com.tencent.android.tpush.service.XGDaemonService"
@@ -226,7 +227,8 @@
             android:name="XG_V2_ACCESS_KEY"
             android:value="A7CJNB92P65R" />
 
-        <activity android:name=".ui.my.LoginActivity"></activity>
+        <activity android:name=".ui.my.LoginActivity" />
+        <activity android:name=".ui.my.MyFavoriteActivity"></activity>
     </application>
 
 </manifest>

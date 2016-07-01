@@ -9,7 +9,6 @@ import org.json.JSONException;
 import com.aframe.Loger;
 import com.aframe.bitmap.ImageLoader;
 import com.aframe.http.StringCallBack;
-import com.aframe.ui.ViewInject;
 import com.aframe.ui.widget.filtermenu.FilterMenuView;
 
 import com.aframe.ui.widget.xlistview.DataQueryInerface;
@@ -82,11 +81,8 @@ public class FindFragment extends Fragment implements DataQueryInerface{
 	}
 	
 	private void initView(){
-
-
 		xlistview = (XListView) getActivity().findViewById(R.id.find_xlistview);
 		load_lt = (LoadStateView) getActivity().findViewById(R.id.loadingStateBox);
-		filterview = (FilterMenuView) getActivity().findViewById(R.id.filtermenu);
 		manager = new ArticleDBManager(aty);
 		adapter = new ArticleAdapter(aty, datalist);
 		xlistview.setAdapter(adapter);
