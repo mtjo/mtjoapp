@@ -1,61 +1,12 @@
 package net.mtjo.app.config;
 
+import com.aframe.utils.StrUtils;
+
 public class Config {
-	public static String LSCN_URL = "http://ls.cn/?m=";
-	public static String API_URL="http://mtjo.net/?g=app&m=";
-	
-	public static String FINDLAW_URL = "http://api.app.findlaw.cn:8888/router/rest";
-//	public static String FINDLAW_URL = "http://192.168.3.235:9081/router/rest";
-//	public static String ASK_URL = "http://api.app.findlaw.cn:8888/router/rest";
-//	public static String ASK_URL = "http://192.168.3.235:9081/router/rest";
-//	public static String ASK_URL = "http://192.168.23.124:8080/router/rest";
-	
-	/**
-	 * lscn http post公开请求地址
-	 */
-	public static String LSCN_PUB_URL = LSCN_URL+"apppub";
 
+	public static String API_HOST ="mtjo.net";
+	public static String API_URL="http://"+API_HOST+"/?g=app&m=";
 
-	//文章
-	public static String API_ARTICLES =  API_URL+"index&a=article_list";
-
-	//banner
-	public static String API_HOME_SLIDES =  API_URL+"index&a=home_slides";
-
-	//banner
-	public static String API_VERIFYCODE =  API_URL+"index&a=getcode";
-
-
-	//banner
-	public static String API_LOGIN =  API_URL+"user&a=dologin";
-	
-	/**
-	 * lscn http post登录请求地址
-	 */
-	public static String API_LOGOUT = API_URL+"user&a=logout";;
-	
-	/**
-	 * 协议地址
-	 */
-	public static String LSCN_SERVICE = "http://china.findlaw.cn/appwebview/index.php?m=Lscnapp&a=pact";
-	
-	/**
-	 * 问律师协议地址
-	 */
-	public static String FINDLAW_SERVICE = "http://china.findlaw.cn/appwebview/index.php?m=Lscnapp&a=find";
-	
-	/**
-	 * 找律师协议地址
-	 */
-	public static String ASKLAW_SERVICE = "http://china.findlaw.cn/appwebview/index.php?m=Lscnapp&a=ask";
-	
-	/**
-	 * 律师详情地址
-	 * 后加律师uid
-	 */
-	public static String LAW_DETAIL = "http://www.ls.cn/?g=Api&m=OpenWebView&a=lawyerdetail&appkey=0001&uid=";
-	
-	
 	/**
 	 * 客服电话
 	 */

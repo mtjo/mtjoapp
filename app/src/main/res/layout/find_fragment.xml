@@ -3,10 +3,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" 
     android:orientation="vertical">
-    <com.aframe.ui.widget.filtermenu.FilterMenuView
-        android:id="@+id/filtermenu"
+    <EditText
+        android:id="@+id/keyword"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/main_find_normal"
+        android:paddingLeft="15dp"
+        android:imeActionLabel="搜索"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:lines="1"/>
     <com.aframe.ui.widget.xlistview.XListView
         android:id="@+id/find_xlistview"
         android:layout_width="match_parent"

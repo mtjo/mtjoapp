@@ -8,7 +8,7 @@
     <ImageView 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/lscn_logo_icon"/>
+        android:src="@drawable/logo"/>
     <TextView 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

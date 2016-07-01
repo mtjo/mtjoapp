@@ -110,7 +110,7 @@ public class RegistActivity extends BaseActivity {
             }
         };
 
-        HttpPostManager.regist(email_et.getText().toString(), verify_code_et.getText().toString(), regist, this, "数据提交中，请稍后...");
+       // HttpPostManager.regist(email_et.getText().toString(), verify_code_et.getText().toString(), regist, this, "数据提交中，请稍后...");
     }
 
 

@@ -69,7 +69,7 @@ public class VersionService  extends Service{
 					}
 				}
 			};
-			HttpPostManager.getNowView(callback, (Activity)context, "正在检查版本信息，请稍后...");
+			//HttpPostManager.getNowView(callback, (Activity)context, "正在检查版本信息，请稍后...");
 		}catch(Exception e){
 			if(Loger.DEBUG_LOG)
 				e.printStackTrace();

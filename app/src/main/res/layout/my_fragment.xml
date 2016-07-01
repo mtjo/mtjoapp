@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
     <LinearLayout 
 	    android:layout_width="match_parent"
 	    android:layout_height="wrap_content"
@@ -39,19 +40,22 @@
 	        android:background="@drawable/my_top_login_bg"
 	        android:padding="@dimen/activity_horizontal_margin"
 	        android:gravity="center_vertical">
-	        <ImageView 
-	            android:layout_width="wrap_content"
-	            android:layout_height="wrap_content"
-	            android:src="@drawable/my_default_head"/>
+			<com.aframe.ui.widget.CircleImageView
+				android:id="@+id/login_user_avatar"
+				android:layout_width="70dp"
+				android:layout_height="70dp"
+				android:src="@drawable/head_default"
+				app:border_color="#88FFFFFF"
+				app:border_width="2dip" />
 	        <TextView 
-	            android:id="@+id/mobile_tv"
+	            android:id="@+id/nick_name"
 		        android:layout_width="match_parent"
 		        android:layout_height="wrap_content"
 		        android:paddingLeft="10dp"
 		        android:gravity="center_vertical"
 		        android:textColor="@color/text_dark_color"
 		        android:textSize="@dimen/tv_style_big_size"
-		        android:text="我的咨询"/>
+		        android:text="我的"/>
 	    </LinearLayout>
 	    
 	    <LinearLayout 
@@ -59,35 +63,21 @@
 	        android:layout_width="match_parent"
 	        android:layout_height="wrap_content"
 	        android:orientation="vertical">
-	        <!-- 我的咨询 -->
-		    <TextView 
-		        android:id="@+id/my_ask_tv"
-		        android:layout_width="match_parent"
-		        android:layout_height="wrap_content"
-		        android:padding="@dimen/activity_horizontal_margin"
-		        android:drawableLeft="@drawable/my_question_icon"
-		        android:background="@drawable/dialog_btn_selector"
-		        android:gravity="center_vertical"
-		        android:textColor="@color/text_dark_color"
-		        android:textSize="@dimen/tv_style_big_size"
-		        android:drawablePadding="10dp"
-		        android:text="我的咨询"/>
-		    <include layout="@layout/h_line"/>
-		    
-		    <!-- 我的收藏 -->
-<!-- 		    <TextView  -->
-<!-- 		        android:id="@+id/my_collect_tv" -->
-<!-- 		        android:layout_width="match_parent" -->
-<!-- 		        android:layout_height="wrap_content" -->
-<!-- 		        android:padding="@dimen/activity_horizontal_margin" -->
-<!-- 		        android:drawableLeft="@drawable/my_collect_icon" -->
-<!-- 		        android:background="@drawable/click_bg_selector" -->
-<!-- 		        android:gravity="center_vertical" -->
-<!-- 		        android:textColor="@color/text_dark_color" -->
-<!-- 		        android:textSize="@dimen/tv_style_big_size" -->
-<!-- 		        android:drawablePadding="10dp" -->
-<!-- 		        android:text="我的收藏"/> -->
-<!-- 		    <include layout="@layout/h_line"/> -->
+
+		     我的收藏
+ 		    <TextView
+ 		        android:id="@+id/my_collect_tv"
+ 		        android:layout_width="match_parent"
+ 		        android:layout_height="wrap_content"
+ 		        android:padding="@dimen/activity_horizontal_margin"
+ 		        android:drawableLeft="@drawable/my_collect_icon"
+			    android:background="@drawable/dialog_btn_selector"
+ 		        android:gravity="center_vertical"
+ 		        android:textColor="@color/text_dark_color"
+ 		        android:textSize="@dimen/tv_style_big_size"
+ 		        android:drawablePadding="10dp"
+ 		        android:text="我的收藏"/>
+ 		    <include layout="@layout/h_line"/>
 	    </LinearLayout>
 	    
 	    <!-- 设置与帮助 -->

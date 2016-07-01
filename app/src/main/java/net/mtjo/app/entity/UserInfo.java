@@ -1,6 +1,16 @@
 package net.mtjo.app.entity;
 
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+
+import com.aframe.bitmap.ImageLoader;
+
+import java.io.IOException;
+import java.io.InputStream;
 import java.io.Serializable;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
 
 /**
  * 用户信息对象
@@ -30,6 +40,7 @@ public class UserInfo implements Serializable {
     private String mobile;
     private String score;
     private String user_type;
+    private Bitmap avatarbm;
 
 
     public String getId() {
@@ -183,4 +194,6 @@ public class UserInfo implements Serializable {
     public void setCreate_time(String create_time) {
         this.create_time = create_time;
     }
+
+
 }

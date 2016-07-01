@@ -6,6 +6,7 @@ import android.net.Uri;
 import android.view.Gravity;
 import android.view.View;
 
+import com.aframe.utils.AppUtils;
 import com.tencent.android.tpush.XGPushManager;
 import com.aframe.Loger;
 import com.aframe.http.StringCallBack;
@@ -99,6 +100,7 @@ public class SetAndHelpActivity extends BaseActivity {
 				SharedUserInfo.exitUserInfo(mContext);
 				ViewInject.showToast(mContext, getString(R.string.me_exit_succ_msg));
 				XGPushManager.unregisterPush(mContext.getApplicationContext());
+				AppUtils.cleanLocalCache(mContext,"PHPSESSID");
 				
 				findViewById(R.id.login_out_btn).setVisibility(View.GONE);
 				SysApplication.getInstance().loginOutSuccess();

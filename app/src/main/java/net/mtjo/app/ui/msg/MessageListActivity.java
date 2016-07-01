@@ -128,8 +128,8 @@ public class MessageListActivity extends BaseListViewActivity {
 				loadLocalData(1);
 			}
 		};
-		HttpPostManager.getNewMsg(user.getBirthday(),
-				lastid,callback, this,null);
+		//HttpPostManager.getNewMsg(user.getBirthday(),
+		//		lastid,callback, this,null);
 	}
 
 	@Override

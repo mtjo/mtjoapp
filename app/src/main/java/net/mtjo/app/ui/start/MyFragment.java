@@ -1,8 +1,11 @@
 package net.mtjo.app.ui.start;
 
 import com.aframe.Loger;
+import com.aframe.bitmap.ImageLoader;
 import com.aframe.ui.ViewInject;
 import com.aframe.utils.AppUtils;
+import com.aframe.utils.StrUtils;
+
 import net.mtjo.app.R;
 import net.mtjo.app.config.Config;
 import net.mtjo.app.entity.UserInfo;
@@ -16,18 +19,28 @@ import net.mtjo.app.utils.UMengUtil;
 import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
 
 public class MyFragment extends Fragment implements OnClickListener{
 	private static int TOLOGIN = 0;
 	private Activity aty;
-	
+	ImageView user_avatar;
+
 	public MyFragment(){
 	}
 	
@@ -49,8 +62,7 @@ public class MyFragment extends Fragment implements OnClickListener{
 	private void initView(){
 		getActivity().findViewById(R.id.tologin_btn).setOnClickListener(this);
 		getActivity().findViewById(R.id.unlogin_head).setOnClickListener(this);
-		getActivity().findViewById(R.id.my_ask_tv).setOnClickListener(this);
-//		getActivity().findViewById(R.id.my_collect_tv).setOnClickListener(this);
+		getActivity().findViewById(R.id.my_collect_tv).setOnClickListener(this);
 		getActivity().findViewById(R.id.set_help_tv).setOnClickListener(this);
 		getActivity().findViewById(R.id.feed_back_tv).setOnClickListener(this);
 		getActivity().findViewById(R.id.contanct_us_tv).setOnClickListener(this);
@@ -69,8 +81,19 @@ public class MyFragment extends Fragment implements OnClickListener{
 		getActivity().findViewById(R.id.nologin_head_lt).setVisibility(View.GONE);
 		getActivity().findViewById(R.id.login_head_lt).setVisibility(View.VISIBLE);
 		getActivity().findViewById(R.id.login_content_lt).setVisibility(View.VISIBLE);
-		((TextView)getActivity().findViewById(R.id.mobile_tv)).setText(user.getMobile());
+
+		((TextView)getActivity().findViewById(R.id.nick_name)).setText(user.getUser_nicename());
+		user_avatar = (ImageView)getActivity().findViewById(R.id.login_user_avatar);
+
+		if (!StrUtils.isEmpty(user.getAvatar())) {
+			ImageLoader.getInstance(aty).displayImage(user_avatar, user.getAvatar(),
+					null, true, 50, 70, 70);
+		}
+
 	}
+
+
+
 	
 	private void setUnLogin(){
 		getActivity().findViewById(R.id.nologin_head_lt).setVisibility(View.VISIBLE);
@@ -92,11 +115,11 @@ public class MyFragment extends Fragment implements OnClickListener{
 				intent2.setClass(aty, LoginActivity.class);
 				startActivity(intent2);
 				break;
-			case R.id.my_ask_tv:
+			case R.id.my_collect_tv:
 				ViewInject.showToast(aty,"my_ask_tv");
 				if(null == SharedUserInfo.getUserInfo(aty)){
 					//RegistActivity.open(aty, TOLOGIN);
-					ViewInject.showToast(aty,"tologin_btn");
+					ViewInject.showToast(aty,"my_collect_tv");
 				} else {
 					//我的咨询
 					//AskLawyerListActivity.open(aty, 1);
@@ -137,12 +160,15 @@ public class MyFragment extends Fragment implements OnClickListener{
 	public void loginSuccess(){
 		setLogin(SharedUserInfo.getUserInfo(aty));
 	}
-	
+
+
+
 	/**
 	 * 退出成功
 	 */
 	public void loginOutSuccess(){
 		setUnLogin();
 	}
+
 
 }
