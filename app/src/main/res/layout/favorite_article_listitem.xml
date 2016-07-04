@@ -1,0 +1,28 @@
+<com.aframe.ui.widget.MaterialRippleLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/f_item">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:id="@+id/f_id_tv"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/f_id_tv"
+            android:text="标题标题标题标题标题标题"
+            android:id="@+id/f_title_tv"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="取消收藏"
+            android:id="@+id/f_op_bt"/>
+
+    </RelativeLayout>
+
+</com.aframe.ui.widget.MaterialRippleLayout>

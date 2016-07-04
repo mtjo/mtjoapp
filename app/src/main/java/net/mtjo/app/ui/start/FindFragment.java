@@ -253,6 +253,7 @@ public class FindFragment extends Fragment implements DataQueryInerface{
 
 	@Override
 	public void onRefresh(int pageNo, int pageSize) {
+		isReflash = true;
 		loadData(1);
 	}
 

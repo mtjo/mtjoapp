@@ -60,7 +60,7 @@
 		    android:layout_height="wrap_content"
 		    android:layout_toRightOf="@id/lawarticle_thum_img"
 		    android:paddingLeft="10dp"
-		    android:text="婚姻动态"
+		    android:text="分类"
 		    android:layout_alignParentBottom="true"
 		    android:paddingBottom="6dp"
 		    android:textColor="@color/text_light_color"

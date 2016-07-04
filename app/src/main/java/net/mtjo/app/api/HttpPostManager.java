@@ -92,9 +92,11 @@ public class HttpPostManager {
     /**
      * dologin
      */
-    public static void getFavorite( StringCallBack callback, Activity aty, String msg) {
+    public static void getFavorite(String uid, StringCallBack callback, Activity aty, String msg) {
+        HashMap<String,String> params = new HashMap<String,String>();
+        params.put("uid",uid);
         Http.getInstancts().urlPost(getUrl(Config.API_URL, "user","favorite"),
-                null, callback, aty, msg);
+                params, callback, aty, msg);
     }
 
 

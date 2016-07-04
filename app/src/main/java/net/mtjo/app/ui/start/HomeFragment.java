@@ -1,8 +1,8 @@
 package net.mtjo.app.ui.start;
 
-import com.aframe.http.FormAgent;
+
 import com.aframe.http.StringCallBack;
-import com.aframe.utils.AppUtils;
+
 
 import net.mtjo.app.R;
 import net.mtjo.app.api.HttpPostManager;
@@ -16,15 +16,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
-import android.webkit.CookieManager;
-import android.webkit.CookieSyncManager;
-import android.webkit.WebView;
+
 import android.widget.GridView;
 import android.widget.ListAdapter;
 import android.widget.ScrollView;
 import android.widget.SimpleAdapter;
 import android.widget.Toast;
 
+import com.aframe.ui.ViewInject;
 import com.daimajia.slider.library.*;
 import com.daimajia.slider.library.SliderTypes.BaseSliderView;
 import com.daimajia.slider.library.SliderTypes.TextSliderView;
@@ -99,7 +98,6 @@ public class HomeFragment extends Fragment implements OnClickListener, BaseSlide
     }
 
     private void initView() {
-        //getActivity().findViewById(R.id.ask_img).setOnClickListener(this);
         scrollview = ((ScrollView)aty.findViewById(R.id.scrollView));
         sliderShow = (SliderLayout) aty.findViewById(R.id.slider);
         HttpPostManager.getHomeSlides(
@@ -157,6 +155,7 @@ public class HomeFragment extends Fragment implements OnClickListener, BaseSlide
         //配置适配器
         gview.setAdapter(sim_adapter);
         setListViewHeightBasedOnChildren(gview);
+
     }
 
     @Override
@@ -168,10 +167,6 @@ public class HomeFragment extends Fragment implements OnClickListener, BaseSlide
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            /*//case R.id.ask_img:
-				UMengUtil.onEvtent(getActivity().getApplicationContext(), Config.UMENG_ASK_LAWYER1);
-				AskLawyerActivity.open(getActivity(), 0);
-				break;*/
 
             default:
                 break;
@@ -181,8 +176,6 @@ public class HomeFragment extends Fragment implements OnClickListener, BaseSlide
 
     @Override
     public void onSliderClick(BaseSliderView slider) {
-        //Toast.makeText(aty, slider.getBundle().get("slide_url") + "", Toast.LENGTH_SHORT).show();
-       // SharedPreferences spf = getSharedPreferences("Cookie", Context.MODE_PRIVATE);
 
        WebViewActivity.WebView(aty, slider.getBundle().get("slide_url") + "","文章详情");
     }
@@ -200,9 +193,9 @@ public class HomeFragment extends Fragment implements OnClickListener, BaseSlide
             case 1:
                 transformer = new BackgroundToForegroundTransformer();
                 break;
-                                    /*case 2:
-                                        transformer= new BaseTransformer();
-                                        break;*/
+            /*case 2:
+                transformer= new BaseTransformer();
+            break;*/
             case 3:
                 transformer = new CubeInTransformer();
                 break;
@@ -261,7 +254,6 @@ public class HomeFragment extends Fragment implements OnClickListener, BaseSlide
             map.put("text", iconName[i]);
             data_list.add(map);
         }
-
         return data_list;
     }
 
@@ -272,7 +264,7 @@ public class HomeFragment extends Fragment implements OnClickListener, BaseSlide
             return;
         }
         // 固定列宽，有多少列
-        int col = 3;// listView.getNumColumns();
+        int col = 4;// listView.getNumColumns();
         int totalHeight = 0;
         // i每次加4，相当于listAdapter.getCount()小于等于4时 循环一次，计算一次item的高度，
         // listAdapter.getCount()小于等于8时计算两次高度相加

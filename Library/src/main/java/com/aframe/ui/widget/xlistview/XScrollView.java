@@ -23,7 +23,7 @@ import android.widget.AbsListView.OnScrollListener;
  *
  * @author MarkMjw
  * @date 2013-10-08
- * @see com.markmao.pulltorefresh.widget.XListView
+ * @see com.aframe.ui.widget.xlistview.XListView
  */
 public class XScrollView extends ScrollView implements OnScrollListener {
 //    private static final String TAG = "XScrollView";
