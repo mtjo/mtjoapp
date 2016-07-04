@@ -70,6 +70,7 @@ public class FavoriteArticleAdapter extends BaseAdapter {
 		FavoriteArticles article = (FavoriteArticles) getItem(position);
 		if(null != article){
 			if(null != holder.title_tv){
+				holder.id_tv.setText(article.getId());
 				holder.title_tv.setText(article.getTitle());
 				holder.title_tv.setTextColor(mContext.getResources().getColor(R.color.text_dark_color));
 			}

@@ -36,6 +36,7 @@ public class MyFavoriteActivity extends BaseActivity implements DataQueryInerfac
     private ArrayList<FavoriteArticles> datalist = new ArrayList<FavoriteArticles>();
     public boolean isReflash;
     public FavoriteArticleAdapter adapter;
+
     public XListView xlistview;
     public boolean isInit = true;
     private LoadStateView load_lt;
