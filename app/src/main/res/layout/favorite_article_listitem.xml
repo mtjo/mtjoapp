@@ -1,28 +1,38 @@
 <com.aframe.ui.widget.MaterialRippleLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    ripple:mrl_rippleDelayClick="true"
+    ripple:mrl_rippleInAdapter="true"
+    ripple:mrl_rippleColor="@color/theme_window_background_click"
+    ripple:mrl_rippleAlpha="0.6">
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
+        android:padding="10dp"
         android:id="@+id/f_item">
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="20dp"
             android:layout_height="wrap_content"
             android:text="1"
+            android:textSize="@dimen/tv_style_smal_size"
             android:id="@+id/f_id_tv"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@id/f_id_tv"
+            android:layout_marginLeft="10dp"
             android:text="标题标题标题标题标题标题"
-            android:id="@+id/f_title_tv"/>
-        <Button
+            android:id="@+id/f_title_tv"
+            android:textSize="@dimen/tv_style_smal_size"
+            android:textColor="@color/abc_input_method_navigation_guard" />
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:text="取消收藏"
-            android:id="@+id/f_op_bt"/>
-
+            android:layout_alignRight="@+id/f_id_tv"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:textSize="@dimen/tv_style_mini_size" />
     </RelativeLayout>
 
 </com.aframe.ui.widget.MaterialRippleLayout>

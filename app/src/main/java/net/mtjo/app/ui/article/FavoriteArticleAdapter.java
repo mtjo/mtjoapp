@@ -2,18 +2,14 @@ package net.mtjo.app.ui.article;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
-import android.graphics.Bitmap;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.TextView;
 
-import com.aframe.bitmap.FailReason;
-import com.aframe.bitmap.ImageCallBack;
-import com.aframe.bitmap.ImageLoader;
+import android.widget.TextView;
 
 import net.mtjo.app.R;
 import net.mtjo.app.entity.Articles;
@@ -61,7 +57,7 @@ public class FavoriteArticleAdapter extends BaseAdapter {
 			convertView = inflate.inflate(R.layout.favorite_article_listitem,  parent, false);
 			holder.id_tv = (TextView) convertView.findViewById(R.id.f_id_tv);
 			holder.title_tv = (TextView) convertView.findViewById(R.id.f_title_tv);
-			holder.button = (Button) convertView.findViewById(R.id.f_op_bt);
+			//holder.button = (Button) convertView.findViewById(R.id.f_op_bt);
 			
 			convertView.setTag(holder);
 		}else{
@@ -85,6 +81,5 @@ public class FavoriteArticleAdapter extends BaseAdapter {
 		TextView title_tv;
 		TextView id_tv;
 		TextView time_tv;
-		Button button;
 	}
 }

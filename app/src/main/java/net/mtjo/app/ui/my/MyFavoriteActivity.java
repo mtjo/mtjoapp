@@ -1,16 +1,16 @@
 package net.mtjo.app.ui.my;
 
-import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.util.Log;
-import android.view.LayoutInflater;
+
 import android.view.View;
-import android.view.ViewGroup;
+import android.widget.AbsListView;
 import android.widget.AdapterView;
-import android.widget.BaseAdapter;
+import android.widget.AdapterView.OnItemClickListener;
+
 
 import com.aframe.Loger;
 import com.aframe.http.StringCallBack;
+
 import com.aframe.ui.ViewInject;
 import com.aframe.ui.widget.xlistview.DataQueryInerface;
 import com.aframe.ui.widget.xlistview.XListView;
@@ -20,10 +20,9 @@ import net.mtjo.app.R;
 import net.mtjo.app.api.HttpPostManager;
 import net.mtjo.app.entity.FavoriteArticles;
 import net.mtjo.app.ui.LoadStateView;
-import net.mtjo.app.ui.article.ArticleAdapter;
 import net.mtjo.app.ui.article.FavoriteArticleAdapter;
 import net.mtjo.app.ui.base.BaseActivity;
-import net.mtjo.app.ui.base.BaseListViewActivity;
+import net.mtjo.app.ui.base.WebViewActivity;
 import net.mtjo.app.utils.SharedUserInfo;
 
 import org.json.JSONArray;
@@ -50,8 +49,7 @@ public class MyFavoriteActivity extends BaseActivity implements DataQueryInerfac
         super.onInit();
         loadData();
         initview();
-
-
+        initListener();
 
     }
     public void initview(){
@@ -60,12 +58,26 @@ public class MyFavoriteActivity extends BaseActivity implements DataQueryInerfac
         adapter = new FavoriteArticleAdapter(this, datalist);
         xlistview.setAdapter(adapter);
         xlistview.setDataQueryInerface(this);
+        xlistview.setOnItemClickListener(new OnItemClickListener(){
+            @Override
+            public void onItemClick(AdapterView<?> arg0, View arg1,
+                                    int arg2, long arg3) {
+                if(arg2 > 0 && arg2 <= datalist.size()){
+                    FavoriteArticles article = datalist.get(arg2 -1);
+                    if(null == article){
+                        return;
+                    }
+                    adapter.notifyDataSetChanged();
+                    WebViewActivity.ShareWebView(mContext, article.getUrl(), "文章列表", article.getTitle(), article.getTitle());
+                }
+            }
+        });
 
     }
 
     @Override
     public void onRefresh(int pageNo, int pageSize) {
-        loadData();
+        startLoad(); loadData();
     }
 
     @Override
@@ -109,7 +121,6 @@ public class MyFavoriteActivity extends BaseActivity implements DataQueryInerfac
      * 设置加载成功
      */
     public void setLoadSuccess(){
-        Log.i("setLoadSuccess", "setLoadSuccess: "+isInit);
         if(isInit){
             if(null != load_lt)
                 load_lt.setVisibility(View.GONE);
@@ -148,4 +159,57 @@ public class MyFavoriteActivity extends BaseActivity implements DataQueryInerfac
         };
         HttpPostManager.getFavorite(uid,favoritecallback,this,null);
     }
+
+    /**
+     * 设置listview的单击监听
+     */
+    public void setOnItemClickListener(OnItemClickListener listener){
+        if(null != xlistview){
+            xlistview.setOnItemClickListener(listener);
+        }
+    }
+
+    private void initListener(){
+        setOnItemClickListener(new OnItemClickListener(){
+            @Override
+            public void onItemClick(AdapterView<?> arg0, View arg1,
+                                    int arg2, long arg3) {
+                if(arg2 > 0 && arg2 <= datalist.size()){
+                    FavoriteArticles article = datalist.get(arg2 -1);
+                    if(null == article){
+                        return;
+                    }
+                    adapter.notifyDataSetChanged();
+                    WebViewActivity.ShareWebView(mContext, article.getUrl(), "文章列表", article.getTitle(), null);
+                }
+            }
+        });
+        if(null != xlistview){
+            xlistview.setOnScrollListener(new AbsListView.OnScrollListener() {
+                @Override
+                public void onScrollStateChanged(AbsListView view, int scrollState) {
+                    switch (scrollState) {
+                        case AbsListView.OnScrollListener.SCROLL_STATE_FLING:
+                            adapter.setFlagBusy(true);
+                            break;
+                        case AbsListView.OnScrollListener.SCROLL_STATE_IDLE:
+                            adapter.setFlagBusy(false);
+                            break;
+                        case AbsListView.OnScrollListener.SCROLL_STATE_TOUCH_SCROLL:
+                            adapter.setFlagBusy(false);
+                            break;
+                        default:
+                            break;
+                    }
+                    adapter.notifyDataSetChanged();
+                }
+
+                @Override
+                public void onScroll(AbsListView view, int firstVisibleItem,
+                                     int visibleItemCount, int totalItemCount) {
+                }
+            });
+        }
+    }
+
 }
