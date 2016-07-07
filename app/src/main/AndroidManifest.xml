@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="net.mtjo.app"
-    android:versionCode="5"
-    android:versionName="2.0.2">
+    android:versionCode="1"
+    android:versionName="1.0.0">
 
     <uses-sdk
         android:minSdkVersion="11"
@@ -45,7 +45,7 @@
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
     <uses-permission android:name="android.permission.READ_SMS" />
 
-    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:name=".application.SysApplication"
@@ -143,7 +143,7 @@
 
         <meta-data
             android:name="UMENG_APPKEY"
-            android:value="5450aaf5fd98c5a67d02bb2f"
+            android:value="577dd99ce0f55ad4f1000155"
             tools:replace="android:value" />
         <meta-data
             android:name="UMENG_CHANNEL"

@@ -22,6 +22,7 @@ import com.aframe.ui.widget.CustomProgressDialog;
 import com.aframe.utils.AppUtils;
 import com.aframe.utils.StrUtils;
 import net.mtjo.app.R;
+import net.mtjo.app.config.Config;
 import net.mtjo.app.ui.SelectPicPopupShare;
 import net.mtjo.app.ui.article.ArticlesActivity;
 
@@ -127,7 +128,7 @@ public class WebViewActivity extends BaseActivity {
 		CookieManager cookieManager = CookieManager.getInstance();
 		cookieManager.setAcceptCookie(true);
 		cookieManager.removeSessionCookie();
-		cookieManager.setCookie("mtjo.net", AppUtils.getLocalCache(mContext,"PHPSESSID"));
+		cookieManager.setCookie(Config.API_HOST, AppUtils.getLocalCache(mContext,"PHPSESSID"));
 		CookieSyncManager.getInstance().sync();
 
 		System.out.println(cookieManager);

@@ -47,12 +47,14 @@ public class MyFavoriteActivity extends BaseActivity implements DataQueryInerfac
         setContentLayout(R.layout.my_favorite);
 
         super.onInit();
+        mContext = this;
         loadData();
         initview();
         initListener();
 
     }
     public void initview(){
+        setTitle("我的收藏");
         xlistview = (XListView)findViewById(R.id.my_favorite_xlixtview);
         load_lt = (LoadStateView) findViewById(R.id.loadingStateBox);
         adapter = new FavoriteArticleAdapter(this, datalist);
@@ -68,7 +70,7 @@ public class MyFavoriteActivity extends BaseActivity implements DataQueryInerfac
                         return;
                     }
                     adapter.notifyDataSetChanged();
-                    WebViewActivity.ShareWebView(mContext, article.getUrl(), "文章列表", article.getTitle(), article.getTitle());
+                    WebViewActivity.ShareWebView(mContext, article.getUrl(), article.getTitle(), article.getTitle(), null);
                 }
             }
         });
@@ -77,7 +79,9 @@ public class MyFavoriteActivity extends BaseActivity implements DataQueryInerfac
 
     @Override
     public void onRefresh(int pageNo, int pageSize) {
-        startLoad(); loadData();
+        isReflash = true;
+        loadData();
+
     }
 
     @Override
@@ -180,36 +184,13 @@ public class MyFavoriteActivity extends BaseActivity implements DataQueryInerfac
                         return;
                     }
                     adapter.notifyDataSetChanged();
-                    WebViewActivity.ShareWebView(mContext, article.getUrl(), "文章列表", article.getTitle(), null);
+                    Log.i("url", article.getUrl());
+
+                    WebViewActivity.ShareWebView(mContext, article.getUrl(), article.getTitle(), article.getTitle(), null);
+
                 }
             }
         });
-        if(null != xlistview){
-            xlistview.setOnScrollListener(new AbsListView.OnScrollListener() {
-                @Override
-                public void onScrollStateChanged(AbsListView view, int scrollState) {
-                    switch (scrollState) {
-                        case AbsListView.OnScrollListener.SCROLL_STATE_FLING:
-                            adapter.setFlagBusy(true);
-                            break;
-                        case AbsListView.OnScrollListener.SCROLL_STATE_IDLE:
-                            adapter.setFlagBusy(false);
-                            break;
-                        case AbsListView.OnScrollListener.SCROLL_STATE_TOUCH_SCROLL:
-                            adapter.setFlagBusy(false);
-                            break;
-                        default:
-                            break;
-                    }
-                    adapter.notifyDataSetChanged();
-                }
-
-                @Override
-                public void onScroll(AbsListView view, int firstVisibleItem,
-                                     int visibleItemCount, int totalItemCount) {
-                }
-            });
-        }
     }
 
 }
