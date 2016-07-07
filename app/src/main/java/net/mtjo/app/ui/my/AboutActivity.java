@@ -15,6 +15,7 @@ import com.aframe.Loger;
 import com.aframe.ui.ViewInject;
 import com.aframe.utils.AppUtils;
 import net.mtjo.app.R;
+import net.mtjo.app.config.Config;
 import net.mtjo.app.service.VersionService;
 import net.mtjo.app.ui.base.BaseActivity;
 import net.mtjo.app.ui.base.WebViewActivity;
@@ -95,7 +96,7 @@ public class AboutActivity extends BaseActivity{
 	 * 用户协议
 	 */
 	public void userAgreement(View v){
-		WebViewActivity.WebView(this, "http://china.findlaw.cn/appwebview/index.php?m=Lscnapp&a=pact", getString(R.string.me_about_lscn_user_protocol_text));
+		WebViewActivity.WebView(this, Config.API_URL, getString(R.string.me_about_lscn_user_protocol_text));
 	}
 	
 	private void initView(){

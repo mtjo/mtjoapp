@@ -43,8 +43,6 @@ public class MainActivity extends BaseActivity {
 	
 	private RadioButton home_rb, find_rb, article_rb, my_rb;
 	private TextView msg_count_tv;
-	private ScrollView scrollview = null;
-	
 	private Long lastClickTime = 0l;
 	
 	private boolean ishomeAdd, isfindAdd, isarticleAdd, ismyAdd;
@@ -86,9 +84,6 @@ public class MainActivity extends BaseActivity {
 	@Override
 	public void onResume() {
 		super.onResume();
-		if(null!=scrollview){
-			scrollview.scrollTo(0,0);
-		}
 	}
 
 	/*****************页面切换控制***************/
@@ -132,8 +127,6 @@ public class MainActivity extends BaseActivity {
 		}
 		ft.hide(mContent).show(home_fragment).commit();
 		mContent = home_fragment;
-		scrollview = ((ScrollView)findViewById(R.id.scrollView));
-
 	}
 	
 	public void goFind(View v){
