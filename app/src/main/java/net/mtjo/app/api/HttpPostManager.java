@@ -7,6 +7,7 @@ import android.app.Activity;
 
 import com.aframe.http.StringCallBack;
 import com.aframe.http.Http;
+import com.aframe.utils.StrUtils;
 
 
 import net.mtjo.app.config.Config;
@@ -87,6 +88,23 @@ public class HttpPostManager {
                 params, callback, aty, msg);
     }
 
+    /**
+     * dologin
+     */
+    public static void regist(String email_phone, String password, String verify_code, StringCallBack callback, Activity aty, String msg) {
+        HashMap<String, String> params = new HashMap<String, String>();
+        if (StrUtils.isMobileNO(email_phone)) {
+            params.put("mobile", email_phone);
+        } else {
+            params.put("email", email_phone);
+        }
+        params.put("password", password);
+        params.put("repassword", password);
+        params.put("verify", verify_code);
+
+        Http.getInstancts().urlPost(getUrl(Config.API_URL, "user","doregister"),
+                params, callback, aty, msg);
+    }
 
 
     /**

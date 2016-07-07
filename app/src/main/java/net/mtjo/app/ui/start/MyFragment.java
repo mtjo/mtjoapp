@@ -24,6 +24,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -85,10 +86,12 @@ public class MyFragment extends Fragment implements OnClickListener{
 
 		((TextView)getActivity().findViewById(R.id.nick_name)).setText(user.getUser_nicename());
 		user_avatar = (ImageView)getActivity().findViewById(R.id.login_user_avatar);
-
+		Log.i("", "setLogin: "+user.getAvatar());
 		if (!StrUtils.isEmpty(user.getAvatar())) {
 			ImageLoader.getInstance(aty).displayImage(user_avatar, user.getAvatar(),
 					null, true, 50, 70, 70);
+		}else {
+			user_avatar.setImageResource(R.drawable.head_default);
 		}
 
 	}

@@ -37,13 +37,15 @@ public class LoginActivity extends BaseActivity {
     private final static String TAG = "Login";
     private String username, password, verify_code;
     private EditText username_et, password_et, verify_code_et;
+    public static LoginActivity loginActivity;
     private LoginActivity mContext;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentLayout(R.layout.my_login_activity);
-        mContext = LoginActivity.this;
+        mContext = this;
+        loginActivity = mContext;
 
     }
     @Override

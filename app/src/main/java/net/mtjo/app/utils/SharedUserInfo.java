@@ -83,6 +83,7 @@ public class SharedUserInfo {
 		SharedPreferences.Editor mEditor = sp.edit();
 		mEditor.remove(ID);
 		mEditor.remove(MOBILE);
+		mEditor.remove(AVATAR);
 		mEditor.remove(USER_LOGIN);
 		mEditor.remove(USER_NICENAME);
 		mEditor.remove(SEX);

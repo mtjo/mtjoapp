@@ -30,13 +30,17 @@
     <string name="regist_lawyer_phone_msg">律师会通过该手机号与您联系。</string>
     <string name="regist_not_empty_msg">邮箱不能为空</string>
     <string name="regist_mobile_rule__msg">手机号码不符合规范</string>
+    <string name="regist_not_empty_password_msg">密码不能为空</string>
+    <string name="regist_not_empty_re_password_msg">重复密码不能为空</string>
+    <string name="regist_password_differ_msg">两次输入密码不一致</string>
+
     <string name="regist_not_empty_vecode_msg">验证码不能为空</string>
     <string name="regist_vecode_msg">验证码不符合规范</string>
     <string name="regist_succ">登录成功</string>
     <string name="regist_fail">登录失败:验证码过期</string>
     <string name="regist_change_mobile">更换手机号码</string>
     <string name="regist_agree_user">点击确认表示您同意</string>
-    <string name="regist_protocol">《好律师在线服务协议》</string>
+    <string name="regist_protocol">《服务协议》</string>
     <string name="regist_load">点击登录</string>
     <string name="regist_commit_question">确定发送?</string>
 
