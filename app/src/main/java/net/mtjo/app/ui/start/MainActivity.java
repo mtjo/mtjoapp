@@ -21,6 +21,7 @@ import net.mtjo.app.ui.msg.cache.MessageCache;
 import net.mtjo.app.ui.my.RegistActivity;
 import net.mtjo.app.utils.SharedUserInfo;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -76,7 +77,6 @@ public class MainActivity extends BaseActivity {
 		
 		SysApplication.getInstance().setMainActivity(this);
 		XGPushConfig.enableDebug(this, true);
-		
 		registerPush();
 
 	}

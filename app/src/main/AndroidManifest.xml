@@ -27,11 +27,16 @@
     <uses-permission android:name="android.permission.PERMISSION_NAME" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <!-- 【必须】 信鸽SDK所需权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.RESTART_PACKAGES" />
     <uses-permission android:name="android.permission.BROADCAST_STICKY" />
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
     <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
     <uses-permission android:name="android.permission.GET_TASKS" />
@@ -73,7 +78,6 @@
             android:name=".ui.start.MainActivity"
             android:screenOrientation="portrait" />
 
-        <!-- 找律师 -->
 
 
         <!-- 消息列表 -->
@@ -135,7 +139,7 @@
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <!-- 微信分享 -->
         <activity
-            android:name=".wxapi.WXEntryActivity"
+            android:name="com.componet.wxapi.WXEntryActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:exported="true"
             android:screenOrientation="portrait"
@@ -214,18 +218,18 @@
             android:name="com.tencent.android.tpush.rpc.XGRemoteService"
             android:exported="true">
             <intent-filter>
-                <action android:name="com.wanyou.lscn.PUSH_ACTION" />
+                <action android:name="net.mtjo.app.PUSH_ACTION" />
             </intent-filter>
         </service>
 
         <!-- 【必须】 请将YOUR_ACCESS_ID修改为APP的AccessId，“21”开头的10位数字，中间没空格 -->
         <meta-data
             android:name="XG_V2_ACCESS_ID"
-            android:value="2100054908" />
+            android:value="2100172899" />
         <!-- 【必须】 请将YOUR_ACCESS_KEY修改为APP的AccessKey，“A”开头的12位字符串，中间没空格 -->
         <meta-data
             android:name="XG_V2_ACCESS_KEY"
-            android:value="A7CJNB92P65R" />
+            android:value="A42UU1B2I1PA" />
 
         <activity android:name=".ui.my.LoginActivity" />
         <activity android:name=".ui.my.MyFavoriteActivity"></activity>

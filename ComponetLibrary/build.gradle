@@ -15,6 +15,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
 }
 
 dependencies {
@@ -28,7 +33,8 @@ dependencies {
     compile files('libs/SocialSDK_tencentWB_1.jar')
     compile files('libs/SocialSDK_tencentWB_2.jar')
     compile files('libs/SocialSDK_tencentWB_3.jar')
-    compile files('libs/Xg_sdk_v2.37.jar')
+    //compile files('libs/Xg_sdk_v2.37.jar')
+    compile files('libs/Xg_sdk_v2.46_20160602_1638.jar')
     compile files('libs/httpmime-4.1.3.jar')
     compile files('libs/mid-sdk-2.10.jar')
     compile files('libs/umeng-analytics-v5.5.3.jar')
